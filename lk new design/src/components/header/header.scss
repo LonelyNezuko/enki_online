@@ -1,0 +1,59 @@
+@import '../../rules/variables.scss';
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: $theme_header;
+    padding: $padding * 6;
+
+    position: relative;
+
+    & .right, & .left {
+        display: flex;
+        align-items: center;
+    }
+
+    & #formGlobalSearch {
+        & .forminput {
+            width: 350px;
+        }
+    }
+
+    & .left {
+        height: 50px;
+        & .btn + .btn {
+            margin-left: $margin * 3;
+        }
+
+        & .btn {
+            height: 100%;
+            width: 50px;
+
+            position: relative;
+            &.color {
+                width: auto;
+                
+                padding: 0.8em 0.8em * 1.5;
+                & span, & svg {
+                    // color: $theme_colorBlack;
+                }
+            }
+        }
+    }
+
+    & .right {
+        & .theme {
+            margin-left: $margin * 2;
+
+            height: 50px;
+            width: 50px;
+
+            & .btn {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

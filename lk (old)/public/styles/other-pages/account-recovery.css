@@ -1,0 +1,185 @@
+.header
+{
+	justify-content: center;
+}
+
+.wrapper
+{
+	width: calc(100% - 40px);
+	transform: translateX(0);
+
+	color: black;
+}
+
+
+.recovery-main
+{
+	width: 800px;
+	max-width: 95%;
+
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.recovery-main .recovery-main-info
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+.recovery-main .recovery-main-info h3
+{
+	margin: 0;
+	width: 100%;
+
+	text-align: center;
+	font-size: 45px;
+
+	text-transform: uppercase;
+}
+.recovery-main .recovery-main-info span
+{
+	text-align: center;
+	font-size: 18px;
+
+	width: 85%;
+	margin-top: 20px;
+}
+
+
+.recovery-main .recovery-main-inputs
+{
+	width: 50%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.recovery-main .recovery-main-inputs .recovery-main-input
+{
+	width: 80%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+.recovery-main .recovery-main-inputs .recovery-main-input img
+{
+	position: absolute;
+
+	width: 18px;
+	height: 18px;
+
+	top: 50%;
+	left: 10px;
+
+	transform: translateY(-50%);
+}
+.recovery-main .recovery-main-inputs .recovery-main-input input
+{
+	width: 300px;
+
+	padding: 20px 0;
+	padding-left: 35px;
+	padding-right: 15px;
+
+	background-color: rgba(170, 170, 170, 0.7);
+	border: 0;
+
+	transition: .3s;
+	color: white;
+}
+.recovery-main .recovery-main-inputs .recovery-main-input input::placeholder
+{
+	color: b;
+	transition: .3s;
+}
+.recovery-main .recovery-main-inputs .recovery-main-input input:focus
+{
+	background-color: rgba(170, 170, 170, 1);
+	color: white;
+}
+.recovery-main .recovery-main-inputs .recovery-main-input input:focus::placeholder
+{
+	opacity: 0;
+}
+
+
+.recovery-main .recovery-main-btns
+{
+	width: 30%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-wrap: wrap;
+
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.recovery-main .recovery-main-btns button,
+.recovery-main .recovery-main-btns a
+{
+	width: 100%;
+
+	background-color: #fda605;
+	color: white;
+
+	border: 0;
+	border-radius: 20px 0 20px 0;
+
+	padding: 25px 0px;
+	cursor: pointer;
+
+	text-transform: uppercase;
+	font-size: 17px;
+
+	transition: .3s;
+}
+.recovery-main .recovery-main-btns button:hover
+{
+	background-color: #cd8603;
+	box-shadow: 0 0 15px 7px rgb(205, 134, 3, .2);
+}
+.recovery-main .recovery-main-btns a
+{
+	margin-top: 20px;
+
+	text-transform: none;
+	font-size: 15px;
+
+	background-color: #a7a7a7;
+	padding: 15px 0px;
+
+	border-radius: 0 15px 0 15px;
+	text-align: center;
+}
+.recovery-main .recovery-main-btns a:hover
+{
+	background-color: #8f8f8f;
+	box-shadow: 0 0 15px 7px rgba(143, 143, 143, .2);
+}
+
+
+@media screen and (max-width: 750px)
+{
+	.recovery-main .recovery-main-info h3
+	{
+		font-size: calc(1em + 4vw);
+	}
+	.recovery-main .recovery-main-btns
+	{
+		width: auto;
+	}
+}

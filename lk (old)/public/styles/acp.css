@@ -1,0 +1,253 @@
+.adm-panel-wrap
+{
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgb(0, 0, 0, .5);
+	z-index: 5001;
+}
+.adm-panel
+{
+	position: absolute;
+
+	top: 100px;
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	background-color: white;
+	box-shadow: 0 0 12px 2px rgba(0, 0, 0, .15);
+
+	width: 500px;
+	max-width: 95%;
+
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.adm-panel .adm-panel-desc
+{
+	position: absolute;
+
+	top: 100%;
+	left: 0;
+
+	width: 100%;
+	height: calc(100% - 48px);
+
+	background-color: rgb(192, 192, 192, .9);
+	z-index: 1;
+
+	transform: .1s;
+}
+.adm-panel .adm-panel-desc.adm-panel-desc-show
+{
+	top: 48px;
+}
+
+.adm-panel .adm-panel-help
+{
+	max-height: 100%;
+	overflow-x: auto;
+}
+.adm-panel .adm-panel-help div
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px 15px;
+}
+.adm-panel .adm-panel-help div:first-child
+{
+	color: grey;
+	margin-bottom: 30px;
+
+	text-transform: uppercase;
+}
+
+.adm-panel .adm-panel-help div span
+{
+	width: calc(100% / 3);
+	white-space: nowrap;
+}
+.adm-panel .adm-panel-help div span:nth-child(2)
+{
+	text-align: center;
+}
+.adm-panel .adm-panel-help div span:last-child
+{
+	text-align: right;
+}
+.adm-panel .adm-panel-help button
+{
+	position: fixed;
+
+	bottom: 15px;
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	padding: 15px 20px;
+
+	background-color: silver;
+	color: white;
+
+	border-radius: 30px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .15);
+
+	cursor: pointer;
+	transition: .2s;
+}
+.adm-panel .adm-panel-help button:hover
+{
+	background-color: #fda605;
+	box-shadow: 3px 2px 5px 1px rgb(253, 166, 5, .15);
+}
+
+.adm-panel .adm-panel-title
+{
+	padding: 10px 15px;
+
+	font-size: 25px;
+	text-transform: uppercase;
+
+	text-align: center;
+
+	background-color: #159be8;
+	color: white;
+}
+.adm-panel .adm-panel-hint
+{
+	width: calc(100% - 30px);
+	padding: 15px;
+
+	position: relative;
+}
+.adm-panel .adm-panel-hint h4
+{
+	color: grey;
+	font-size: 12px;
+
+	margin-bottom: 5px;
+}
+
+.adm-panel .adm-panel-body
+{
+	position: relative;
+}
+
+.adm-panel .adm-panel-body .adm-panel-body-input
+{
+	padding: 10px;
+}
+.adm-panel .adm-panel-body .adm-panel-body-input input
+{
+	width: calc(100% - 40px - 6px);
+	padding: 20px 15px;
+
+	position: relative;
+
+	border: 1px solid silver;
+	border-radius: 3px;
+}
+.adm-panel .adm-panel-body .adm-panel-body-input input:focus::-webkit-input-placeholder
+{
+	color: transparent;
+}
+
+.adm-panel .adm-panel-body .adm-panel-body-btn
+{
+	padding: 25px 15px;
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.adm-panel .adm-panel-body .adm-panel-body-btn button
+{
+	padding: 15px 20px;
+
+	background-color: silver;
+	color: white;
+
+	border-radius: 30px;
+	box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, .15);
+
+	cursor: pointer;
+	transition: .2s;
+}
+.adm-panel .adm-panel-body .adm-panel-body-btn button:hover
+{
+	background-color: #fda605;
+	box-shadow: 3px 2px 5px 1px rgb(253, 166, 5, .15);
+}
+.adm-panel .adm-panel-body .adm-panel-body-btn button#adm-panel-btn-close
+{
+	background-color: #f37f7f;
+	box-shadow: 3px 2px 5px 1px rgb(243, 127, 127, .15);
+}
+
+.adm-panel .adm-panel-logs
+{
+	margin-top: 10px;
+	padding: 15px 20px;
+
+	background-color: silver;
+	color: white;
+}
+
+.adm-panel .adm-panel-logs .adm-panel-logs-title
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 10px;
+}
+.adm-panel .adm-panel-logs .adm-panel-logs-title h4
+{
+	font-size: 12px;
+}
+.adm-panel .adm-panel-logs .adm-panel-logs-title button
+{
+	padding: 5px 6px;
+	font-size: 12px;
+
+	color: white;
+	background-color: #d7d7d7;
+
+	cursor: pointer;
+	transition: .1s;
+}
+.adm-panel .adm-panel-logs .adm-panel-logs-title button:hover
+{
+	background-color: #cecece;
+}
+
+.adm-panel .adm-panel-logs .adm-panel-log
+{
+	display: flex;
+	flex-wrap: wrap;
+
+	max-height: 150px;
+	overflow-x: auto;
+}
+.adm-panel .adm-panel-logs .adm-panel-log div
+{
+	width: 100%;
+
+	font-size: 14px;
+}
+.adm-panel .adm-panel-logs .adm-panel-log div span
+{
+	font-size: 12px;
+	margin-right: 10px;
+}

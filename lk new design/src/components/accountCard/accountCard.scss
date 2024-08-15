@@ -1,0 +1,107 @@
+@import '../../rules/variables.scss';
+
+.accountCard {
+    margin-right: $margin * 2;
+    margin-bottom: $margin * 2;
+    
+    display: flex;
+    align-items: center;
+
+    & .image {
+        background-color: $theme_colorLightGrey;
+        
+        position: relative;
+        z-index: $zindex_hover;
+
+        border-radius: 50%;
+        padding: $padding * 2;
+
+        & .avatar {
+            border: 2px solid rgba(223, 223, 223, .5);
+            &[data-status="online"] {
+                border-color: #63FB72;
+            }
+        }
+    }
+    & .info {
+        cursor: pointer;
+        
+        background-color: white;
+        border: 1px solid $theme_colorSilver;
+
+        padding: $padding * 4 0;
+        padding-left: $padding * 16;
+
+        border-radius: $borderRadius;
+        transform: translateX(-$padding * 10);
+
+        position: relative;
+        overflow: hidden;
+
+        & header {
+            border-bottom: 1px solid $theme_colorSilver;
+            padding-bottom: $padding * 3;
+
+            & span {
+                font-size: $fontsize - 3px;
+                opacity: .6;
+            }
+            & h1 {
+                font-weight: 600;
+                margin-top: $margin;
+            }
+        }
+
+        & .desc {
+            margin-top: $margin * 3;
+            padding-right: $padding * 6;
+
+            & span + span {
+                margin-top: $margin;
+            }
+            & span {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                font-size: $fontsize - 2px;
+                color: #00000060;
+
+                & h1 {
+                    color: black;
+                    margin-left: $margin * 4;
+
+                    text-align: right;
+                }
+            }
+        }
+
+        &:hover {
+            & .hover {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        & .hover {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 100%;
+
+            backdrop-filter: blur(2px);
+            transition: $transition;
+
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}

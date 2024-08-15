@@ -1,0 +1,816 @@
+.account-user,
+.account-lic
+{
+    display: flex;
+
+    background-color: white;
+    padding: 30px;
+    padding-bottom: 40px;
+
+    border-radius: 11px;
+
+    width: 415px;
+}
+.account-user .account-user-image
+{
+    width: 115px;
+    height: 115px;
+
+    position: relative;
+}
+.account-user .account-user-image.account-user-image-online .avatar
+{
+    background-color: #F1FFE9;
+    border: 1px solid #55FF2B;
+}
+.account-user .account-user-image.account-user-image-ban .avatar
+{
+    background-color: #f9d8d8;
+    border: 1px solid #F85C5C;
+}
+.account-user .account-user-image span
+{
+    position: absolute;
+
+    bottom: -12px;
+    left: 50%;
+
+    font-size: 11px;
+    color: #4E4E4E;
+
+    transform: translateX(-50%);
+    background-color: #E9EBFF;
+
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+.account-user .account-user-image.account-user-image-online span
+{
+    background-color: #63FB72;
+}
+.account-user .account-user-image.account-user-image-ban span
+{
+    background-color: #F85C5C;
+    color: white;
+}
+
+.account-user .account-user-info
+{
+    margin-left: 30px;
+}
+.account-user .account-user-info div h2
+{
+    color: #B9B9B9;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    margin-bottom: 4px;
+}
+.account-user .account-user-info div span
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.account-user .account-user-info div + div
+{
+    margin-top: 6px;
+}
+.account-user .account-user-info div span .button
+{
+    padding: 7px 13px;
+    border-radius: 5px;
+
+    margin: 3px;
+    cursor: default;
+
+    background-color: #504F4F;
+    color: white;
+
+    font-weight: 500;
+    font-size: 12px;
+}
+.account-user .account-user-info div span .button.button-select
+{
+    background: #FF3E3E;
+}
+
+
+.account-lic
+{
+    margin-top: 17px;
+    padding: 17px;
+
+    width: calc(415px + 34px - 10px);
+    align-items: center;
+}
+.account-lic .account-lic-item
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    position: relative;
+}
+.account-lic .account-lic-item svg
+{
+    background-color: #E9EBFF;
+    padding: 14px 26px;
+
+    border-radius: 10px;
+
+    width: 34px;
+    height: 34px;
+}
+.account-lic .account-lic-item.account-lic-item-other-on svg
+{
+    cursor: pointer;
+}
+.account-lic .account-lic-item span
+{
+    font-size: 11px;
+    font-weight: 600;
+
+    text-align: center;
+    margin-top: 7px;
+
+    color: #B9B9B9;
+}
+.account-lic .account-lic-item.account-lic-item-select span
+{
+    color: black;
+}
+.account-lic .account-lic-item .account-lic-item-other
+{
+    position: absolute;
+
+    top: -100%;
+    left: 0;
+
+    transform: translateY(-35%);
+
+    background-color: white;
+    filter: drop-shadow(0px 4px 21px rgba(0, 0, 0, 0.25));
+
+    border-radius: 11px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 270px;
+    z-index: 5;
+
+    padding: 8px;
+    transition: .2s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.account-lic .account-lic-item .account-lic-item-other:before
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: 100%;
+    height: 28px;
+
+    background-color: transparent;
+
+    bottom: --28px;
+    left: 0;
+}
+.account-lic .account-lic-item .account-lic-item-other div
+{
+    background-color: #E9EBFF;
+    padding: 13px 23px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    margin: 8px;
+}
+.account-lic .account-lic-item .account-lic-item-other div svg
+{
+    background-color: transparent;
+    padding: 0;
+
+    border-radius: 0;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: default;
+}
+.account-lic .account-lic-item .account-lic-item-other div span
+{
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+
+    font-weight: 700;
+    color: #9F9F9F;
+
+    font-size: 10px;
+    margin: 0;
+
+    cursor: default;
+}
+.account-lic .account-lic-item .account-lic-item-other div.account-lic-item-other-select span
+{
+    color: #FF8515;
+}
+.account-lic .account-lic-item.account-lic-item-other-on svg:hover ~ .account-lic-item-other
+{
+    transform: translateY(-45%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.account-info
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: 100%; */
+}
+.account-info .account-info-item
+{
+    background-color: white;
+    border-radius: 11px;
+
+    margin: 0 3px;
+    margin-bottom: 8px;
+
+    padding: 21px 14px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+}
+.account-info .account-info-item svg
+{
+    width: 31px;
+    height: 31px;
+}
+.account-info .account-info-item div
+{
+    margin-left: 10px;
+}
+.account-info .account-info-item div section:first-child
+{
+    font-weight: 500;
+    font-size: 12px;
+
+    color: #B9B9B9;
+}
+.account-info .account-info-item div section:last-child
+{
+    color: #171717;
+}
+
+.account-acs
+{
+    width: 710px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 3px;
+    margin-top: 13px;
+}
+.account-acs .account-acs-wrap
+{
+    background-color: white;
+    border-radius: 11px;
+
+    padding: 18px 6px;
+
+    display: flex;
+    align-items: center;
+}
+.account-acs .account-acs-wrap .account-acs-item
+{
+    width: 38px;
+    height: 38px;
+
+    border-radius: 100%;
+    background-color: #E9EBFF;
+
+    margin: 0 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.account-acs .account-acs-wrap .account-acs-item.account-acs-item-select
+{
+    background-color: #FFE193;
+    border: 1px solid #FFA41B;
+
+    width: 37px;
+    height: 37px;
+
+    cursor: pointer;
+}
+.account-acs .account-acs-wrap .account-acs-item img
+{
+    width: 28px;
+    height: 28px;
+}
+.account-acs .account-acs-wrap .account-acs-item.account-acs-item-error img
+{
+    width: 14px;
+    height: 14px;
+}
+.account-acs .account-acs-wrap .account-acs-item.account-acs-item-select:hover > div
+{
+    top: calc(-100% - 10px);
+    opacity: 1;
+    visibility: visible;
+}
+.account-acs .account-acs-wrap .account-acs-item div
+{
+    position: absolute;
+
+    top: -100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 11px;
+    font-weight: 500;
+
+    color: black;
+
+    background-color: white;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+    white-space: nowrap;
+
+    padding: 8px 11px;
+    transition: .2s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.account-acs .account-acs-wrap .account-acs-item div:before
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: 100%;
+    height: 14px;
+
+    background-color: transparent;
+
+    bottom: -13px;
+    left: 0;
+}
+.account-acs .account-acs-info
+{
+    margin-left: 24px;
+}
+.account-acs .account-acs-info h1
+{
+    font-size: 14px;
+
+    margin: 0;
+    margin-bottom: 4px;
+}
+.account-acs .account-acs-info span
+{
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #0000004D;
+}
+
+.account-other
+{
+    min-width: 100%;
+    position: relative;
+}
+.account-other-wrap
+{
+    display: flex;
+    width: 350px;
+
+    transition: .2s;
+}
+.account-other .account-other-item
+{
+    width: calc(100% - 32px);
+
+    background-color: white;
+    border-radius: 7px;
+
+    padding: 11px 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+.account-other .account-other-item:last-child
+{
+    margin: 0;
+}
+.account-other .account-other-item.account-other-item-empty
+{
+    padding: 17px 16px;
+    background-color: transparent;
+}
+.account-other .account-other-item span,
+.account-other .account-other-item span a
+{
+    font-size: 11px;
+    font-weight: 500;
+}
+.account-other .account-other-item span:first-child
+{
+    color: #00000080;
+}
+.account-other .account-other-item span:last-child
+{
+    text-align: right;
+}
+.account-other-select
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 14px;
+}
+.account-other-select button
+{
+    width: 10px;
+    height: 10px;
+
+    border-radius: 100%;
+    background-color: #CECECE;
+
+    border: 0;
+    margin: 0 3px;
+
+    cursor: pointer;
+    user-select: none;
+}
+.account-other-select button.account-other-select-btn
+{
+    background: linear-gradient(259.38deg, #FDC705 31.85%, #FD9A05 102.19%);
+}
+
+.account-ban
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+
+    /* border: 1.5px solid transparent;
+    border-image: linear-gradient(92.81deg, #FF5858 -4.55%, rgba(255, 88, 88, 0) 82.47%);
+    border-image-slice: 1; */
+
+    border-radius: 11px;
+
+    padding: 18px;
+    position: relative;
+
+    z-index: 2;
+}
+.account-ban:before
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    top: -1px;
+    left: -1px;
+
+    background: linear-gradient(92.81deg, #FF5858 -4.55%, rgba(255, 88, 88, 0) 82.47%);
+    z-index: -1;
+
+    border-radius: 11px;
+}
+.account-ban:after
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background: white;
+    z-index: -1;
+
+    border-radius: 11px;
+}
+.account-ban section
+{
+    display: flex;
+    align-items: center;
+}
+.account-ban section svg
+{
+    width: 38px;
+    height: 38px;
+}
+.account-ban section div
+{
+    margin-left: 14px;
+}
+.account-ban section div section
+{
+    display: block;
+}
+.account-ban section div section:first-child
+{
+    color: #FF3F3F;
+}
+.account-ban section div section:last-child
+{
+    color: #FF3F3FB2;
+
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.account-ban .button
+{
+    background: #FF7474;
+    color: white;
+
+    font-size: 12px;
+    padding: 12px 30px;
+}
+
+
+.account-skills
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.account-skills .account-skills-item
+{
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 15px;
+    padding-right: 28px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+.account-skills .account-skills-item img
+{
+    width: 31px;
+    height: 31px;
+
+    padding: 14px;
+    background-color: #E7E7E7;
+
+    border-radius: 50%;
+}
+.account-skills .account-skills-item.account-skills-item-select img
+{
+    background: linear-gradient(259.38deg, #FDC705 31.85%, #FD9A05 102.19%);
+}
+.account-skills .account-skills-item .account-skills-item-info
+{
+    margin-left: 16px;
+}
+.account-skills .account-skills-item .account-skills-item-info h1
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 155px;
+    margin: 0;
+
+    margin-bottom: 7px;
+}
+.account-skills .account-skills-item .account-skills-item-info h1 span:first-child
+{
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #202020;
+}
+.account-skills .account-skills-item .account-skills-item-info h1 span:last-child
+{
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #494949;
+    text-align: right;
+}
+.account-skills .account-skills-item .account-skills-item-info section
+{
+    width: 155px;
+    height: 6px;
+
+    background-color: #E7E7E7;
+
+    border-radius: 10px;
+}
+.account-skills .account-skills-item .account-skills-item-info section section
+{
+    background: linear-gradient(98.39deg, #FF6635 14.05%, #FFA215 36.67%);
+}
+
+
+.account-baninfo-wrap
+{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, .3);
+    z-index: 255;
+
+    display: none;
+}
+.account-baninfo-wrap.account-baninfo-wrap-show
+{
+    display: block;
+}
+.account-baninfo
+{
+    position: absolute;
+
+    left: 50%;
+    top: 55px;
+
+    transform: translateX(-50%);
+
+    background: url(/images/account/baninfo_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 412px;
+    height: 610px;
+
+    transition: .2s;
+}
+.account-baninfo .account-baninfo-center
+{
+    position: absolute;
+
+    top: 85px;
+    left: 72px;
+
+    width: 65%;
+    height: 68%;
+}
+.account-baninfo .account-baninfo-svg
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    padding-bottom:
+}
+.account-baninfo svg
+{
+    width: 86px;
+    height: 86px;
+}
+.account-baninfo h1
+{
+    margin-top: 25px;
+    color: #FF3F3F;
+
+    font-weight: 500;
+    font-size: 17px;
+
+    text-align: center;
+    position: relative;
+
+    padding-bottom: 11px;
+}
+.account-baninfo h1:before
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #C4C4C466;
+
+    bottom: 0;
+    left: 0;
+}
+.account-baninfo section
+{
+    margin-top: 11px;
+}
+.account-baninfo section h2,
+.account-baninfo section h2 span,
+.account-baninfo section h2 a
+{
+    font-size: 12px;
+    color: #737373;
+
+    text-align: center;
+    font-weight: 500;
+}
+.account-baninfo section h2 span,
+.account-baninfo section h2 a
+{
+    color: black;
+}
+.account-baninfo section h2 + h2
+{
+    margin-top: 4px;
+}
+.account-baninfo section h3
+{
+    margin-top: 25px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    text-align: center;
+}
+.account-baninfo section h3 a
+{
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #FF3F3F;
+}
+.account-baninfo .account-baninfo-bottom
+{
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+}
+.account-baninfo .account-baninfo-bottom .button
+{
+    padding: 14px 35px;
+}
+.account-baninfo .account-baninfo-bottom .button:first-child
+{
+    background-color: #FF3F3F;
+    color: white;
+}
+.account-baninfo .account-baninfo-bottom .button:last-child
+{
+    margin-left: 15px;
+}
+
+
+.account-settings .button
+{
+    color: black;
+    padding: 26px 38px;
+
+    margin-right: 17px;
+    margin-bottom: 17px;
+}

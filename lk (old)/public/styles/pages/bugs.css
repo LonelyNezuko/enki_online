@@ -1,0 +1,127 @@
+.bugs-menu
+{
+	position: absolute;
+
+	top: -200%;
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	background-color: white;
+	box-shadow: 0 3px 17px 3px rgba(0, 0, 0, .12);
+
+	padding: 32px;
+	border-radius: 8px;
+
+	width: calc(350px - 64px);
+	z-index: -1;
+
+	transition: .3s;
+}
+.bugs-menu.bugs-menu-show
+{
+	top: 50px;
+	z-index: 1000;
+}
+.bugs-menu h3
+{
+	text-align: center;
+	font-size: 27px;
+
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+}
+.bugs-menu .bugs-menu-wrap
+{
+	margin-top: 30px;
+	padding-bottom: 10px;
+
+	width: 100%;
+}
+.bugs-menu .bugs-menu-wrap section.bugs-menu-section-bg
+{
+	width: calc(100% - 24px);
+
+	background-color: white;
+	box-shadow: 0 0 23px 1px rgba(0, 0, 0, .15);
+
+	padding: 7px 12px;
+	border-radius: 8px;
+}
+.bugs-menu .bugs-menu-wrap section + section
+{
+	margin-top: 20px;
+}
+.bugs-menu .bugs-menu-wrap .input-label
+{
+	max-width: 100%;
+}
+.bugs-menu .bugs-menu-wrap section:nth-child(3)
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.bugs-menu .bugs-menu-wrap section h4
+{
+	width: 100%;
+	text-align: center;
+
+	margin-bottom: 15px;
+}
+.bugs-menu .bugs-menu-wrap section:nth-child(3) button
+{
+	background-color: transparent;
+
+	border: 1px solid grey;
+	border-radius: 5px;
+
+	color: grey;
+
+	padding: 5px 7px;
+}
+.bugs-menu .bugs-menu-wrap section:nth-child(3) button.button-select,
+.bugs-menu .bugs-menu-wrap section:nth-child(3) button:hover
+{
+	border-color: #fda605;
+	background-color: #fda605;
+
+	color: white;
+}
+
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns
+{
+	position: absolute;
+
+	bottom: -20px;
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+}
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns button
+{
+	background-color: #6dbf74;
+	border-radius: 7px;
+}
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns button:hover
+{
+	background-color: #8fdc95;
+}
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns button[data-id="cancel"]
+{
+	background-color: silver;
+}
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns button[data-id="cancel"]:hover
+{
+	background-color: #adadad;
+}
+.bugs-menu .bugs-menu-wrap section#bugs-menu-btns button + button
+{
+	margin-left: 12px;
+}

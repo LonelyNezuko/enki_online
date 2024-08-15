@@ -1,0 +1,181 @@
+.reg-c
+{
+	width: 700px;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.reg-c .reg-c-title
+{
+	font-size: 27px;
+	font-weight: bold;	
+}
+.reg-c .reg-c-title span
+{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+
+.reg-c .reg-c-body
+{
+	margin-top: 55px;
+}
+.reg-c .reg-c-body .reg-c-body-item
+{
+	font-size: 20px;
+}
+.reg-c .reg-c-body .reg-c-body-item + .reg-c-body-item
+{
+	margin-top: 30px;
+}
+
+.reg-c .reg-c-body .reg-c-body-item h4
+{
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.reg-c .reg-c-body .reg-c-body-item h4 span
+{
+	width: 100%;
+
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns
+{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+}
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns button
+{
+	border-radius: 6px;
+	margin: 0 10px;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	width: calc(100% / 3 - 15px);
+	margin: 15px 0;
+
+	position: relative;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img:before
+{
+	display: block;
+	content: "";
+
+	position: absolute;
+
+	right: calc(15px + 12.5px + 15px);
+	bottom: 10px;
+
+	width: 25px;
+	height: 25px;
+
+	border: 2px solid white;
+	border-radius: 8px;
+
+	z-index: 100;
+	cursor: pointer;
+
+	transition: .2s;
+}
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img:after
+{
+	display: block;
+	content: "";
+
+	position: absolute;
+
+	right: calc(22px + 10px + 15px);
+	bottom: 14.5px;
+
+	width: 20px;
+	height: 20px;
+
+	background-color: white;
+	border-radius: 5px;
+
+	z-index: 101;
+	cursor: pointer;
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: .2s;
+}
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img.reg-c-body-img-select:before
+{
+	border-color: #fda605;
+}
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img.reg-c-body-img-select:after
+{
+	background-color: #fda605;
+	opacity: 1;
+	visibility: visible;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img img
+{
+	width: 145px;
+	height: 145px;
+
+	border-radius: 8px;
+	position: relative;
+
+	border: 4px solid white;
+	cursor: pointer;
+
+	transition: .2s;
+}
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img.reg-c-body-img-select img
+{
+	border-color: #fda605;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .reg-c-body-btns .reg-c-body-img span
+{
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	color: white;
+
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.reg-c .reg-c-body .reg-c-body-item .input-label
+{
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.reg-c .reg-c-body .reg-c-body-item .input-label input
+{
+	background-color: transparent;
+}
+
+
+.reg-c .reg-c-footer
+{
+	margin-top: 60px;
+}
+.reg-c .reg-c-footer button
+{
+	border-radius: 8px 0 8px 0;
+}

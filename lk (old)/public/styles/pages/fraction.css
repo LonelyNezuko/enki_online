@@ -1,0 +1,312 @@
+.fraction
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.fraction .fraction-div
+{
+	width: 49%;
+	min-width: 450px;
+
+	margin-bottom: 15px;
+}
+
+.fraction-box
+{
+	background-color: rgb(155, 155, 155, .5);
+	border-radius: 10px 10px 0 0;
+
+	color: white;
+	width: 100%;
+}
+.fraction-box + .fraction-box
+{
+	margin-top: 30px;
+}
+
+.fraction-box h2
+{
+	text-align: center;
+
+	background-color: #fda605;
+	padding: 10px 0;
+
+	font-size: 19px;
+	text-transform: uppercase;
+
+	color: white;
+	border-radius: 10px 10px 0 0;
+}
+.fraction-box .fraction-info
+{
+	padding: 15px;
+}
+.fraction-box .fraction-info.fraction-info-flex
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.fraction-app + .fraction-app
+{
+	margin-top: 20px;
+}
+
+.fraction-app
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.fraction-app input
+{
+	padding: 10px;
+
+	min-width: 400px;
+	max-width: 100%;
+
+	border-bottom: 3px solid silver;
+	transition: .3s;
+}
+.fraction-app input:not(:placeholder-shown),
+.fraction-app textarea:not(:placeholder-shown)
+{
+	border-bottom-color: #fda605;
+}
+
+.fraction-app textarea
+{
+	width: calc(600px - 30px);
+	height: calc(200px - 30px);
+
+	padding: 15px;
+	resize: none;
+
+	border-bottom: 3px solid silver;
+	transition: .3s;
+}
+
+.fraction-app .fraction-app-item
+{
+	width: 50%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1010px)
+{
+	.fraction .fraction-div
+	{
+		width: 100%;
+		min-width: 100%;
+	}
+}
+
+
+.fr-apps
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.fr-apps .fr-apps-box
+{
+	width: calc(100% / 3 - 20px - 30px);
+	min-width: 350px;
+
+	background-color: white;
+	box-shadow: 0 0 25px 5px rgba(0, 0, 0, .15);
+
+	padding: 15px;
+	border-radius: 7px;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	margin-bottom: 30px;
+}
+.fr-apps .fr-apps-box .fr-apps-title
+{
+	width: 100%;
+	text-align: center;
+
+	margin-bottom: 30px;
+
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.fr-apps .fr-apps-box.fr-apps-box-edit .fr-apps-form
+{
+	cursor: pointer;
+	transition: .1s;
+
+	border: 2px solid transparent;
+	padding: 5px;
+
+	border-radius: 5px;
+	user-select: none;
+}
+.fr-apps .fr-apps-box.fr-apps-box-edit .fr-apps-form:hover
+{
+	border-color: #fda605;	
+}
+
+
+.fr-apps .fr-apps-box .fr-apps-form
+{
+	width: 100%;
+	position: relative;
+}
+.fr-apps .fr-apps-box .fr-apps-form.fr-apps-form-edit
+{
+	border-color: #fda605;
+}
+
+.fr-apps .fr-apps-box .fr-apps-form + .fr-apps-form
+{
+	margin-top: 30px;
+}
+
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-title
+{
+	margin-bottom: 10px;
+
+	display: flex;
+	align-items: center;
+}
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-title h2
+{
+	font-size: 17px;
+	font-weight: bold;
+}
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-title span
+{
+	color: #fda605;
+	margin-left: 5px;
+}
+
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-label
+{
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+}
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-label + .fr-apps-form-label
+{
+	margin-top: 5px;
+}
+.fr-apps .fr-apps-box .fr-apps-form .fr-apps-form-label label
+{
+	margin-left: 10px;
+}
+
+.fr-apps .fr-apps-box .fr-apps-form input[type="text"]
+{
+	width: calc(100% - 20px);
+	font-size: 12px;
+
+	background-color: transparent;
+}
+
+.fr-apps .fr-apps-box .fr-apps-button
+{
+	width: 100%;
+	margin-top: 40px;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.fr-apps .fr-apps-box .fr-apps-edit-add
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.fr-apps .fr-apps-box .fr-apps-edit-add button
+{
+	width: 100%;
+
+	padding-right: 0;
+	padding-left: 0;
+}
+.fr-apps .fr-apps-box .fr-apps-edit-add button + button
+{
+	margin-top: 10px;
+}
+
+
+.fr-apps .fr-apps-box .fr-apps-edit
+{
+	width: 100%;
+	margin-top: 60px;
+}
+.fr-apps .fr-apps-box .fr-apps-edit .fr-apps-edit-item
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fr-apps .fr-apps-box .fr-apps-edit .fr-apps-edit-item + .fr-apps-edit-item
+{
+	margin-top: 20px;
+}
+.fr-apps .fr-apps-box .fr-apps-edit .fr-apps-edit-item input[type="text"]
+{
+	background-color: transparent;
+}
+
+
+.fraction .fraction-div .fr-settings
+{
+}
+.fraction .fraction-div .fr-settings .item
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.fraction .fraction-div .fr-settings .item + .item
+{
+	margin-top: 15px;
+}
+
+.fraction .fraction-div .fr-settings .item span:first-child
+{
+	white-space: nowrap;
+}
+.fraction .fraction-div .fr-settings .item span:last-child
+{
+	display: flex;
+	justify-content: flex-end;
+
+	flex-wrap: wrap;
+}
+.fraction .fraction-div .fr-settings .item span:last-child .item-other
+{
+	display: flex;
+	justify-content: flex-end;
+
+	margin-top: 10px;
+	width: 100%;
+}
+
+.fraction .fraction-div .fr-settings .item h4
+{
+	cursor: pointer;
+}

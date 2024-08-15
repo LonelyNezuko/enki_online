@@ -1,0 +1,25 @@
+{
+  "name": "panel Enki RP",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "authenticator": "^1.1.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-mailer": "^0.3.1",
+    "http-errors": "~1.6.3",
+    "js-sha256": "^0.9.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "node-localstorage": "^2.1.6",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "pug": "2.0.0-beta11",
+    "qrcode": "^1.4.4",
+    "speakeasy": "^2.0.0"
+  }
+}

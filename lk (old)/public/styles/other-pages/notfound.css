@@ -1,0 +1,51 @@
+.header
+{
+	justify-content: center;
+}
+
+.wrapper
+{
+	width: calc(100% - 40px);
+	transform: translateX(0);
+}
+
+.not-found
+{
+	width: 500px;
+
+	margin: 0 auto;
+	margin-top: 100px;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.not-found img
+{
+	width: 350px;
+	height: auto;
+}
+.not-found h3
+{
+	width: 100%;
+	text-align: center;
+
+	font-size: 35px;
+}
+.not-found a
+{
+	margin-top: 20px;
+
+	background-color: #fda605;
+	color: white;
+
+	padding: 15px 30px;
+	border-radius: 6px;
+
+	transition: .3s;
+}
+.not-found a:hover
+{
+	background-color: #cd8603;
+}

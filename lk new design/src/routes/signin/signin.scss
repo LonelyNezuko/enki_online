@@ -1,0 +1,104 @@
+@import '../../rules/variables.scss';
+
+#signin {
+    display: flex;
+    justify-content: center;
+
+    & .wrapper {
+        margin-top: $margin * 18;
+        
+        background-color: white;
+        border-radius: $borderRadius * 2;
+
+        padding: $padding * 12;
+        width: 400px;
+
+        & .icon {
+            display: flex;
+            justify-content: center;
+
+            & section {
+                background: $theme_color;
+
+                width: 60px;
+                height: 60px;
+
+                border-radius: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & svg {
+                    font-size: $fontsize + 18px;
+                    color: white;
+                }
+            }
+        }
+
+        & .title {
+            text-align: center;
+            
+            font-size: $fontsize + 12px;
+            font-weight: 700;
+
+            margin-top: $margin * 4;
+        }
+        & .desc {
+            width: 100%;
+            display: block;
+
+            text-align: center;
+
+            font-size: $fontsize - 2px;
+            opacity: .4;
+
+            width: 80%;
+
+            margin: 0 auto;
+            margin-top: $margin * 2;
+        }
+
+        & .form {
+            margin-top: $margin * 8;
+            
+            & .forminput {
+                & input {
+                    background-color: $theme_colorLightGrey;
+                }
+            }
+            & .formselect {
+                & .select {
+                    background-color: $theme_colorLightGrey;
+
+                    & ul {
+                        & li {
+                            &:hover {
+                                & h1 {
+                                    background-color: #ffffff30;
+                                }
+                            }
+
+                            & h1 {
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .buttons {
+            margin-top: $margin * 6;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .btn {
+                padding-left: 4em;
+                padding-right: 4em;
+            }
+        }
+    }
+}

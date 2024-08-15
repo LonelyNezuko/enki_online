@@ -1,0 +1,66 @@
+@import '../../../rules/variables.scss';
+@import '../minix.scss';
+
+.donate {
+    & .other {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: $margin * 4;
+
+        & .elem {
+            height: calc(100% / 2 - 8px);
+
+            width: calc(100% / 3 - 11px);
+            min-width: calc(100% / 3 - 11px);
+
+            & .icon {
+                & img {
+                    width: 30%;
+                }
+            }
+            & .title {
+                font-size: $fontsize + 6px;
+                margin-top: $margin * 4;
+            }
+            & .desc {
+                font-size: $fontsize - 3px;
+                text-transform: none;
+            }
+            & .buttons {
+                width: 90%;
+                left: 50%;
+
+                transform: translateX(-50%);
+                & button {
+                    padding: $padding * 3 $padding * 5;
+
+                    width: 50%;
+                    font-size: $fontsize;
+                }
+
+                & .info {
+                    & .hover {
+                        width: 95%;
+                    }
+                }
+
+                & .input {
+                    & input {
+                        font-size: $fontsize - 2px;
+                        text-transform: none;
+                    }
+                }
+
+                &.alreadybuying {
+                    & button {
+                        white-space: nowrap;
+                        font-size: $fontsize;
+
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

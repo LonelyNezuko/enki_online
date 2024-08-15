@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,500;0,600;1,100;1,200;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,500;1,700&display=swap');
+
+@import 'logo.css';
+@import 'loader.css';
+
+@import 'lk.css';
+
+/* @import 'page/auth.css'; */
+@import 'page/auth2.css';
+@import 'page/reg.css';
+
+@import 'page/lk_notf.css';
+@import 'page/lk_account.css';
+
+*, body, html
+{
+    margin: 0;
+    padding: 0;
+
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+
+    font-size: 15px;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: normal;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+svg
+{
+    width: 30px;
+    height: 30px;
+}
+li
+{
+    list-style: none;
+}
+
+
+.body
+{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    background-color: #f5f6fb;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fda605;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #fda605;
+}
+
+
+
+
+
+
+
+.input
+{
+    width: 300px;
+    position: relative;
+
+    margin: 10px 0;
+}
+.input label
+{
+    position: absolute;
+
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+    cursor: text;
+
+    color: #999;
+    transition: .3s;
+
+    top: 12px;
+    font-size: 13px;
+}
+.input input
+{
+    outline: 0;
+    border: 0;
+
+    width: 100%;
+
+    padding: 13px 10px;
+    padding-top: 24px;
+
+    border-radius: 0 5px 0 5px;
+    background-color: #f8f8f8;
+
+    font-size: 14px;
+}
+
+
+button
+{
+    border: 0;
+    background-color: #e8e8e8;
+
+    padding: 13px 35px;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    border-radius: 3px;
+
+    cursor: pointer;
+    color: #898989;
+
+    transition: .2s;
+}
+button[data-type="select"]
+{
+    background-color: #efad35;
+    color: white;
+}
+button:disabled
+{
+    cursor: not-allowed;
+}
+
+button.grad
+{
+    background: linear-gradient(258.3deg, #FD9A05 27.02%, #FDBF05 108.4%);
+
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+
+    padding: 13px 70px;
+    border-radius: 7px;
+}
+button.grad:disabled
+{
+    background: #e8e8e8;
+}
+
+
+.__notf-title
+{
+    position: absolute;
+    color: white;
+
+    z-index: 5;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: #ff6565;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+}

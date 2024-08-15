@@ -1,0 +1,125 @@
+.page-account
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.page-account .page-account-block
+{
+    background-color: white;
+
+    padding: 15px 10px;
+    border-radius: 4px;
+}
+
+.page-account .page-account-main
+{
+    width: 450px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.page-account .page-account-main h1
+{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 7px;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+.page-account .page-account-main .page-account-main-level
+{
+    margin-top: 12px;
+    width: calc(80% - 20px);
+
+    background-color: #dddddd;
+    color: white;
+
+    padding: 10px;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+}
+.page-account .page-account-main .page-account-main-level.page-account-main-level-adm
+{
+    background-color: #efad35;
+}
+.page-account .page-account-main section
+{
+    margin-top: 50px;
+    width: 80%;
+}
+.page-account .page-account-main section div
+{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 7px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-account .page-account-main section div:last-child
+{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.page-account .page-account-main section div + div
+{
+    margin-top: 7px;
+}
+
+.page-account .page-account-other
+{
+    width: calc(100% - 450px - 20px - 20px - 20px);
+}
+.page-account .page-account-other header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-account .page-account-other header button
+{
+    margin: 0 10px;
+}
+.page-account .page-account-other section
+{
+    margin-top: 25px;
+
+    background-color: white;
+    box-shadow: 0 0 35px .3px rgba(0, 0, 0, .06);
+
+    border-radius: 4px;
+    padding: 13px;
+}
+.page-account .page-account-other section h1
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-account .page-account-other section .page-account-other-section
+{
+    height: 470px;
+}
+.page-account .page-account-other section .page-account-other-section.page-account-other-section-error
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-account .page-account-other section .page-account-other-section.page-account-other-section-error h6
+{
+    font-size: 45px;
+
+    color: #e1e1e1;
+    opacity: .5;
+}

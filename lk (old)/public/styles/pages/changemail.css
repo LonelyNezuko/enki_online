@@ -1,0 +1,225 @@
+.changemail-main
+{
+	width: 100%;
+	min-height: calc(100% - 60px - 100px - 100px);
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	color: black;
+
+	position: relative;
+}
+.changemail-main h3
+{
+	margin: 0;
+	width: 100%;
+
+	text-align: center;
+
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+.changemail-main .changemail-type
+{
+	width: 400px;
+	max-width: 90%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	margin: 0 auto;
+	transition: .3s;
+
+	margin-top: 40px;
+}
+.changemail-main .changemail-type.changemail-type-up
+{
+	/*position: static;
+	transform: none;
+
+	margin-top: 50px;*/
+}
+.changemail-main .changemail-type button
+{
+	width: 100%;
+
+	background-color: silver;
+	color: white;
+
+	border: 0;
+	border-radius: 10px 0 10px 0;
+
+	padding: 15px 0;
+
+	cursor: pointer;
+	transition: .3s;
+}
+.changemail-main .changemail-type button:not(:first-child)
+{
+	margin-top: 20px;
+}
+.changemail-main .changemail-type button.changemail-type-select
+{
+	background-color: #fda605;
+}
+.changemail-main .changemail-type button:hover
+{
+	background-color: #fda605;
+}
+
+
+.changemail-main .changemail-wrap
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.changemail-main .changemail-input-wrap
+{
+	/*position: relative;*/
+	width: 500px;
+	max-width: 90%;
+
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*top: 30%;*/
+
+	/*background-color: red;*/
+}
+.changemail-main .changemail-input
+{
+	width: 300px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+.changemail-main .changemail-input:not(:first-child)
+{
+	margin-top: 40px;
+}
+.changemail-main .changemail-input input
+{
+	width: 300px;
+
+	border: 0;
+	border-bottom: 2px solid silver;
+
+	background-color: transparent;
+
+	padding: 10px;
+	color: black;
+}
+.changemail-main .changemail-input label
+{
+	position: absolute;
+
+	top: 10px;
+	left: 10px;
+
+	cursor: text;
+
+	font-size: 15px;
+	transition: .3s;
+}
+.changemail-main .changemail-input input:focus ~ label,
+.changemail-main .changemail-input input:not(:placeholder-shown) ~ label
+{
+	top: -10px;
+	font-size: 13px;
+}
+.changemail-main .changemail-input input:focus,
+.changemail-main .changemail-input input:not(:placeholder-shown)
+{
+	border-color: #159ae7;
+}
+
+.changemail-main .changemail-btn
+{
+	width: 200px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 80px;
+}
+.changemail-main .changemail-btn button
+{
+	background-color: silver;
+	color: white;
+
+	padding: 15px 30px;
+
+	border: 0;
+	border-radius: 0 10px 0 10px;
+
+	transition: .3s;
+}
+.changemail-main .changemail-btn button.changemail-btn-select
+{
+	cursor: pointer;
+	background-color: #fda605;
+}
+.changemail-main .changemail-btn button.changemail-btn-select:hover
+{
+	background-color: #cd8603;
+}
+
+.changemail-input #changemail-input-desc
+{
+	resize: vertical;
+	outline: none;
+
+	width: 100%;
+	height: 100px;
+
+	padding: 10px;
+	border: 2px solid silver;
+
+	overflow: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+
+	color: black;
+}
+.changemail-input #changemail-input-desc::placeholder
+{
+	color: silver;
+}
+.changemail-input #changemail-input-desc:hover,
+.changemail-input #changemail-input-desc:focus,
+.changemail-input #changemail-input-desc:not(:placeholder-shown)
+{
+	border-color: #0e87cd;
+}
+
+
+.changemail-input-wrap .changemail-info
+{
+	text-align: center;
+	color: silver;
+
+	margin-top: 30px;
+}
+
+
+@media screen and (max-width: 600px)
+{
+	.changemail-input-wrap .changemail-info
+	{
+		font-size: 15px;
+	}
+	.changemail-main h3
+	{
+		font-size: calc(1em + 4vw);
+	}
+}

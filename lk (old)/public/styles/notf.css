@@ -1,0 +1,149 @@
+.notf-all
+{
+	position: absolute;
+	z-index: 5000;
+
+	top: 40px;
+	right: 0;
+
+	background-color: white;
+	box-shadow: 0 0 35px 5px rgba(0, 0, 0, .2);
+
+	border-radius: 6px;
+	padding: 10px 0;
+
+	min-width: 300px;
+	cursor: default;
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: .3s;
+	z-index: 100;
+}
+.notf-all.notf-all-show
+{
+	opacity: 1;
+	visibility: visible;
+
+	top: 65px;
+}
+
+.notf-all .notf-all-title
+{
+	height: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	padding: 0 20px;
+	margin-bottom: 10px;
+}
+.notf-all .notf-all-title h1
+{
+	font-size: 22px;
+}
+.notf-all .notf-all-title a
+{
+	height: 20px;
+
+	background-image: url(../styles/images/settings.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	width: 20px;
+	height: 20px;
+}
+
+.notf-all .notf-all-items
+{
+	max-height: 400px;
+	overflow: auto;
+}
+.notf-all .notf-all-item
+{
+	cursor: pointer;
+	transition: .3s;
+
+	padding: 5px 15px;
+	position: relative;
+}
+.notf-all .notf-all-item:hover
+{
+	background-color: #e1e1e1;
+}
+.notf-all .notf-all-item.notf-all-item-read:before
+{
+	display: block;
+	content: "";
+
+	position: absolute;
+
+	width: 2px;
+	height: 80%;
+
+	top: 50%;
+	left: 7px;
+
+	transform: translateY(-50%);
+	background-color: #fda605;
+}
+.notf-all .notf-all-item h2
+{
+	font-size: 16px;
+
+	margin-bottom: 10px;
+}
+.notf-all .notf-all-item span
+{
+	color: silver;
+	font-size: 14px;
+
+	margin-left: 20px;
+}
+
+.notf-all .notf-all-remove
+{
+	margin-top: 5px;
+
+	width: 100%;
+	padding: 10px 0;
+
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+}
+.notf-all .notf-all-remove:hover
+{
+	background-color: #e1e1e1;
+}
+
+.notf-all .notf-all-item-error
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 370px)
+{
+	#header-item-notf
+	{
+		position: static;
+	}
+
+	.notf-all
+	{
+		width: 100%;
+		min-width: 100%;
+
+		left: 0;
+	}
+}

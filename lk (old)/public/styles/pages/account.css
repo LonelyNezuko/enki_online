@@ -1,0 +1,1479 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+h1, h3
+{
+	margin: 0;
+}
+
+.account-main
+{
+	width: calc(90% - 60px);
+	margin: 0 auto;
+
+	padding: 30px;
+
+	background-color: rgba(102, 102, 102, 0.5);
+	border-radius: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	overflow: hidden;
+	color: white;
+}
+.account-main:not(:first-child)
+{
+	margin-top: 30px;
+}
+
+
+.account-main-info
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.account-main-info .account-info-skin
+{
+	width: 30%;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	flex-wrap: wrap;
+
+	padding-left: 30px;
+}
+.account-main-info .account-info-skin span
+{
+	font-size: 40px;
+	color: white;
+
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+.account-main-info .account-info-skin .account-info-skin-img
+{
+	margin-top: 20px;
+
+	width: 150px;
+	height: 150px;
+
+	border: 5px solid grey;
+	border-radius: 50%;
+
+	box-shadow: 0 0 15px 5px rgba(133, 133, 133, 0.5);
+
+	overflow: hidden;
+
+	display: flex;
+	align-items: flex-start;
+
+	position: relative;
+}
+.account-main-info .account-info-skin .account-info-skin-img img
+{
+	width: 200px;
+	height: auto;
+}
+.account-main-info .account-info-skin .account-info-skin-img div
+{
+	position: absolute;
+
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	backdrop-filter: blur(7px);
+	background-color: rgba(255, 0, 0, 0.3);
+
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.account-main-info .account-info-skin .account-info-skin-img-bars
+{
+	width: calc(100% - 150px - 40px);
+
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar
+{
+	text-align: center;
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar:not(:first-child)
+{
+	margin-top: 20px;
+}
+
+.account-main-info .account-info-skin .account-info-skin-img-bar .account-info-skin-img-bar-text
+{
+	margin-bottom: 7px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar h3
+{
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar span
+{
+	font-size: 10px;
+	text-align: right;
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar .account-info-skin-img-bar-line
+{
+	min-width: 80px;
+	position: relative;
+
+	box-shadow: inset 0 0 0 2px red;
+	border-radius: 7px;
+
+	padding: 4px;
+
+}
+.account-main-info .account-info-skin .account-info-skin-img-bar .account-info-skin-img-bar-line i
+{
+	display: block;
+
+	border-radius: 4px;
+	height: 20px;
+
+	width: 100%;
+	background-color: red;
+}
+
+
+.account-main-info .account-info
+{
+	width: 63%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.account-main-info .account-info .account-info-box
+{
+	background-color: rgb(205, 134, 3, .7);
+
+	padding: 15px;
+	border-radius: 10px;
+}
+.account-main-info .account-info .account-info-box
+{
+	margin: 0 10px;
+}
+
+.account-main-info .account-info .account-info-box .account-info-box-title
+{
+	font-size: 15px;
+
+	color: #ffcd70;
+	margin-bottom: 5px;
+}
+.account-main-info .account-info .account-info-box .account-info-box-desc
+{
+	font-size: 20px;
+}
+
+
+.account-main h1
+{
+	width: 100%;
+
+	text-align: center;
+	margin: 0;
+
+	margin-bottom: 30px;
+}
+.account-main .account-main-acs
+{
+	width: 60%;
+}
+
+.account-main .account-main-acs .account-main-acs-wrap
+{
+	width: 100%;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	flex-wrap: wrap;
+}
+.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item
+{
+	width: calc(100% / 3 - 30px);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	margin-bottom: 20px;
+}
+.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item .account-main-acs-item-img
+{
+	width: 120px;
+	height: 120px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 3px solid #fda605;
+	border-radius: 50%;
+
+	margin-bottom: 15px;
+	background-color: #cd8603;
+
+	overflow: hidden;
+}
+.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item .account-main-acs-item-img img
+{
+	width: 100%;
+	height: 100%;
+}
+.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item span
+{
+	width: 100%;
+	text-align: center;
+
+	text-transform: uppercase;
+}
+
+
+.account-main .account-main-other
+{
+	width: 35%;
+	margin-left: 2%;
+}
+.account-main .account-main-other .account-main-other-item
+{
+	width: calc(100% - 20px);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border: 2px solid white;
+	border-radius: 5px;
+
+	padding: 7px 10px;
+	font-size: 18px;
+}
+.account-main .account-main-other .account-main-other-item:not(:first-child)
+{
+	margin-top: 15px;
+}
+
+
+.account-main .account-main-skills
+{
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-between;*/
+}
+.account-main .account-main-skills .account-main-skills-item
+{
+	width: calc(100% / 3 - 40px);
+
+	background-color: rgb(205, 134, 3, .7);
+
+	border-radius: 10px;
+	padding: 10px 15px;
+
+	margin-bottom: 15px;
+	margin-right: 10px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.account-main .account-main-skills .account-main-skills-item img
+{
+	width: 60px;
+	height: 60px;
+}
+.account-main .account-main-skills .account-main-skills-item .account-main-skills-item-line
+{
+	width: calc(100% - 120px - 10px);
+	height: 5px;
+
+	display: flex;
+	align-items: center;
+
+	background-color: #ffcd70;
+	border-radius: 20px;
+}
+.account-main .account-main-skills .account-main-skills-item .account-main-skills-item-line i
+{
+	display: block;
+
+	width: 100%;
+	height: 5px;
+
+	background-color: #fda605;
+	border-radius: 20px;
+
+	box-shadow: 0 0 15px 3px #fda605;
+}
+.account-main .account-main-skills .account-main-skills-item .account-main-skills-item-info
+{
+	display: block;
+
+	width: calc(40px - 10px);
+	height: calc(20px - 10px);
+
+	border-radius: 10px;
+
+	background-color: #fda605;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 10px;
+	font-size: 15px;
+}
+
+.account-main .account-main-grettings
+{
+	width: 100%;
+	margin-top: 30px;
+}
+.account-main .account-main-grettings .account-main-grettings-wrap
+{
+	width: 100%;
+	max-height: 500px;
+
+	overflow: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+.account-main .account-main-grettings .account-main-grettings-item
+{
+	width: calc(100% / 3 - 20px - 60px);
+	background-color: rgb(205, 134, 3, .7);
+
+	margin-right: 20px;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	padding: 20px 30px;
+	border-radius: 20px;
+
+	margin-bottom: 20px;
+	cursor: pointer;
+
+	transition: .3s;
+	color: white;
+
+	position: relative;
+}
+.account-main .account-main-grettings .account-main-grettings-item:hover
+{
+	background-color: #fda605;
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item
+{
+	background-color: grey;	
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item:hover
+{
+	background-color: #939393;
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item.account-main-houses-item-h:hover
+{
+	background-color: #259065;
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item.account-main-houses-item-b:hover
+{
+	background-color: #549747;
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item.account-main-houses-item-v:hover
+{
+	background-color: #134f61;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-img
+{
+	/*width: 100px;
+	height: 100px;
+
+	border: 3px solid green;
+	border-radius: 50%;
+
+	overflow: hidden;
+	box-shadow: 0 0 15px 5px rgba(0, 128, 0, 0.5);
+
+	position: relative;
+
+	display: flex;
+	align-items: flex-start;*/
+
+	width: 100px;
+	height: 100px;
+
+	border: 3px solid grey;
+	border-radius: 50%;
+
+	box-shadow: 0 0 15px 5px rgba(133, 133, 133, 0.5);
+
+	overflow: hidden;
+
+	display: flex;
+	align-items: flex-start;
+
+	position: relative;
+}
+.account-main .account-main-grettings.account-main-houses .account-main-grettings-item .account-main-grettings-item-img
+{
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	overflow: visible;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-img img
+{
+	width: 100px;
+	height: auto;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-img span
+{
+	position: absolute;
+
+	width: calc(100% + 7px);
+	height: calc(100% + 7px);
+
+	top: calc(50% - 20px);
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+
+	backdrop-filter: blur(7px);
+	background-color: rgba(255, 0, 0, 0.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.account-main .account-main-grettings .account-main-grettings-item span
+{
+	width: 100%;
+	font-size: 18px;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-top: 20px;
+}
+.account-main-grettings-wrap h3
+{
+	width: 100%;
+	text-align: center;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-notf
+{
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+
+	background-color: #f37373;
+	color: white;
+
+	font-size: 13px;
+
+	padding: 5px 7px;
+	border-radius: 4px;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-notf-click
+{
+	cursor: pointer;
+	transition: .2s;
+}
+.account-main .account-main-grettings .account-main-grettings-item .account-main-grettings-item-notf-click:hover
+{
+	background-color: #c44b4b;
+}
+
+#account-exit-btn
+{
+	background-color: red;
+	color: white;
+
+	border: 2px solid red;
+	border-radius: 15px;
+
+	margin: 0 auto;
+	padding: 15px 20px;
+
+	cursor: pointer;
+	transition: .3s;
+}
+#account-exit-btn:hover
+{
+	background-color: #fe4b4b;
+	border-color: #fe4b4b;
+}
+
+
+.account-main .account-main-settings
+{
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.account-main .account-main-settings button,
+.account-main .account-main-settings a
+{
+	background-color: rgb(205, 134, 3, .7);
+	box-shadow: 0 0 15px 5px rgb(205, 134, 3, .5);
+
+	color: white;
+	border: 0;
+
+	padding: 15px 30px;
+	margin: 0 15px;
+
+	cursor: pointer;
+	transition: .3s;
+
+	font-size: 15px;
+	font-family: 'Lora', serif;
+
+	border-radius: 10px 0 10px 0;
+	margin-bottom: 20px;
+}
+.account-main .account-main-settings button:hover,
+.account-main .account-main-settings a:hover
+{
+	background-color: rgb(253, 166, 5, .7);
+	box-shadow: 0 0 15px 5px rgb(253, 166, 5, .5);
+}
+
+
+.account-passwd-wrap
+{
+	position: fixed;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 2000;
+
+	opacity: 0;
+	visibility: hidden;
+
+	display: none;
+}
+.account-passwd
+{
+	position: absolute;
+
+	width: calc(550px - 120px);
+	height: calc(600px - 120px);
+
+	background-color: rgba(11, 161, 217, 0.5);
+
+	top: 60%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	transition: .7s;
+
+	clip-path: polygon(0 0, 94% 1%, 97% 28%, 100% 71%, 88% 100%, 10% 100%, 0 60%, 7% 26%);
+
+	color: white;
+	padding: 60px;
+}
+
+.account-passwd-wrap-show
+{
+	opacity: 1;
+	visibility: visible;
+
+	display: block;
+}
+.account-passwd-wrap-show .account-passwd
+{
+	top: 50%;
+}
+
+.account-passwd h3
+{
+	margin-top: 40px;
+
+	font-size: 25px;
+	text-transform: uppercase;
+
+	text-align: center;
+	color: white;
+}
+
+
+.account-passwd .account-passwd-input
+{
+	width: 80%;
+	position: relative;
+
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.account-passwd .account-passwd-input input
+{
+	background-color: transparent;
+	border: none;
+
+	border-bottom: 1px solid #eee;
+	color: white;
+
+	padding-bottom: 5px;
+	padding-left: 25px;
+
+	width: 100%;
+
+	transition: .3s;
+}
+.account-passwd .account-passwd-input label
+{
+	position: absolute;
+
+	top: 0;
+	left: 25px;
+
+	cursor: text;
+	color: white;
+
+	font-size: 14px;
+	transition: .3s;
+}
+.account-passwd .account-passwd-input img
+{
+	width: 16px;
+	height: 16px;
+
+	position: absolute;
+
+	top: 0;
+	left: 2.5px;
+}
+
+.account-passwd .account-passwd-input input:focus ~ label,
+.account-passwd .account-passwd-input input:not(:placeholder-shown) ~ label
+{
+	top: -15px;
+	font-size: 12px;
+}
+
+.account-passwd .account-passwd-input input:not(:placeholder-shown) ~ label
+{
+	color: #61cdf5;
+}
+.account-passwd .account-passwd-input input:not(:placeholder-shown)
+{
+	border-color: #61cdf5;
+}
+
+.account-passwd .account-passwd-input + .account-passwd-input
+{
+	margin-top: 40px;
+}
+
+.account-passwd-close
+{
+	background-color: white;
+
+	width: 20px;
+	height: 2px;
+
+	position: absolute;
+
+	top: 20px;
+	right: 40px;
+
+	transform: rotate(45deg);
+	cursor: pointer;
+
+	transition: .2s ease-in-out;
+}
+.account-passwd-close:before
+{
+	display: block;
+	content: "";
+
+	transform: rotate(90deg);
+
+	background-color: white;
+
+	width: 20px;
+	height: 2px;
+}
+.account-passwd-close:hover
+{
+	transform: rotate(-45deg);
+}
+
+.account-passwd .account-passwd-btn
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 60px;
+}
+.account-passwd .account-passwd-btn button
+{
+	background-color: transparent;
+	border: 1px solid #eee;
+
+	color: white;
+
+	padding: 15px 100px;
+	border-radius: 4px;
+
+	cursor: pointer;
+	transition: .3s;
+
+	text-transform: uppercase;
+}
+.account-passwd .account-passwd-btn button:hover
+{
+	background-color: #61cdf5;
+	border-color: #61cdf5;
+
+	box-shadow: 0 5px 15px 5px rgba(97, 205, 245, 0.5);
+}
+
+.account-passwd .account-passwd-help
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 15px;
+}
+.account-passwd .account-passwd-help a
+{
+	font-size: 14px;
+	color: #61cdf5;
+
+	border-bottom: 1px solid #61cdf5;
+	padding-bottom: 3px;
+
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+	.account-passwd
+	{
+		width: calc(100% - 120px);
+		clip-path: none;
+	}
+}
+@media screen and (max-width: 400px)
+{
+	.account-passwd .account-passwd-input
+	{
+		width: 80%;
+	}
+	.account-passwd
+	{
+		width: calc(100% - 40px);
+		height: calc(600px - 40px);
+
+		padding: 20px;
+	}
+	.account-passwd .account-passwd-btn button
+	{
+		width: 90%;
+		padding: 15px 0;
+	}
+}
+@media screen and (max-width: 1070px)
+{
+	.account-main
+	{
+		width: calc(90% - 60px);
+	}
+}
+@media screen and (max-width: 1500px)
+{
+	.account-main-info
+	{
+		flex-wrap: wrap;
+	}
+
+	.account-main-info .account-info-skin
+	{
+		width: 100%;
+		margin-bottom: 50px;
+
+		padding-left: 0;
+	}
+	.account-main-info .account-info-skin span
+	{
+		text-align: center;
+	}
+	.account-main-info .account-info
+	{
+		width: 100%;
+	}
+	.account-main-info .account-info .account-info-box
+	{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 1300px)
+{
+	.account-main .account-main-acs,
+	.account-main .account-main-other
+	{
+		width: 100%;
+	}
+	.account-main .account-main-other
+	{
+		margin-left: 0;
+	}
+
+	.account-main .account-main-skills
+	{
+		justify-content: center;
+	}
+	.account-main .account-main-skills .account-main-skills-item
+	{
+		width: calc(100% / 2 - 40px);
+	}
+
+	.account-main .account-main-grettings .account-main-grettings-item
+	{
+		width: calc(100% / 2 - 20px - 60px);
+	}
+}
+@media screen and (max-width: 890px)
+{
+	.account-main .account-main-skills .account-main-skills-item
+	{
+		width: 100%;
+	}
+	.account-main .account-main-grettings .account-main-grettings-item
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 900px)
+{
+	.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item
+	{
+		width: calc(100% / 2 - 30px);
+	}
+	.account-main .account-main-acs
+	{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 750px)
+{
+	.account-main-info .account-info-skin
+	{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.account-main-info .account-info-skin .account-info-skin-img
+	{
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.account-main-info .account-info-skin .account-info-skin-img-bars
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+	.account-main-info .account-info-skin span
+	{
+		font-size: calc(1em + 4vw);
+	}
+}
+@media screen and (max-width: 695px)
+{
+	.account-main .account-main-settings button,
+	.account-main .account-main-settings a
+	{
+		width: 100%;
+
+		text-align: center;
+	}
+}
+@media screen and (max-width: 620px)
+{
+	.account-main .account-main-acs .account-main-acs-wrap .account-main-acs-item
+	{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.account-main-info .account-info .account-info-box .account-info-box-desc
+	{
+		font-size: 1em;
+	}
+}
+
+
+.account-main .account-main-logs-time
+{
+	width: 100%;
+	min-height: 50px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.account-main .account-main-logs-time h2
+{
+	margin: 0;
+	font-size: 20px;
+}
+.account-main .account-main-logs-time .account-main-logs-time-items
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item
+{
+	display: flex;
+	align-items: center;
+
+	margin-top: 10px;
+}
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item label
+{
+	text-transform: uppercase;
+}
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item input,
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item + .account-main-logs-time-item
+{
+	margin-left: 15px;
+}
+
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item button
+{
+	padding: 15px 20px;
+	color: white;
+
+	background-color: rgba(21, 155, 232, 0.7);
+	box-shadow: 0 0 15px 3px rgba(21, 155, 232, 0.25);
+
+	cursor: pointer;
+	transition: .3s;
+
+	border-radius: 4px;
+}
+.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item button:hover
+{
+	background-color: rgba(21, 155, 232, 0.9);
+	box-shadow: 0 0 15px 5px rgba(21, 155, 232, 0.4);
+}
+
+.account-main .account-main-logs
+{
+	width: 100%;
+	margin-top: 70px;
+}
+.account-main .account-main-logs .account-main-logs-item
+{
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+
+	font-size: 18px;
+}
+.account-main .account-main-logs .account-main-logs-item span:first-child
+{
+	margin-right: 15px;
+	color: grey;
+
+	white-space: nowrap;
+}
+.account-main .account-main-logs .account-main-logs-item + .account-main-logs-item
+{
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 500px)
+{
+	.account-main .account-main-logs .account-main-logs-item
+	{
+		flex-wrap: wrap;
+	}
+	.account-main .account-main-logs .account-main-logs-item span
+	{
+		width: 100%;
+	}
+	.account-main .account-main-logs .account-main-logs-item span:first-child
+	{
+		margin-bottom: 5px;
+	}
+	.account-main .account-main-logs .account-main-logs-item + .account-main-logs-item
+	{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 565px)
+{
+	.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item + .account-main-logs-time-item
+	{
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 700px)
+{
+	.account-main .account-main-logs-time .account-main-logs-time-items .account-main-logs-time-item:last-child
+	{
+		width: 100%;
+		justify-content: center;
+
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 920px)
+{
+	.account-main .account-main-logs-time h2
+	{
+		width: 100%;
+		text-align: center;
+
+		margin-bottom: 20px;
+	}
+	.account-main .account-main-logs-time .account-main-logs-time-items
+	{
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.account-main-logs-time-input
+{
+	background-color: white;
+	box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.16);
+
+	padding: 10px;
+	border-radius: 7px;
+}
+
+
+.account-admin
+{
+	display: flex;
+
+	width: calc(100% - 40px);
+
+	padding: 0 20px;
+}
+
+.account-admin .account-admin-infos
+{
+	display: flex;
+	justify-content: space-around;
+
+	width: 100%;
+}
+
+.account-admin .account-admin-level
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	margin-right: 70px;
+	width: 350px;
+}
+.account-admin .account-admin-level h3
+{
+	text-align: center;
+	width: 100%;
+
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.account-admin .account-admin-level div
+{
+	background-color: #fda605;
+	border-radius: 50%;
+
+	flex: 0 0 150px;
+	height: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 40px;
+	position: relative;
+}
+
+.account-admin .account-admin-level div svg
+{
+	position: absolute;
+
+	top: calc(50% + .2px);
+	left: calc(50%);
+
+	transform: rotateY(-180deg) rotate(-90deg) translate(50%, 50%);
+
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+}
+.account-admin .account-admin-level div svg circle
+{
+	stroke: #ffcd70;
+
+    stroke-dasharray: 200, 200;
+    stroke-dashoffset: -50;
+    /*-126*/
+}
+
+.account-admin .account-admin-info
+{
+	width: calc(100% - 30px);
+	margin: 0 15px;
+}
+.account-admin .account-admin-info div
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 100%;
+	font-size: 18px;
+}
+.account-admin .account-admin-info div + div
+{
+	margin-top: 10px;
+	border-top: 1px solid white;
+
+	padding-top: 11px;
+}
+
+
+@media screen and (max-width: 1430px)
+{
+	.account-admin
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.account-admin .account-admin-level
+	{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 1160px)
+{
+	.account-admin .account-admin-info div
+	{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	.account-admin .account-admin-info div
+	{
+		justify-content: center;
+	}
+	.account-admin .account-admin-info div span
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.account-admin .account-admin-info div span:first-child
+	{
+		font-size: 18px;
+	}
+	.account-admin .account-admin-info div span + span
+	{
+		margin-top: 4px;
+	}
+}
+@media screen and (max-width: 790px)
+{
+	.account-admin .account-admin-infos
+	{
+		flex-wrap: wrap;
+	}
+	.account-admin .account-admin-info + .account-admin-info
+	{
+		margin-top: 50px;
+	}
+}
+
+
+
+.account-ban
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	width: 100%;
+}
+.account-ban h1
+{
+	width: 100%;
+	text-align: center;
+
+	color: #ff3e3e;
+	text-transform: uppercase;
+
+	font-size: 25px;
+}
+
+.account-ban .account-ban-info
+{
+	width: 100%;
+}
+.account-ban .account-ban-info div
+{
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 18px;
+}
+.account-ban .account-ban-info div + div
+{
+	margin-top: 5px;
+}
+
+.account-ban .account-ban-text
+{
+	margin-top: 30px;
+
+	font-size: 14px;
+	color: #fdf6f6;
+
+	text-align: center;
+	width: 100%;
+}
+.account-ban .account-ban-text a
+{
+	color: #555;
+}
+
+
+
+.account-settings
+{
+	width: calc(80% - 40px);
+	margin: 0 auto;
+
+	background-color: white;
+	box-shadow: 0 7px 15px 3px rgba(0, 0, 0, .12);
+
+	padding: 25px 20px;
+	border-radius: 8px;
+}
+.account-settings + .account-settings
+{
+	margin-top: 35px;
+}
+.account-settings-title
+{
+	font-size: 22px;
+	width: 100%;
+
+	text-align: center;
+}
+.account-settings-body
+{
+	margin-top: 30px;
+}
+.account-settings-body .account-settings-item
+{
+	margin: 0 auto;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.account-settings-body .account-settings-item + .account-settings-item
+{
+	margin-top: 15px;
+}
+
+.account-settings-body .account-settings-info span
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.account-settings-body .account-settings-qr
+{
+	width: 30%;
+	height: auto;
+}
+.account-settings-body .account-settings-qr img
+{
+	width: 100%;
+	height: auto;
+}
+
+
+.account-realty-pay
+{
+	position: fixed;
+
+	bottom: -100%;
+	right: 15px;
+
+	width: calc(250px - 30px);
+
+	border: 3px solid #51d495;
+	border-radius: 21px 0 21px 0;
+
+	background-color: rgb(245, 245, 245, .8);
+	padding: 10px 15px;
+
+	z-index: -1;
+	transition: .3s;
+}
+.account-realty-pay.account-realty-pay-show
+{
+	bottom: 15px;
+	z-index: 1;
+}
+.account-realty-pay h3
+{
+	font-size: 15px;
+	margin-bottom: 4px;
+
+	text-align: center;
+}
+.account-realty-pay .account-realty-pay-block + .account-realty-pay-block
+{
+	margin-top: 15px;
+}
+.account-realty-pay .account-realty-pay-type
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 100%;
+}
+.account-realty-pay .account-realty-pay-type button
+{
+	border: 2px solid #51d495;
+	border-bottom: none;
+	border-left: none;
+
+	width: 10px;
+	height: 10px;
+
+	padding: 5px;
+	transform: rotate(45deg);
+
+	cursor: pointer;
+	background-color: transparent;
+}
+.account-realty-pay .account-realty-pay-type button:first-child
+{
+	transform: rotate(-135deg);
+}
+.account-realty-pay .account-realty-pay-type input
+{
+	text-align: center;
+	cursor: default;
+}
+.account-realty-pay .account-realty-pay-type input:disabled
+{
+	cursor: default;
+}
+
+
+.account-main-inv
+{
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	overflow-y: auto;
+	max-height: 300px;
+}
+.account-main-inv section
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	border: 2px solid silver;
+	border-radius: 14px;
+
+	padding: 7px;
+	margin: 0 10px;
+}
+.account-main-inv section span
+{
+	width: 100%;
+	text-align: center;
+
+	font-size: 11px;
+	margin-top: 15px;
+}
+.account-main-inv section img
+{
+	width: 55px;
+	height: 55px;
+}

@@ -1,0 +1,374 @@
+<html en="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Enki Online New Desing</title>
+
+    <script src="js/modules/jquery.js"></script>
+    <script src="js/modules/loader.js"></script>
+    <script src="js/modules/selBlock.js"></script>
+    <script src="js/modules/select.js"></script>
+
+    <link rel="stylesheet" href="src/css.css">
+</head>
+<body>
+    <script src="js/js.js"></script>
+
+    <script src="js/pages/auth.js"></script>
+    <div class="body">
+        <!-- auth -->
+        <div class="auth" style="display: none;">
+            <section>
+                <div class="logo">
+                    <img src="src/images/logo.png">
+                </div>
+                <h1>Совершенно новый игровой проект на платформе GTA:SA, дающий возможность почувствовать себя кем-то весомым, заняв самые вершины айсберга игрового процесса, или же продолжить свой путь на улицах родного San Andreas</h1>
+            </section>
+            <section>
+                <h1>Добро пожаловать!</h1>
+                <h2>Для продолжения пользования сайтом, пожалуйста, авторизуйтесь:</h2>
+
+                <div class="input">
+                    <input type="text" placeholder=" " maxlength="24" id="auth-input-username">
+                    <label for="auth-input-username">Игровой ник</label>
+                </div>
+                <div class="input">
+                    <input type="password" placeholder=" " maxlength="64" id="auth-input-password">
+                    <label for="auth-input-password">Пароль</label>
+                </div>
+
+                <!-- <div class="auth-accounts">
+                    <h2>Вы недавно заходили с этих аккаунтов</h2>
+                    <a href="#">Войти под другим аккаунтом</a>
+
+                    <div class="select" id="auth-accounts">
+                        <input type="text" disabled value="MyAngelNezuko" data-id="0">
+                        <input type="text" disabled value="Test_Account" data-id="1">
+                        <input type="text" disabled value="Test_Account" data-id="1">
+                        <input type="text" disabled value="Test_Account" data-id="1">
+                        <input type="text" disabled value="Test_Account" data-id="1">
+                    </div>
+                </div> -->
+
+                <div class="auth-btns">
+                    <button id="auth-success">Войти</button>
+                    <a href="#">Или зарегистрироваться</a>
+                </div>
+            </section>
+            <div class="auth-error">Сообщение об ошибке</div>
+        </div>
+
+        <!-- auth 2 -->
+        <div class="auth" style="display: none;">
+            <section>
+                <div class="auth-section-wrap">
+                    <div class="logo">
+                        <img src="src/images/global_logo_white.png">
+                    </div>
+                    <h6>Совершенно новый игровой проект на платформе GTA:SA, дающий возможность почувствовать себя кем-то весомым, заняв самые вершины айсберга игрового процесса, или же продолжить свой путь на улицах родного San Andreas</h6>
+                    <div>
+                        <a href="https://vk.com/enkiplay" target="_blank">
+                            <svg viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.8139 0.299988L5.5139 7.99999H3.3689L0.079895 0.299988H2.4339L4.5239 5.31599L6.6579 0.299988H8.8139Z" fill="#FDB105"/>
+                                <path d="M12.2346 5.20599L11.4206 6.07499V7.99999H9.26464V0.299988H11.4206V3.50099L14.4016 0.299988H16.7996L13.6536 3.70999L16.9646 7.99999H14.4346L12.2346 5.20599Z" fill="#FDB105"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCt0cgAO4aZCInlug1GeDQKA" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 461.001 461.001">
+                                <path fill="#FDB105" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                            		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                            		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                            		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg" id="auth-svg-bg">
+                        <path d="M82.0085 36.9885C72.1642 37.9642 62.8139 41.7793 55.0948 47.9697L29.3146 22.1896C31.6558 20.091 34.1144 18.1272 36.6784 16.3076L36.6335 16.3526C37.2023 15.9482 37.8549 15.677 38.5427 15.559C39.2305 15.441 39.9359 15.4794 40.6067 15.6712C41.2775 15.863 41.8965 16.2033 42.4177 16.6669C42.9389 17.1305 43.349 17.7056 43.6177 18.3494L43.7164 18.6009C44.4045 20.2631 45.4187 21.7705 46.6991 23.034C47.9794 24.2975 49.5 25.2916 51.1712 25.9577C52.8424 26.6237 54.6302 26.9482 56.4292 26.912C58.2282 26.8758 60.0019 26.4796 61.6458 25.7468C68.3394 22.7533 71.2794 14.8199 68.4829 8.04251L68.4425 7.94819C68.1731 7.30299 68.0529 6.60519 68.0909 5.90687C68.1289 5.20854 68.3241 4.52773 68.662 3.91524C68.9999 3.30276 69.4717 2.77442 70.0423 2.36967C70.6128 1.96492 71.2673 1.69422 71.957 1.57776C72.2445 1.52377 72.532 1.47877 72.8284 1.43377C75.8407 0.936445 78.877 0.598212 81.9247 0.420492L82.0085 36.9885ZM48.391 54.6735L22.6108 28.8933C20.4547 31.2568 18.4496 33.7538 16.6076 36.3694L16.3335 36.7423C15.9202 37.3255 15.6436 37.9942 15.5241 38.6987C15.4045 39.4032 15.4452 40.1256 15.6431 40.812C15.841 41.4985 16.1909 42.1315 16.667 42.6641C17.1431 43.1966 17.7331 43.615 18.3932 43.8883C20.083 44.5912 21.618 45.6194 22.9111 46.9144C25.1438 49.0964 26.545 51.9893 26.8732 55.0946C27.2014 58.1999 26.436 61.323 24.709 63.9257C22.9819 66.5284 20.4014 68.4477 17.4121 69.3527C14.4229 70.2578 11.2121 70.0919 8.33327 68.8837C7.65554 68.6033 6.92314 68.4796 6.19075 68.5218C5.45834 68.5641 4.74484 68.7711 4.10346 69.1276C3.46208 69.484 2.90938 69.9807 2.48661 70.5804C2.06384 71.1802 1.7819 71.8676 1.66183 72.5914L1.64384 72.6812C1.14404 75.6915 0.80729 78.7265 0.635052 81.773L37.2884 81.7085C38.1207 71.7709 41.9978 62.3301 48.391 54.6735ZM37.2767 91.1863L0.627843 91.2103C0.801382 94.4852 1.16489 97.7472 1.71655 100.98L1.73448 101.088C1.85394 101.789 2.13027 102.455 2.54288 103.035C2.95548 103.615 3.49372 104.095 4.1175 104.438C4.74128 104.781 5.43452 104.979 6.14556 105.017C6.8566 105.055 7.56711 104.932 8.22415 104.657C14.7875 101.937 22.5037 104.558 25.6551 110.936C26.4879 112.589 26.9705 114.396 27.0726 116.245C27.1747 118.093 26.8942 119.943 26.2486 121.679C25.6031 123.414 24.6063 124.998 23.3207 126.331C22.0351 127.664 20.4884 128.718 18.7773 129.426L18.5257 129.534C17.8809 129.802 17.3048 130.212 16.8401 130.733C16.3755 131.255 16.0343 131.874 15.8421 132.545C15.6498 133.217 15.6113 133.923 15.7295 134.611C15.8477 135.299 16.1196 135.951 16.5249 136.519C16.6416 136.636 16.709 136.784 16.8122 136.924C18.5506 139.367 20.4275 141.709 22.434 143.938L48.5345 117.838C42.1289 110.325 38.1976 101.018 37.2767 91.1863ZM124.487 117.362L150.936 143.811C152.666 141.839 154.962 139.049 156.818 136.447C156.94 136.326 156.993 136.191 157.092 136.048C157.493 135.478 157.761 134.826 157.876 134.14C157.99 133.453 157.949 132.749 157.754 132.081C157.56 131.413 157.218 130.797 156.753 130.279C156.288 129.762 155.712 129.355 155.069 129.09L154.961 129.054C148.183 126.249 144.655 118.569 147.271 111.714C147.914 110.034 148.887 108.499 150.132 107.201C151.378 105.903 152.87 104.867 154.522 104.155C156.175 103.443 157.952 103.069 159.751 103.056C161.549 103.043 163.332 103.39 164.994 104.077L165.254 104.185C165.877 104.44 166.547 104.558 167.219 104.53C167.892 104.502 168.55 104.329 169.15 104.022C169.749 103.716 170.275 103.283 170.691 102.754C171.108 102.225 171.404 101.612 171.562 100.958C171.584 100.854 171.607 100.751 171.62 100.648C172.149 97.5123 172.499 94.3493 172.669 91.1743L135.405 91.1131C134.364 100.729 130.573 109.842 124.487 117.362ZM91.3529 172.482C94.6357 172.303 97.9054 171.933 101.145 171.374L101.339 171.343C102.028 171.226 102.683 170.954 103.253 170.549C103.824 170.144 104.295 169.615 104.633 169.002C104.97 168.389 105.165 167.708 105.202 167.009C105.24 166.311 105.119 165.613 104.849 164.968L104.813 164.878C102.007 158.1 104.952 150.171 111.65 147.174C113.293 146.44 115.067 146.043 116.867 146.006C118.666 145.97 120.454 146.294 122.125 146.96C123.797 147.626 125.317 148.621 126.598 149.885C127.878 151.149 128.892 152.657 129.579 154.319L129.682 154.566C129.951 155.21 130.36 155.785 130.881 156.248C131.402 156.712 132.02 157.052 132.69 157.245C133.361 157.437 134.066 157.476 134.753 157.359C135.441 157.241 136.093 156.971 136.662 156.568L136.743 156.487C139.357 154.643 141.856 152.639 144.224 150.488L117.792 124.057C110.303 130.295 101.115 134.143 91.4176 135.101L91.3529 172.482ZM55.0683 124.246L28.9048 150.409C31.4172 152.685 34.0673 154.804 36.8401 156.754C36.8752 156.784 36.9082 156.817 36.9389 156.852C37.5086 157.254 38.1611 157.524 38.8487 157.642C39.5362 157.759 40.2413 157.721 40.9126 157.531C41.5838 157.341 42.2042 157.004 42.7284 156.543C43.2525 156.083 43.6673 155.511 43.9422 154.87L44.0186 154.793C45.3494 151.511 47.9043 148.874 51.143 147.441C54.3816 146.007 58.0501 145.889 61.3727 147.112C63.0513 147.753 64.5842 148.724 65.8811 149.968C67.178 151.211 68.2125 152.702 68.9238 154.352C69.635 156.002 70.0085 157.778 70.0223 159.575C70.036 161.373 69.6897 163.155 69.0038 164.816L68.9004 165.081C68.6355 165.727 68.5192 166.424 68.56 167.121C68.6008 167.817 68.7976 168.496 69.136 169.106C69.4744 169.716 69.9456 170.242 70.5148 170.646C71.084 171.049 71.7367 171.319 72.4246 171.436L72.7884 171.494C75.7991 171.988 78.8337 172.323 81.8796 172.498L81.7691 135.104C71.9817 134.236 62.6809 130.454 55.0683 124.246Z" fill="url(#auth-svg-bg-gradient)"/>
+                    <defs>
+                        <radialGradient id="auth-svg-bg-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80.2912 182.169) rotate(-45) scale(158.233 158.142)">
+                            <stop stop-color="#FDCC05"/>
+                            <stop offset="1" stop-color="#FD9A05"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </section>
+            <section>
+                <svg id="auth-section2-svg-bg" viewBox="0 0 224 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224 0L188.242 175.021C186.354 184.263 178.535 191.112 169.125 191.767L0.5 203.5L115.13 230.443C116.705 230.813 118.317 231 119.935 231H203C214.598 231 224 221.598 224 210V0Z" fill="#FDC137"/>
+                </svg>
+                <svg id="auth-section2-svg-bg2" viewBox="0 0 121 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 99.5L17.6918 36.3149C19.7356 29.0156 25.5545 23.3841 32.9169 21.5804L121 0H106.5H21C9.40202 0 0 9.40202 0 21V99.5Z" fill="#E48C06"/>
+                </svg>
+                <svg id="auth-section2-svg-bg3" viewBox="0 0 220 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.5L37.8119 185.825C39.4504 193.856 45.6114 200.199 53.5909 202.072L219.5 241H21C9.40203 241 0 231.598 0 220V0.5Z" fill="#FD9A05" fill-opacity="0.8"/>
+                </svg>
+
+                <div class="auth-section-wrap">
+                    <h1>Добро пожаловать!</h1>
+                    <h2>Для продолжения войдите на сайт</h2>
+                    <div class="auth-inputs">
+                        <div class="input">
+                            <input type="text" placeholder=" " maxlength="24" id="auth-input-username">
+                            <label for="auth-input-username">Игровой ник</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" placeholder=" " maxlength="64" id="auth-input-password">
+                            <label for="auth-input-password">Пароль</label>
+                        </div>
+                        <script>
+                            select.add('.auth section:last-child .auth-inputs', 'auth-servers', [ 'Enki Online Test', 'Enki Online #1' ], {
+                                placeholder: "Выберите сервер"
+                            })
+                        </script>
+                    </div>
+                    <div class="auth-btns">
+                        <button id="auth-success" class="grad">ВОЙТИ</button>
+                        <a href="#">РЕГИСТРАЦИЯ</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- global -->
+        <div class="lk">
+            <div class="header">
+                <div class="header-account">
+                    <a href="#">
+                        <div class="logo logo-minimal">
+                            <img src="src/images/logo.png">
+                        </div>
+                        <span>MyAngelNezuko</span>
+                    </a>
+                    <nav>
+                        <li>
+                            <svg fill="none" viewBox="0 0 34 27" xmlns="http://www.w3.org/2000/svg"><path d="M28.5 25.6H5.5C3.4 25.6 1.70001 23.8929 1.70001 21.7841V5.41592C1.70001 3.30714 3.4 1.59998 5.5 1.59998H28.5C30.6 1.59998 32.3 3.30714 32.3 5.41592V21.7841C32.4 23.8929 30.6 25.6 28.5 25.6Z" stroke="#b4bece" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M17 14.9557L2.60001 3.60834" stroke="#b4bece" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="M31.4 3.60834L17 14.9557" stroke="#b4bece" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+                            <span class="__notf-title"></span>
+                        </li>
+                        <li>
+                            <svg fill="#b4bece" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><title/><path d="M64,39A25,25,0,1,0,89,64,25,25,0,0,0,64,39Zm0,44A19,19,0,1,1,83,64,19,19,0,0,1,64,83Z"/><path d="M121,48h-8.93a1,1,0,0,1-.94-.68,49.9,49.9,0,0,0-2-4.85,1,1,0,0,1,.18-1.15L115.62,35a7,7,0,0,0,0-9.9L102.89,12.38a7,7,0,0,0-9.9,0l-6.31,6.31a1,1,0,0,1-1.15.18,49.76,49.76,0,0,0-4.85-2,1,1,0,0,1-.68-.94V7a7,7,0,0,0-7-7H55a7,7,0,0,0-7,7v8.93a1,1,0,0,1-.68.94,49.9,49.9,0,0,0-4.85,2,1,1,0,0,1-1.15-.18L35,12.38a7,7,0,0,0-9.9,0L12.38,25.11a7,7,0,0,0,0,9.9l6.31,6.31a1,1,0,0,1,.18,1.15,49.76,49.76,0,0,0-2,4.85,1,1,0,0,1-.94.68H7a7,7,0,0,0-7,7V73a7,7,0,0,0,7,7h8.93a1,1,0,0,1,.94.68,49.9,49.9,0,0,0,2,4.85,1,1,0,0,1-.18,1.15L12.38,93a7,7,0,0,0,0,9.9l12.73,12.73a7,7,0,0,0,9.9,0l6.31-6.31a1,1,0,0,1,1.15-.18,49.76,49.76,0,0,0,4.85,2,1,1,0,0,1,.68.94V121a7,7,0,0,0,7,7H73a7,7,0,0,0,7-7v-8.93a1,1,0,0,1,.68-.94,49.9,49.9,0,0,0,4.85-2,1,1,0,0,1,1.15.18L93,115.62a7,7,0,0,0,9.9,0l12.73-12.73a7,7,0,0,0,0-9.9l-6.31-6.31a1,1,0,0,1-.18-1.15,49.76,49.76,0,0,0,2-4.85,1,1,0,0,1,.94-.68H121a7,7,0,0,0,7-7V55A7,7,0,0,0,121,48Zm1,25a1,1,0,0,1-1,1h-8.93a7,7,0,0,0-6.6,4.69,43.9,43.9,0,0,1-1.76,4.26,7,7,0,0,0,1.35,8l6.31,6.31a1,1,0,0,1,0,1.41L98.65,111.38a1,1,0,0,1-1.41,0l-6.31-6.31a7,7,0,0,0-8-1.35,43.88,43.88,0,0,1-4.27,1.76,7,7,0,0,0-4.68,6.6V121a1,1,0,0,1-1,1H55a1,1,0,0,1-1-1v-8.93a7,7,0,0,0-4.69-6.6,43.9,43.9,0,0,1-4.26-1.76,7,7,0,0,0-8,1.35l-6.31,6.31a1,1,0,0,1-1.41,0L16.62,98.65a1,1,0,0,1,0-1.41l6.31-6.31a7,7,0,0,0,1.35-8,43.88,43.88,0,0,1-1.76-4.27A7,7,0,0,0,15.93,74H7a1,1,0,0,1-1-1V55a1,1,0,0,1,1-1h8.93a7,7,0,0,0,6.6-4.69,43.9,43.9,0,0,1,1.76-4.26,7,7,0,0,0-1.35-8l-6.31-6.31a1,1,0,0,1,0-1.41L29.35,16.62a1,1,0,0,1,1.41,0l6.31,6.31a7,7,0,0,0,8,1.35,43.88,43.88,0,0,1,4.27-1.76A7,7,0,0,0,54,15.93V7a1,1,0,0,1,1-1H73a1,1,0,0,1,1,1v8.93a7,7,0,0,0,4.69,6.6,43.9,43.9,0,0,1,4.26,1.76,7,7,0,0,0,8-1.35l6.31-6.31a1,1,0,0,1,1.41,0l12.73,12.73a1,1,0,0,1,0,1.41l-6.31,6.31a7,7,0,0,0-1.35,8,43.88,43.88,0,0,1,1.76,4.27,7,7,0,0,0,6.6,4.68H121a1,1,0,0,1,1,1Z"/></svg>
+                            <span class="__notf-title"></span>
+                        </li>
+                    </nav>
+                    <div class="header-notf">
+                        <h1>Уведомления</h1>
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-j</title><path d="M427.68,351.43C402,320,383.87,304,383.87,217.35,383.87,138,343.35,109.73,310,96c-4.43-1.82-8.6-6-9.95-10.55C294.2,65.54,277.8,48,256,48S217.79,65.55,212,85.47c-1.35,4.6-5.52,8.71-9.95,10.53-33.39,13.75-73.87,41.92-73.87,121.35C128.13,304,110,320,84.32,351.43,73.68,364.45,83,384,101.61,384H410.49C429,384,438.26,364.39,427.68,351.43Z" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M320,384v16a64,64,0,0,1-128,0V384" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+                        <span class="__notf-title"></span>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <section>
+                        <a href="#">Аккаунт</a>
+                        <nav>
+                            <a href="#">Информация</a>
+                            <a href="#">Настройки</a>
+                            <a href="#">Жалобы</a>
+                            <a href="#">Заявки</a>
+                        </nav>
+                    </section>
+                    <section>
+                        <a href="#">Фракция</a>
+                        <nav>
+                            <a href="#">Информация</a>
+                            <a href="#">Настройки</a>
+                            <a href="#">Жалобы</a>
+                            <a href="#">Заявки</a>
+                        </nav>
+                    </section>
+                    <section>
+                        <a href="#">Администрация</a>
+                        <nav>
+                            <a href="#">Информация</a>
+                            <a href="#">Настройки</a>
+                            <a href="#">Жалобы</a>
+                            <a href="#">Заявки</a>
+                        </nav>
+                    </section>
+                </div>
+                <div class="header-logo">
+                    <a href="#">
+                        <div class="logo logo-header">
+                            <img src="src/images/global_logo.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <!-- account -->
+                <div class="page-account">
+                    <div class="page-account-block page-account-main">
+                        <div class="logo">
+                            <img src="src/images/logo.png">
+                        </div>
+
+                        <h1>MyAngelNezuko</h1>
+                        <div class="page-account-main-level">
+                            <span>Игровой уровень</span>
+                            <span>25</span>
+                        </div>
+                        <div class="page-account-main-level page-account-main-level-adm">
+                            <span>Административный уровень</span>
+                            <span>6</span>
+                        </div>
+
+                        <section>
+                            <div>
+                                <span>Персональный ID</span>
+                                <span>1</span>
+                            </div>
+                            <div>
+                                <span>Привязанная почта</span>
+                                <span>mail@enki.online</span>
+                            </div>
+                            <div>
+                                <span>Игровой опыт</span>
+                                <span>25 / 35</span>
+                            </div>
+                            <div>
+                                <span>Наличный счет</span>
+                                <span>2.125.758.233 $</span>
+                            </div>
+                            <div>
+                                <span>Банковский счет</span>
+                                <span>2.125.758.233 $</span>
+                            </div>
+                            <div>
+                                <span>Депозитный счет</span>
+                                <span>2.125.758.233 $</span>
+                            </div>
+                            <div>
+                                <span>Донат счет</span>
+                                <span>1.758.283.523 RUB</span>
+                            </div>
+                            <div>
+                                <span>Фракция</span>
+                                <span>Police Los Santos</span>
+                            </div>
+                            <div>
+                                <span>Должность во фракции</span>
+                                <span>Подполковник (8)</span>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="page-account-block page-account-other">
+                        <header>
+                            <button>Мой онлайн</button>
+                            <button data-type="select">Мое имущество</button>
+                        </header>
+                        <section class="page-account-other-houses">
+
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="page-notf" style="display: none;">
+                    <div class="page-notf-nav">
+                        <section>
+                            <span>Все</span>
+                        </section>
+                        <section class="page-notf-nav-select">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 234.409 234.409"><path d="M117.204,30.677c-47.711,0-86.527,38.816-86.527,86.528c0,47.711,38.816,86.526,86.527,86.526s86.527-38.815,86.527-86.526C203.732,69.494,164.915,30.677,117.204,30.677z M117.204,188.732c-39.44,0-71.527-32.086-71.527-71.526c0-39.441,32.087-71.528,71.527-71.528s71.527,32.087,71.527,71.528C188.732,156.645,156.645,188.732,117.204,188.732z"/><path d="M44.896,44.897c2.929-2.929,2.929-7.678,0-10.607c-2.93-2.929-7.678-2.929-10.607,0c-45.718,45.719-45.718,120.111,0,165.831c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.197c2.93-2.929,2.93-7.677,0.001-10.606C5.026,149.643,5.026,84.768,44.896,44.897z"/><path d="M200.119,34.29c-2.93-2.929-7.678-2.929-10.607,0c-2.929,2.929-2.929,7.678,0,10.607c39.872,39.871,39.872,104.746,0,144.618c-2.929,2.929-2.929,7.678,0,10.606c1.465,1.464,3.385,2.197,5.304,2.197c1.919,0,3.839-0.732,5.304-2.197C245.839,154.4,245.839,80.009,200.119,34.29z"/><path d="M117.204,140.207c4.143,0,7.5-3.358,7.5-7.5v-63.88c0-4.142-3.357-7.5-7.5-7.5c-4.143,0-7.5,3.358-7.5,7.5v63.88C109.704,136.849,113.062,140.207,117.204,140.207z"/><circle cx="117.204" cy="156.254" r="9.329"/></svg>
+                            <span>Системные</span>
+                            <!-- <h6 class="__notf-title"></h6> -->
+                        </section>
+                        <section>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 184.153 184.153"><path d="M129.318,0H26.06c-1.919,0-3.475,1.554-3.475,3.475v177.203c0,1.92,1.556,3.475,3.475,3.475h132.034c1.919,0,3.475-1.554,3.475-3.475V34.131C161.568,22.011,140.771,0,129.318,0z M154.62,177.203H29.535V6.949h99.784c7.803,0,25.301,18.798,25.301,27.182V177.203z"/><path d="M71.23,76.441c15.327,0,27.797-12.47,27.797-27.797c0-15.327-12.47-27.797-27.797-27.797c-15.327,0-27.797,12.47-27.797,27.797C43.433,63.971,55.902,76.441,71.23,76.441z M71.229,27.797c11.497,0,20.848,9.351,20.848,20.847c0,0.888-0.074,1.758-0.183,2.617l-18.071-2.708L62.505,29.735C65.162,28.503,68.112,27.797,71.229,27.797z M56.761,33.668l11.951,19.869c0.534,0.889,1.437,1.49,2.462,1.646l18.669,2.799c-3.433,6.814-10.477,11.51-18.613,11.51c-11.496,0-20.847-9.351-20.847-20.847C50.381,42.767,52.836,37.461,56.761,33.668z"/><rect x="46.907" y="90.339" width="73.058" height="6.949"/><rect x="46.907" y="107.712" width="48.644" height="6.949"/><rect x="46.907" y="125.085" width="62.542" height="6.949"/></svg>
+                            <span>Жалобы</span>
+                            <h6 class="__notf-title"></h6>
+                        </section>
+                        <section>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 475.851 475.851"><path d="M151.549,145.274c0,23.39,9.145,50.385,24.462,72.214c17.389,24.78,39.376,38.427,61.911,38.427c22.534,0,44.521-13.647,61.91-38.428c15.317-21.828,24.462-48.824,24.462-72.213c0-47.626-38.746-86.372-86.372-86.372C190.296,58.902,151.549,97.648,151.549,145.274z M237.922,73.902c39.354,0,71.372,32.018,71.372,71.372c0,20.118-8.33,44.487-21.74,63.598c-14.29,20.364-32.38,32.043-49.632,32.043c-17.252,0-35.342-11.679-49.632-32.04
+                            				c-13.41-19.11-21.741-43.479-21.741-63.598C166.549,105.919,198.567,73.902,237.922,73.902z"/>
+                                            <path d="M302.372,239.167c-2.862-1.363-6.273-0.778-8.52,1.461c-16.775,16.728-36.117,25.569-55.935,25.569c-19.821,0-39.158-8.841-55.923-25.567c-2.246-2.241-5.659-2.826-8.521-1.463c-25.254,12.022-46.628,30.829-61.811,54.388c-15.596,24.2-23.84,52.277-23.84,81.195v0.121c0,2.116,0.894,4.134,2.461,5.556c40.492,36.722,92.922,56.945,147.633,56.945s107.141-20.224,147.632-56.945c1.568-1.422,2.462-3.439,2.462-5.556v-0.121c0-28.918-8.242-56.995-23.834-81.194C348.997,269.995,327.625,251.188,302.372,239.167z M237.918,422.372c-49.861,0-97.685-18.023-135.057-50.827c0.583-24.896,7.956-48.986,21.411-69.865c12.741-19.77,30.322-35.823,51.058-46.676c18.746,17.157,40.285,26.193,62.588,26.193c22.3,0,43.842-9.035,62.598-26.193c20.734,10.853,38.313,26.906,51.053,46.676c13.452,20.877,20.823,44.968,21.406,69.865C335.602,404.349,287.778,422.372,237.918,422.372z"/><path d="M455.077,243.89c-13.23-20.532-31.856-36.923-53.864-47.399c-2.862-1.363-6.275-0.778-8.52,1.461c-14.312,14.271-30.79,21.815-47.654,21.815c-9.142,0-18.184-2.205-26.873-6.553c-3.706-1.853-8.209-0.353-10.063,3.351c-1.854,3.705-0.354,8.21,3.351,10.063c10.793,5.401,22.093,8.139,33.586,8.139c19.335,0,38.004-7.737,54.288-22.437c17.504,9.298,32.348,22.934,43.141,39.685c11.445,17.763,17.756,38.243,18.338,59.416c-18.524,16.158-40.553,28.449-63.91,35.634c-3.959,1.218-6.182,5.415-4.964,9.374c0.992,3.225,3.96,5.297,7.166,5.297c0.73,0,1.474-0.107,2.208-0.333c26.509-8.154,51.435-22.362,72.082-41.088c1.568-1.422,2.462-3.439,2.462-5.556v-0.105C475.85,289.45,468.666,264.98,455.077,243.89z"/><path d="M130.493,210.473c7.93,0,15.841-1.934,23.516-5.748c3.709-1.843,5.222-6.345,3.379-10.054c-1.843-3.71-6.345-5.222-10.054-3.379c-5.582,2.774-11.248,4.18-16.841,4.18c-14.541,0-29.836-9.914-41.964-27.2c-11.449-16.318-18.562-37.112-18.562-54.266c0-33.375,27.152-60.527,60.526-60.527c15.752,0,30.67,6.022,42.006,16.958c2.98,2.875,7.729,2.792,10.604-0.19c2.876-2.981,2.791-7.729-0.19-10.604c-14.146-13.647-32.763-21.163-52.42-21.163c-41.646,0-75.526,33.881-75.526,75.527c0,20.38,7.957,43.887,21.283,62.881C91.445,198.545,110.709,210.473,130.493,210.473z"/><path d="M61.034,340.143c-16.753-7.222-32.209-16.972-45.989-29.004c0.582-21.112,6.875-41.53,18.291-59.243c10.761-16.698,25.561-30.294,43.01-39.566c16.239,14.662,34.856,22.376,54.139,22.376c11.587,0,22.969-2.785,33.829-8.277c3.696-1.87,5.177-6.381,3.308-10.078c-1.869-3.697-6.381-5.177-10.078-3.308c-8.742,4.421-17.846,6.663-27.059,6.663c-16.811,0-33.238-7.522-47.504-21.754c-2.246-2.24-5.658-2.825-8.521-1.462c-21.954,10.451-40.534,26.8-53.733,47.28C7.167,264.811,0,289.221,0,314.362v0.103c0,2.116,0.894,4.134,2.461,5.556c15.629,14.174,33.338,25.579,52.634,33.897c0.968,0.417,1.975,0.615,2.966,0.615c2.904,0,5.668-1.697,6.891-4.533C66.591,346.196,64.837,341.783,61.034,340.143z"/><path d="M69.854,351.003c-2.671,6.443,4.532,12.832,10.617,9.387c3.238-1.834,4.683-5.937,3.227-9.385C81.291,344.86,72.32,345.053,69.854,351.003z"/><path d="M83.698,351.005C83.888,351.455,83.518,350.545,83.698,351.005L83.698,351.005z"/><path d="M303.345,70.438c11.336-10.936,26.254-16.958,42.006-16.958c33.374,0,60.526,27.152,60.526,60.527c0,17.154-7.112,37.947-18.563,54.266c-12.128,17.286-27.424,27.2-41.964,27.2c-5.593,0-11.259-1.406-16.841-4.18c-3.711-1.844-8.212-0.331-10.055,3.379c-1.843,3.709-0.33,8.21,3.379,10.054c7.675,3.814,15.587,5.748,23.517,5.748c19.783,0,39.048-11.927,54.243-33.585c13.327-18.994,21.283-42.501,21.283-62.881c0-41.646-33.881-75.527-75.526-75.527c-19.657,0-38.273,7.516-52.42,21.163c-2.981,2.875-3.066,7.624-0.19,10.604C295.614,73.229,300.363,73.314,303.345,70.438z"/></svg>
+                            <span>Фракция</span>
+                            <!-- <h6 class="__notf-title"></h6> -->
+                        </section>
+                        <section>
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M14.68,14.81a6.76,6.76,0,1,1,6.76-6.75A6.77,6.77,0,0,1,14.68,14.81Zm0-11.51a4.76,4.76,0,1,0,4.76,4.76A4.76,4.76,0,0,0,14.68,3.3Z" class="clr-i-outline clr-i-outline-path-1"></path><path d="M16.42,31.68A2.14,2.14,0,0,1,15.8,30H4V24.22a14.81,14.81,0,0,1,11.09-4.68l.72,0a2.2,2.2,0,0,1,.62-1.85l.12-.11c-.47,0-1-.06-1.46-.06A16.47,16.47,0,0,0,2.2,23.26a1,1,0,0,0-.2.6V30a2,2,0,0,0,2,2H16.7Z" class="clr-i-outline clr-i-outline-path-2"></path><path d="M26.87,16.29a.37.37,0,0,1,.15,0,.42.42,0,0,0-.15,0Z" class="clr-i-outline clr-i-outline-path-3"></path><path d="M33.68,23.32l-2-.61a7.21,7.21,0,0,0-.58-1.41l1-1.86A.38.38,0,0,0,32,19l-1.45-1.45a.36.36,0,0,0-.44-.07l-1.84,1a7.15,7.15,0,0,0-1.43-.61l-.61-2a.36.36,0,0,0-.36-.24H23.82a.36.36,0,0,0-.35.26l-.61,2a7,7,0,0,0-1.44.6l-1.82-1a.35.35,0,0,0-.43.07L17.69,19a.38.38,0,0,0-.06.44l1,1.82A6.77,6.77,0,0,0,18,22.69l-2,.6a.36.36,0,0,0-.26.35v2.05A.35.35,0,0,0,16,26l2,.61a7,7,0,0,0,.6,1.41l-1,1.91a.36.36,0,0,0,.06.43l1.45,1.45a.38.38,0,0,0,.44.07l1.87-1a7.09,7.09,0,0,0,1.4.57l.6,2a.38.38,0,0,0,.35.26h2.05a.37.37,0,0,0,.35-.26l.61-2.05a6.92,6.92,0,0,0,1.38-.57l1.89,1a.36.36,0,0,0,.43-.07L32,30.4A.35.35,0,0,0,32,30l-1-1.88a7,7,0,0,0,.58-1.39l2-.61a.36.36,0,0,0,.26-.35V23.67A.36.36,0,0,0,33.68,23.32ZM24.85,28a3.34,3.34,0,1,1,3.33-3.33A3.34,3.34,0,0,1,24.85,28Z" class="clr-i-outline clr-i-outline-path-4"></path>
+                                <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+                            </svg>
+                            <span>Администрация</span>
+                            <h6 class="__notf-title"></h6>
+                        </section>
+                    </div>
+
+                    <div class="page-notf-section">
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+
+                            <h4 class="__notf-title">Новое</h4>
+                        </a>
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+
+                            <h4 class="__notf-title">Новое</h4>
+                        </a>
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+
+                            <h4 class="__notf-title">Новое</h4>
+                        </a>
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+                        </a>
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+                        </a>
+                        <a href="#" class="page-notf-section-elem">
+                            <div class="logo logo-minimal">
+                                <img src="src/images/logo.png">
+                            </div>
+
+                            <span><h1>MyAngelNezuko</h1> ответил в Вашей жалобе #228</span>
+                            <h3>несколько секунд назад</h3>
+
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere, quam, ullam reiciendis placeat tenetur expedita, eligendi beatae dolore ut culpa quas reprehenderit voluptatibus laudantium vitae ipsum dicta ipsa molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus a beatae, assumenda maiores, illo debitis! Ratione ad natus tempore eius, aliquid vitae illo culpa, ab, quas excepturi eligendi impedit, adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae ratione sapiente quod molestiae rerum, non doloribus, magni, magnam doloremque facere odio repellendus maiores quo amet sit excepturi harum nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dignissimos sed autem qui. Corporis voluptatum aliquid accusamus, quas illo dolorum, soluta deserunt iure, mollitia ullam asperiores nesciunt impedit excepturi obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tempore, culpa! Aperiam totam vitae, est mollitia quas quibusdam, architecto facere consectetur sequi molestias exercitationem aliquid ut suscipit magnam inventore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit facilis autem earum blanditiis a enim magni necessitatibus corrupti animi amet, tempore, sint nobis perferendis dolore. Ducimus provident, dolorem quaerat.</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.login
+{
+    background-color: white;
+    border-radius: 20px;
+
+    position: absolute;
+
+    top: 53px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(380px - 124px);
+
+    padding: 36px 62px;
+    padding-top: 46px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login svg
+{
+    background: linear-gradient(259.38deg, #FDC705 31.85%, #FD9A05 102.19%);
+    border-radius: 50%;
+
+    padding: 10px;
+
+    width: 42px;
+    height: 42px;
+}
+.login h1
+{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+.login span,
+.login span a
+{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #0000004D;
+}
+.login span a
+{
+    color: #FD9A05;
+}
+.login .login-inputs
+{
+    margin-top: 25px;
+}
+.login .login-inputs .input,
+.login .login-inputs .selectmenu
+{
+    margin-top: 12px;
+}
+.login .login-inputs .input input,
+.login .login-inputs .selectmenu
+{
+    background-color: #F4F4F4;
+}
+.input input:not(:disabled):focus,
+.input input:not(:disabled):not(:placeholder-shown),
+.login .login-inputs .selectmenu[data-id]
+{
+    background-color: white;
+}
+.login .login-inputs .selectmenu span
+{
+    margin: 0;
+}
+.login .button
+{
+    margin-top: 40px;
+    color: white;
+}

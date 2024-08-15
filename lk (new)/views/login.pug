@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+
+        link(rel="stylesheet", href="/styles/_main.css")
+
+        script(type='text/javascript', src='/js/modules/jquery.js')
+        script(type='text/javascript', src='/js/modules/selectmenu.js')
+        script(type='text/javascript', src='/js/modules/notf.js')
+        script(type='text/javascript', src='/js/modules/dialog.js')
+        script(type='text/javascript', src='/js/modules/moment.js')
+
+        title Enki Online - Личный Кабинет | Авторизация
+        link(rel='icon', href='/images/favicon.ico', sizes='48x48', type='image/x-icon')
+
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    body
+        script(type='text/javascript', src='/js/modules/loading.js')
+        script loading.stop()
+        
+        script const servers = !{servers}
+        script(type='module', src='/js/_main.js')
+    
+        .menu
+            .menu-top
+                a(href="/account")
+                    img(src="/images/logo.png", alt="Enki Online - Логотип")
+                //button
+                    span
+                    span
+                    span
+            
+            .menu-nav
+                .menu-nav-item.menu-nav-item-select
+                    svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                    span Авторизация
+                
+        .header
+            .header-left
+                .search.search-disabled
+                    svg(width='22' height='23' viewbox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M21 22L16.1667 16.925M18.7778 10.3333C18.7778 15.488 14.7981 19.6667 9.8889 19.6667C4.9797 19.6667 1 15.488 1 10.3333C1 5.17868 4.9797 1 9.8889 1C14.7981 1 18.7778 5.17868 18.7778 10.3333Z' stroke='#656565' stroke-width='1.70417' stroke-linecap='round' stroke-linejoin='round')
+                    input(disabled type="text" placeholder="Поиск..." maxlength="144")
+                    button(data-type="accounts") Аккаунты
+            a(href="/login").header-right
+                .header-item.header-item-select.header-item-username
+                    svg(viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z' fill='#1E1E1E')
+                    span Авторизация
+
+        
+        .body
+            .notf
+        
+            .login
+                svg(viewbox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  mask#loginSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='42' height='42')
+                    rect(width='42' height='42' fill='url(#loginSVGPattern)')
+                  g(mask='url(#loginSVGMask)')
+                    rect(width='42' height='42' fill='white')
+                  defs
+                    pattern#loginSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                      use(xlink:href='#loginSVGImage' transform='scale(0.0111111)')
+                    image#loginSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEMklEQVR4nO2cO2sVQRiGn0RBTwoLbxixMFgHBUGM4CWigtiIjaCFtSCC+gsUBCvvEhURBcHCykIkCTZqo53iFRW8xLvGS6IRb8diTiDEnXN2ZmdmZ/d8D3zNcma+d97dszOzszsgCIIgCIIgCIJQQrqBk8B9YBioauITcBSo5COzLm3AMeAzev3DqDaeAFaEFDcPuFJHmC6OhxSZkuOYt6Mf6PAtbAnwwUJcFfgGtPoWaEAr8B27trwHunwJm4e9yWUzetRsL1e2ze1ibPT4EJURm1vH2OhzLWhlBjGDwGHi7AwrwBFUh23bPqcd5ElNkhFgBzDLZbLIaAd2otqa5IHTTv6BJskOl0kiZxfJHtxzmWRIk6TMV/J4ZpHswdc0hVtSJqlmLF8WrH2IabhVasToQBTB6C5gL3ANeIGaZAwDV4ENOerygm4M6ZNu4Gad3KNxEfVwKATefQhpdAuwD/hTJ+/4uAucBTYDkzzpok5+ZyTNnAZdJhjDgYRcJnEb9VzGB959OJqQ4LDLBDU2JuSxiSfAVA/6vPtQQU01v9WiB/fPLirAM9wYXUU9w3BNCB8Adf/0NUnZgDuTqygjpnjSauyD6fDOZye43nF9bcAax3WOYuxDTOPoTg91LvRQpxUxGd1ekDqtiMnoiR7qjGaxISajn3uoc8BDnVbEZPQND3Xe8lBn4VmK2+HdL2Bm0BYUiH7cGX0hsPa6xHTrALcdYjMtsxkxHbe3jiowLWgL6hDbFe2SKvA7bxGx8gR3V/P1wNoLxUbgL9lNHgEWBdZeOLaS3ehNwVUXkDbgI/YmvwcmB1ddULZjb/S2HPQWlhbgEuYm99F8b09lZgbwkPQmP6iVESyYAzylsckDwNycNKYi9gnLAHAmxe9OoU5ItMRudGkQowNRBKPTjCJkpJGRicAdGneGt/Gz5tgUtAHnST+8O0dEi7FFoAJsAR5jPmF5VCsrhmuYAKwCTgNfyP5Q6QtqWLimVnfT0wkcAl6T3VxdvEW9BbogUJuiohO4jD9zddELzA/QvijYBfwkvMmj8bOmodTsJj+Dx8cez23NjdW4WaZyGWu9tjgHWnG78OoqHlGM2XFq1pG/qble1aZn0/bsx/wXtdFm7EPaAhXUWHQQtaPWEcxmX4sNdYXERFtWHxpykP//cvsNyvuckGSNlwF9aMibhARvDcr/SCgfS4yE8EH26zDD2odSDW1iRowOhBgdCDE6EGJ0INIaPaQ53kzficzWHE+1HVtao19pjjfTe8i6tppMeBpyAv1gfycRfXPtgXbUQoFu0uV0c9tuTZI0UfQd0RvFMteisn5sWZYd0cdGrw9RHajPFmxFlW2j7nd4fFW4C3uzy2T0OwI8+u1AfcJgKq4sO6L3Evil9+U1offQb3tcpfg7og+hNjDswUPHJwiCIAiCIAiCkDv/AKYWg6NXfn1HAAAAAElFTkSuQmCC')
+                h1 Авторизация
+                span
+                .login-inputs
+                button.button#loginEnter Войти

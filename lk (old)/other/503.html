@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Упс, проблемы...</title>
+
+		<link rel='icon' href='public/styles/images/favicon.ico' sizes='48x48' type='image/x-icon'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<style>
+			*, body, head
+			{
+				margin: 0;
+				padding: 0;
+			}
+			body
+			{
+				height: 100vh;
+				width: 100vw;
+			}
+
+			.header
+			{
+				width: calc(100% - 20px);
+				height: 60px;
+
+				background-color: white;
+				color: black;
+
+				box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.20);
+				z-index: 5;
+
+				display: flex;
+				justify-content: center;
+
+				padding: 0 10px;
+
+				position: relative;
+				z-index: 1000;
+			}
+
+			.header .header-left {
+				display: flex;
+				align-items: center;
+
+				height: 100%;
+			}
+			.header-logo {
+				width: 150px;
+				height: 100%;
+
+				position: relative;
+
+				display: flex;
+				align-items: center;
+			}
+			.header-logo svg {
+				width: 100%;
+				height: auto;
+			}
+
+			.wrapper
+			{
+				width: 100%;
+				height: calc(100% - 60px - 100px);
+			}
+
+			.not-found
+			{
+				width: 500px;
+				max-width: 90%;
+
+				margin: 0 auto;
+				margin-top: 100px;
+
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.not-found svg
+			{
+				width: 350px;
+				height: auto;
+			}
+			.not-found h3
+			{
+				width: 100%;
+				text-align: center;
+
+				font-size: 20px;
+
+				margin-top: 40px;
+			}
+			.not-found h3 span
+			{
+				color: grey;
+				font-size: 17px;
+			}
+			.not-found a
+			{
+				margin-top: 20px;
+
+				background-color: #fda605;
+				color: white;
+
+				padding: 15px 30px;
+				border-radius: 6px;
+
+				transition: .3s;
+			}
+			@media screen and (max-width: 330px)
+			{
+				.not-found h3
+				{
+					font-size: 17px;
+				}
+				.not-found h3 span
+				{
+					font-size: 15px;
+				}
+			}
+				
+		</style>
+
+		<div class="header">
+			<div class="header-left">
+				<div class="header-logo">
+					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 180.000000" preserveAspectRatio="xMidYMid meet">
+
+						<g transform="translate(0.000000,180.000000) scale(0.100000,-0.100000)" fill="#fda605" stroke="none">
+							<path d="M1907 1186 c-94 -35 -157 -106 -183 -206 -61 -237 147 -431 390 -366
+							69 19 146 74 146 105 0 10 -17 27 -40 40 l-40 22 -31 -25 c-56 -47 -150 -56
+							-220 -20 -35 18 -79 71 -79 95 0 18 11 19 223 21 l222 3 -1 75 c0 56 -6 85
+							-21 115 -28 53 -81 107 -129 131 -50 24 -183 30 -237 10z m205 -121 c31 -24
+							72 -91 63 -105 -4 -6 -70 -10 -166 -10 l-159 0 0 24 c0 29 33 72 74 98 42 26
+							149 22 188 -7z"/>
+							<path d="M2415 1170 c-7 -11 -7 -521 -1 -528 9 -8 72 -7 84 1 8 7 12 50 12
+							153 0 109 3 144 13 144 6 -1 59 -68 116 -150 57 -83 108 -151 115 -151 6 -1
+							18 -2 26 -3 8 -1 23 2 33 7 16 7 17 28 15 270 l-3 262 -50 0 -50 0 -3 -152
+							c-1 -84 -6 -153 -11 -153 -4 0 -54 66 -111 148 -57 81 -109 150 -114 154 -16
+							11 -64 10 -71 -2z"/>
+							<path d="M2937 1173 c-4 -3 -7 -122 -7 -264 0 -283 -2 -276 61 -273 46 2 49 9
+							49 119 0 57 4 106 8 109 4 2 47 -47 95 -110 48 -63 92 -114 97 -115 6 0 24 -1
+							40 -1 17 0 35 1 40 1 25 2 4 42 -80 153 -53 69 -88 124 -83 131 3 7 42 58 85
+							115 46 59 78 110 76 120 -3 13 -13 17 -48 17 l-45 0 -83 -105 c-46 -58 -88
+							-106 -93 -108 -5 -2 -9 39 -9 91 0 122 -2 127 -54 127 -24 0 -46 -3 -49 -7z"/>
+							<path d="M3422 1168 c-9 -9 -12 -76 -12 -265 0 -222 2 -254 16 -260 25 -10 58
+							-10 77 -1 16 8 17 29 15 271 l-3 262 -40 3 c-23 2 -46 -3 -53 -10z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="not-found">
+				<!-- <img src="503.png" alt="Тех. работы!"> -->
+				<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.000000 447.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,447.000000) scale(0.100000,-0.100000)" fill="#fda605" stroke="none">
+						<path d="M2730 4083 c-33 -6 -1765 -1734 -1786 -1782 -23 -55 -18 -125 12
+						-173 38 -60 1710 -1725 1756 -1749 49 -25 118 -24 170 2 50 26 1741 1709 1763
+						1756 17 36 20 129 4 170 -16 42 -1712 1736 -1764 1762 -40 20 -93 25 -155 14z
+						m123 -68 c18 -9 416 -399 885 -868 811 -811 854 -855 859 -894 3 -23 2 -54 -2
+						-70 -8 -32 -1694 -1722 -1744 -1748 -37 -19 -59 -19 -102 -1 -36 15 -1692
+						1661 -1735 1724 -30 44 -31 94 -2 135 37 53 1707 1711 1736 1724 37 17 68 16
+						105 -2z"/>
+						<path d="M2598 3030 c-14 -4 -51 -24 -82 -45 -40 -26 -61 -35 -77 -30 -17 6
+						-32 -4 -75 -46 -38 -38 -57 -50 -62 -42 -6 9 -26 -5 -66 -46 -39 -39 -54 -61
+						-46 -66 8 -5 -2 -21 -30 -50 -35 -35 -42 -49 -37 -70 3 -18 -1 -33 -13 -45
+						-17 -17 -19 -16 -47 11 l-28 29 -69 -69 -68 -68 122 -122 121 -121 65 64 c35
+						35 64 67 64 72 0 4 -11 20 -25 34 -24 25 -24 28 -9 41 9 7 32 14 52 15 27 1
+						43 10 73 41 l37 40 183 -183 184 -184 -117 -117 -118 -118 -57 3 c-160 9 -293
+						-117 -293 -278 0 -33 3 -60 7 -60 4 0 53 46 109 101 l102 102 98 -97 99 -96
+						-104 -104 c-102 -103 -104 -105 -77 -112 36 -9 121 3 160 23 17 8 54 40 83 69
+						43 45 54 64 63 111 7 31 10 75 7 98 l-6 41 103 103 103 103 256 -256 c175
+						-175 262 -256 277 -256 29 0 170 141 170 170 0 15 -80 102 -256 277 l-256 256
+						114 114 113 114 43 -6 c46 -7 137 15 180 43 92 60 127 136 123 272 l-1 35
+						-105 -105 -105 -104 -31 29 c-51 48 -159 160 -159 165 0 3 45 50 101 105 83
+						83 97 101 82 106 -55 22 -166 -8 -227 -62 -65 -58 -96 -126 -96 -213 l0 -71
+						-133 -133 -134 -134 -181 183 -182 182 40 43 c27 29 40 53 40 71 0 30 33 58
+						97 83 38 14 120 9 185 -12 40 -14 50 -14 65 -2 17 13 14 17 -37 63 -30 28 -71
+						58 -90 68 -19 10 -37 21 -40 25 -8 10 -90 28 -125 27 -16 0 -42 -4 -57 -9z"/>
+					</g>
+				</svg>
+				<h3> Кажется у нас ведутся технические работы.<br><br><span>Пожалуйста, подождите не много.<br>Возможно Мы загружаем что-то новое...</span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,324 @@
+@import '../../rules/variables.scss';
+
+.dialog
+{
+    min-width: calc(330px - 50px);
+
+    background-color: #0D0E1B;
+    border-radius: 8px;
+
+    color: white;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: $zindex_dialog;
+
+    padding: 0 25px;
+}
+.dialog header
+{
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #86868D;
+
+    font-size: 14px;
+    position: relative;
+}
+.dialog header:before,
+.dialog .dialog-btns:before
+{
+    position: absolute;
+
+    display: block;
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #9494944D;
+    border-radius: 8px;
+
+    left: 0;
+}
+.dialog header:before
+{
+    bottom: 0;
+}
+.dialog .dialog-section
+{
+    width: 100%;
+
+    padding: 20px 0;
+    position: relative;
+
+    max-height: 800px;
+
+    // overflow: auto;
+
+    & * {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+.dialog .dialog-section.dialog-section-tablist,
+.dialog .dialog-section.dialog-section-list {
+    max-width: none;
+    overflow: auto;
+}
+.dialog .dialog-section::-webkit-scrollbar {
+    display: none;
+
+    width: 5px;
+    height: 2px;
+
+    background-color: transparent;
+}
+.dialog .dialog-section::-webkit-scrollbar-thumb {
+    background-color: #222544;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #222544;
+}
+
+.dialog .dialog-section.dialog-section-list
+{
+    max-height: 350px;
+}
+.dialog .dialog-section.dialog-section-list table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.dialog .dialog-section.dialog-section-list tbody,
+.dialog .dialog-section.dialog-section-list thead {
+    width: 100%;
+}
+.dialog .dialog-section.dialog-section-list tr,
+.dialog .dialog-section.dialog-section-tablist tr
+{
+    width: 100%;
+    padding: 15px 10px;
+
+    background-color: #181a34;
+
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+.dialog .dialog-section.dialog-section-tablist thead tr {
+    background-color: transparent;
+}
+.dialog .dialog-section.dialog-section-list tr:nth-child(even)
+{
+    background-color: #222544;
+}
+.dialog .dialog-section.dialog-section-list tr.dialog-section-list-select
+{
+    // background: linear-gradient(149.53deg, #39C54F -7.99%, #199125 79.5%);
+    background: #81181c;
+}
+.dialog .dialog-section.dialog-section-list tbody tr,
+.dialog .dialog-section.dialog-section-tablist thead tr
+{
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+
+    width: 100%;
+
+    // display: flex;
+    // align-items: center;
+}
+.dialog .dialog-section.dialog-section-tablist tbody tr th,
+.dialog .dialog-section.dialog-section-tablist thead tr th
+{
+    font-size: 14px;
+    font-weight: 500;
+
+    // text-align: center;
+    white-space: nowrap;
+
+    padding: $padding * 4;
+    // width: 100%;
+}
+.dialog .dialog-section.dialog-section-tablist thead
+{
+    background-color: #0D0E1B;
+    cursor: default;
+
+    padding: 15px 10px;
+
+    position: sticky;
+    z-index: 2;
+
+    top: -20px;
+    left: 0;
+}
+.dialog .dialog-section.dialog-section-tablist thead tr th {
+    // opacity: .5;
+}
+.dialog .dialog-section.dialog-section-tablist thead tr th:last-child,
+.dialog .dialog-section.dialog-section-tablist tbody tr th:last-child {
+    text-align: right;
+}
+.dialog .dialog-section.dialog-section-tablist thead tr th:first-child,
+.dialog .dialog-section.dialog-section-tablist tbody tr th:first-child {
+    text-align: left;
+}
+.dialog .dialog-section.dialog-section-tablist tbody tr th + th,
+.dialog .dialog-section.dialog-section-tablist thead tr th + th {
+    margin-left: $margin * 10;
+}
+
+
+
+
+
+.dialog .dialog-section.dialog-section-list div
+{
+    width: 100%;
+    padding: 15px 10px;
+
+    background-color: #181a34;
+
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+.dialog .dialog-section.dialog-section-list div:nth-child(even)
+{
+    background-color: #222544;
+}
+.dialog .dialog-section.dialog-section-list div.dialog-section-list-select
+{
+    // background: linear-gradient(149.53deg, #39C54F -7.99%, #199125 79.5%);
+    background: #81181c;
+}
+
+
+
+
+
+.dialog .dialog-section.dialog-section-input
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dialog .dialog-section.dialog-section-input .dialog-input {
+    width: 100%;
+    position: relative;
+}
+.dialog .dialog-section.dialog-section-input input
+{
+    width: 100%;
+
+    margin-top: 15px;
+    background-color: #222544;
+
+    border: 0;
+    border-radius: 4px;
+
+    color: white;
+
+    padding: 15px 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dialog .dialog-btns
+{
+    padding-top: 25px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.dialog .dialog-btns:before
+{
+    top: 0;
+}
+.dialog .dialog-btns button
+{
+    padding: 12px 50px;
+    margin: 0 5px;
+
+    background: linear-gradient(149.53deg, #39C54F -7.99%, #199125 79.5%);
+    color: white;
+
+    border: 0;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+.dialog .dialog-btns button.dialog-btns-closed
+{
+    background: linear-gradient(274.23deg, #B80808 21.13%, #FA0404 87.18%);
+}
+
+
+
+.dialog {
+    & .dialog-input {
+        & .dialog-error {
+            position: absolute;
+
+            top: calc(50% + 8px);
+            right: -15px;
+
+            transform: translateY(-50%) translateX(100%);
+
+            white-space: nowrap;
+
+            background-color: rgb(194, 91, 91);
+            border-radius: $borderRadius / 1.2;
+
+            padding: $padding * 1.5 $padding * 2;
+            font-size: $fontsize - 1px;
+
+            opacity: 0;
+            visibility: hidden;
+
+            color: white;
+
+            &.dialog-error-show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:before {
+                display: block;
+                content: "";
+
+                position: absolute;
+
+                top: 50%;
+                left: -4px;
+
+                transform: translateY(-50%) rotate(45deg);
+
+                background-color: inherit;
+                border-radius: $borderRadius / 2;
+
+                width: 12px;
+                height: 12px;
+
+                z-index: -1;
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+@import '../../rules/variables.scss';
+
+.speedometr {
+    position: absolute;
+    z-index: $zindex_null;
+
+    right: $margin * 10;
+    bottom: $margin * 8;
+
+    & .mini {
+        & .speedCount {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            & .wear {
+                display: flex;
+                align-items: center;
+                gap: $padding * 2;
+
+                & .wearStatus {
+                    display: flex;
+                    flex-direction: column;
+
+                    & svg {
+                        margin-bottom: $margin * 3;
+                        font-size: $fontsize + 8px;
+                        transform: translateX(-3px);
+                    }
+                    
+                    & section {
+                        display: flex;
+                        flex-direction: column-reverse;
+
+                        width: 10px;
+                        height: 80px;
+
+                        border-radius: 2px;
+                        background-color: #00000027;
+
+                        overflow: hidden;
+
+                        & div {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &.health {
+                        & svg {
+                            color: #83ff48;
+                        }
+                        & section {
+                            & div {
+                                background-color: #83ff48;
+                            }
+                        }
+                    }
+                    &.fuel {
+                        & svg {
+                            color: #2187c8;
+                        }
+                        & section {
+                            & div {
+                                background-color: #2187c8;
+                            }
+                        }
+                    }
+                }
+            }
+            & .speed {
+                &, & span {
+                    font-size: $fontsize + 68px;
+                    line-height: $fontsize + 50px;
+
+                    font-family: 'Rubik';
+                }
+
+                color: white;
+                text-align: right;
+
+                & span {
+                    color: #00000026;
+                }
+            }
+        }
+        & .speedFill {
+            margin-top: $margin * 2;
+
+            width: 220px;
+            height: 10px;
+
+            border-radius: 3px;
+            background-color: #0000005C;
+
+            overflow: hidden;
+
+            & div {
+                background-color: #FFB648;
+                height: 100%;
+            }
+        }
+        & .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-top: $margin * 2;
+            
+            & .status {
+                display: flex;
+                align-items: center;
+                gap: $padding;
+
+                & svg {
+                    font-size: $fontsize + 10px;
+                }
+                & img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                & section:not(.belt) {
+                    opacity: .36;
+                    & svg {
+                        color: black;
+                    }
+
+                    &.on {
+                        opacity: 1;
+                        & svg {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            & .nopark {
+                background-color: #cd1d1d;
+                padding: $padding;
+
+                border-radius: 4px;
+
+                & h1 {
+                    color: white;
+                    font-family: 'Rubik';
+                    font-size: $fontsize + 4px;
+
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

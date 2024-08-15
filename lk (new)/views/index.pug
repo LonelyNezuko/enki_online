@@ -1,0 +1,165 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+
+        link(rel="stylesheet", href="/styles/_main.css")
+
+        script(type='text/javascript', src='/js/modules/jquery.js')
+        script(type='text/javascript', src='/js/modules/selectmenu.js')
+        script(type='text/javascript', src='/js/modules/notf.js')
+        script(type='text/javascript', src='/js/modules/dialog.js')
+        script(type='text/javascript', src='/js/modules/moment.js')
+        script(src='/js/modules/socket.io.js')
+
+        title Enki Online - Личный Кабинет
+        link(rel='icon', href='/images/favicon.ico', sizes='48x48', type='image/x-icon')
+
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    body
+        script(type='text/javascript', src='/js/modules/loading.js')
+
+        script(type='module', src='/js/_main.js')
+
+        .dialog-wrap
+            .dialog
+                h1
+                h2
+                .dialog-inputs
+                .dialog-btns
+                    button.button
+                    button.button
+        .menu
+            .menu-top
+                a(href="/account")
+                    img(src="/images/logo.png", alt="Enki Online - Логотип")
+                //button
+                    span
+                    span
+                    span
+
+            .menu-nav
+                a(href='/account').menu-nav-item
+                    svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                    span Мой аккаунт
+                a(href='/account/settings').menu-nav-item
+                    svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M18.7345 12.014C18.7735 11.689 18.7995 11.351 18.7995 11C18.7995 10.649 18.7735 10.311 18.7215 9.98598L20.9185 8.26998C21.1135 8.11398 21.1655 7.82798 21.0485 7.60698L18.9685 4.00598C18.8385 3.77198 18.5655 3.69398 18.3315 3.77198L15.7445 4.81198C15.1985 4.39598 14.6265 4.05798 13.9895 3.79798L13.5995 1.04198C13.5605 0.781975 13.3395 0.599976 13.0795 0.599976H8.91955C8.65955 0.599976 8.45155 0.781975 8.41255 1.04198L8.02255 3.79798C7.38555 4.05798 6.80055 4.40898 6.26755 4.81198L3.68055 3.77198C3.44655 3.68098 3.17355 3.77198 3.04355 4.00598L0.963546 7.60698C0.833546 7.84098 0.885546 8.11398 1.09355 8.26998L3.29055 9.98598C3.23855 10.311 3.19955 10.662 3.19955 11C3.19955 11.338 3.22555 11.689 3.27755 12.014L1.08055 13.73C0.885546 13.886 0.833546 14.172 0.950546 14.393L3.03055 17.994C3.16055 18.228 3.43355 18.306 3.66755 18.228L6.25455 17.188C6.80055 17.604 7.37255 17.942 8.00955 18.202L8.39955 20.958C8.45155 21.218 8.65955 21.4 8.91955 21.4H13.0795C13.3395 21.4 13.5605 21.218 13.5865 20.958L13.9765 18.202C14.6135 17.942 15.1985 17.591 15.7315 17.188L18.3185 18.228C18.5525 18.319 18.8255 18.228 18.9555 17.994L21.0355 14.393C21.1655 14.159 21.1135 13.886 20.9055 13.73L18.7345 12.014ZM10.9995 14.9C8.85455 14.9 7.09955 13.145 7.09955 11C7.09955 8.85498 8.85455 7.09998 10.9995 7.09998C13.1445 7.09998 14.8995 8.85498 14.8995 11C14.8995 13.145 13.1445 14.9 10.9995 14.9Z')
+                    span Настройки аккаунта
+
+                //-.menu-nav-group.menu-nav-group-report
+                    h1 Жалобы
+                    a(href='/report').menu-nav-item
+                        svg(viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemMyReportsSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='24' height='24')
+                            rect(width='24' height='24' fill='url(#menuNavItemMyReportsSVGPattern)')
+                          g(mask='url(#menuNavItemMyReportsSVGMask)')
+                            rect(width='24' height='24')
+                          defs
+                            pattern#menuNavItemMyReportsSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemMyReportsSVGImage' transform='scale(0.0104167)')
+                            image#menuNavItemMyReportsSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAACQElEQVR4nO3dQU4TYRjG8T8ukIUuPIIJoocAEgNcQU/gXeQI4A08gDEYSHsJwAuwIbqx+7pomsyCbpj36/O97zy/ZDYshs7zHxoIaQtmZmZmZmYxzoBvwD2wAJZJjwVwB1wCp6ELNXIAzNEP1+qYAe/C1gp2DPxFP1Lr4w9wFLRZmAOmMf4wwn7IckFu0I+y7WMWslyAM/RjqI6TseO9GHsC4HPAObL6NPYEEQEOA86R1fHYE+wEPIh/wKuA82S0AF6POUFEgGXAOTIbtWHEU5CN4ABiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiVQP8Ar4AH1i9hnmn4SGnfr+G4fGbgFevZ6MefX3MgTeNr7VL6uHXd/4kxwf9+EvgY/Or7Jh6/Kv2l9hOhd+Cvm/4+i5wDjwQH/0H8LLJ1TyD+ifg/YbH9bXR9+tqfNAH2PReRS3u/J/A3jN3akYdYFuPq8vxYRoBuh0f6gfoenyoHaD78aFugBTjQ80AacaHegFSjQ+1AqQbH+oESDk+1AiQdnzIHyD1+JA7QPrxIW+AEuNDzgBlxofV29dnClBqfFh9VliWAN39MyXCJTkClLvz107pP0DJO3/omn4DlL3zh94Cj/QXYBLjrx2x+oS5XgKUf9p5yj7b/1S9TSY3/tAJcAHc0v7vBDMzMzMzs1T+A7tgO4PuG/YTAAAAAElFTkSuQmCC')
+                        span Мои жалобы
+                    a(href='/report#create').menu-nav-item
+                        svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemAddReportSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='22' height='22')
+                            rect(width='22' height='22' fill='url(#menuNavItemAddReportSVGPattern)')
+                          g(mask='url(#menuNavItemAddReportSVGMask)')
+                            rect(width='22' height='22')
+                          defs
+                            pattern#menuNavItemAddReportSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemAddReportSVGImage' transform='scale(0.0104167)')
+                            image#menuNavItemAddReportSVGImage(width='96' height='96' xlink:href='data:image/png;base64,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')
+                        span Написать жалобу
+            //
+            .menu-exit#accountRemoveCookies
+                svg(viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M7.93083 13.8892L9.45833 15.4167L14.875 10L9.45833 4.58333L7.93083 6.11083L10.7258 8.91667H0.25V11.0833H10.7258L7.93083 13.8892ZM17.5833 0.25H2.41667C1.21417 0.25 0.25 1.225 0.25 2.41667V6.75H2.41667V2.41667H17.5833V17.5833H2.41667V13.25H0.25V17.5833C0.25 18.775 1.21417 19.75 2.41667 19.75H17.5833C18.775 19.75 19.75 18.775 19.75 17.5833V2.41667C19.75 1.225 18.775 0.25 17.5833 0.25Z' fill='white')
+                span Выйти
+
+        .search-wrap
+        .header
+            .header-left
+                .search
+                    svg(viewbox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M21 22L16.1667 16.925M18.7778 10.3333C18.7778 15.488 14.7981 19.6667 9.8889 19.6667C4.9797 19.6667 1 15.488 1 10.3333C1 5.17868 4.9797 1 9.8889 1C14.7981 1 18.7778 5.17868 18.7778 10.3333Z' stroke='#656565' stroke-width='1.70417' stroke-linecap='round' stroke-linejoin='round')
+                    input(type="text" placeholder="Поиск..." maxlength="144")
+                    button(data-type="accounts") Аккаунты
+            .header-right
+                //-a(href="/messages").header-item#headerItemMessages
+                    svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        mask#headerItemMessagesSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                            rect(width='26' height='26' fill='url(#headerItemMessagesSVGPattern)')
+                        g(mask='url(#headerItemMessagesSVGMask)')
+                            rect(width='26' height='26')
+                        defs
+                            pattern#headerItemMessagesSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#headerItemMessagesSVGImage' transform='scale(0.0104167)')
+                            image#headerItemMessagesSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAD70lEQVR4nO2dz28MYRjHP/2BStBetC4loXrQ+FUXmuBAExeJxIHEf0G4kHCjJZpG/Dg7Sg9ChXaFRCmRcBBSJC4k6KFFLY2yW4fZQ7Pdd+bt7jvzzM48n+S5bJ7ded7vd96Z2d2Z5wVFURRFURRFURRFSRM1EW5rM3AQ6AI6gCagIcLt2zAD/AK+AO+BV8BD4CnwR7CuitgFPAJmqzgmgWvAVsfahEoDXtF55AV0FXlgENjoUKdQaAKeIC9YWPEXOA8scSWYS5aSbPHnxktgnRvZ3HEZeWGijAlguxPlFBYBzXiCHsO7ePhHsAlTwDaBelNBM9AD/MbfhHFgrVCNqaAVGMDfhBfE9MScFGqAk0AOswm9URfVDpwAMsAYkPUpLq6RLdSeAY4D6wPGfBizCTNE9D2hA7htKCIJkQE6fcZ/yue9t6xVLIN6oB//aZiUyAF9hTEXU4P5nJDH++3LOU14e4a0MFHHENBYQo/VwLThPVcWoKsV9aRT/LkmlJoJvYb8CWCxtboW9AsMOm5xsYQuLZgPxzut1Q2g02cjaYocsKWEPo8N+aeDhK0NSijQs4DcJFMLnCvx+k1DvpMTcTvye17coq1Ioy5D3usgcW326gMWOWmjWJMPhryWoA+yMaDbIidtFGvy3ZC3POiDbAxYY5GTNoo1Mf1hH/jDnM1dET+BZRZ5aSLL/L171pDrq7GNAaYPTjvF2pVlgF5aCqMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGhMt0UIIaEC6TQQlqQLi8CUpQA8JlNChBDQiXgaAENSA8HmBxCNI748rH7864PLAb78ENX3QGhMNVLMQHnQGVYJoBI8BevAe2A9EZ4JYRYD+W4tsyhfwjQXGLqSKNaoFLhNSE8J3gQOMaYxUpOgebQ9BHVxtLEM40sTFg2NXGEsRQlBtrQ37Kxy0i74w15KjwJMTdCrUsi01oq4LZggZi3XP7LApMelyoWMUKqAPulCgqLTFM6XY1kdJIOs8H94AVDvRzQj1e35w0nBNyeIedOifKOWYDcAN5kcKKDKV7AznFxQIObXjdQ7rxmpu2Un2tDbLAp0IM4/X/MXVAqRrC3kN/AEciG00VEqb4z5nfNEkpIgzh83jNA512I0wqrsUfB/ZFOoIqx6X4w8CqaMuvflwIPwOcQf86LYtKxX9LlS0bFTcqEf861fddInaUI7xe2zvkGwsT/xm6BotT7mMnfA44i7eCkeKQboKXMfwM7JEqMA0cxbwO1yCwUq609LAD7z75r3hLxY4Ch4h2KV1FURRFURQlVvwHFuvqWb6oABsAAAAASUVORK5CYII=')
+                //
+                .header-item#headerItemNotf
+                    svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      mask#headerItemNotfSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                        rect(width='26' height='26' fill='url(#headerItemNotfSVGPattern)')
+                      g(mask='url(#headerItemNotfSVGMask)')
+                        rect(width='26' height='26')
+                      defs
+                        pattern#headerItemNotfSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                          use(xlink:href='#headerItemNotfSVGImage' transform='scale(0.0104167)')
+                        image#headerItemNotfSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFIUlEQVR4nO2dTWhcVRTHf6mOiR8YbaK1xlpF29qALtTiQgRFi6i0oki7Ed1YaMEUxIoiiLhVGxW6ERFB3fhFt62lm6oYafxKok0FFQXFojQmY5W2ycTFnWpoM++cN/e+OS+d84OzuvP+59xz5r17331f4DiO4ziO4ziOU346ga3AEPBX3YaAgXqbUyB9wFfAbAP7sv6btqYX2A6MAmPADuCSBLqdZCd/bhFS7AlLCbGPEfryArA4gW6hXA78wKlJ+QVYHqm9dR7dRvZopK/lwK/z6H4PLIvULoylwHc0TspbkfqfZWifbJ9G+no7Q/sgafbopPQQdtWspExG+qgK+nNtqmBfI8CFkT6ScQawBzkpx4AzI/xok3/CmqVSj1XS30Xouznb0SVkX6SfVhUA4COlj+cj/UTzALpAjwI3RPjpVfqZa70R/m4kxKzxc3+EnyiWAL8rApwGNjSh3w1sAT6ua+QtwDThn7wZOL8J/xuVfg8BFzWhH81ORXAzwEM5dZcALxLOcPMmvZFVCfP4i3PG8jBQU+i/n1M3mvsUQc0Cz+TQrADbyDfbyWtTwON1X1qeVWqvz6EZRYXs+f4J2wl0KDWvBD5RaKay/cAKZWwdwDsKzXHyFbZpBhTB/IT+uLuOYv/1WXvD3coYu4GfFZqxZ+AiXYRBJyuIGnC7Um8zzQ2wqWwa2KSMdS3yePBbPUeFsUkIYBZ4Tam1Bd0AV7TV0BfhDYXeI0qt3HQA3wrOq4Q1IYm7sP3nn2wzwL2KuC9Fnp2NA4sUWrlZKzieJcwYJFZhc8yXbArdwPycQkt7CM6FtPtVkReozgK+EHQsbRh5JrMYeS94XdDITScwITh9WaHztKBRBntC0Y8dgsYEiS+PrlcEvlLQ6AOOKHSsrYq83r9aobNO0AD0g8UdQvsw4eQsi6eAc5T+LDkPeS84QLg8mkXScWCE7GpvE7bvAf4RNMpkR4ALhD49KWh8LWyvpocwTcty1i9oPCZsX0YbEPp0nbB9jbgl8f+4U3B0CHnNZ1jQKKMNCX3qQF6Olw7dqjHgGqF9X91ZI/qA6xV+ysYasgfjWcL1hiykI0OSAowJ7behXxUtE4uAW4XfSH2XcqcqwFVC+0GhfY3CR1m5SWgfF9qvlhxoClAT2keFdnE3LDFS7FLfj0kONAX4MKPtR+AbYfsrFD7KihT7GOE6QSP2pAjibOBzTh3hZwgzJAlpCaPMdljRv3uYf5q+n4TXBrqBlwj3S04Ce4GbldtqbnIqqx1V9vGWek4mCffBDqK8ItiK2UnWFHUhUGiOCrlw4OjxAhjjBTDGC2CMF8AYL4AxXgBjvADGeAGM8QIY4wUwxgtgjBfAGC+AMV4AY7wAxngBjPECGOMFMMYLYIwXwBgvgDFeAGOKLEAX8GqB+q3iTeBc6yDysorwiI71nW2p7ABwbdIMFciDlPNB7Fj7mwJfQ5CCLuAV7BNVtJXykLQS+UnK08lGkJ+LbhkrCLdxWyel1XYYxRMwreAD7JNhZe/FJi/Frdd/Ep4faEcmiHyhd4rzgHY+mYvue4rk7U2gsVDZbR0AhJOudhyE/wAuS5C/JCwD3iU8I2WdmKJtkvAay9Ik33Ecx3GKYoq4AbPULISTqKx3MRS5bUtYCAXIelmIxK5kUbQx/TT3muPjKF6Y5Oho5kLPoEmkpykVwqFIm/zdtOhjCu1EhfB65ONkH3YG8eQXSj//fyy0WrdRwod/VhvG5TiO4ziO4ziOo+Jfsf2MlLjDOY4AAAAASUVORK5CYII=')
+                    .notfmenu
+                        .notfmenu-top
+                            h1 Уведомления
+                            a(href="/account/settings")
+                                svg(viewbox='0 0 19 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                  path(d='M15.1525 10.2409C15.181 10.0034 15.2 9.7564 15.2 9.4999C15.2 9.2434 15.181 8.9964 15.143 8.7589L16.7485 7.5049C16.891 7.3909 16.929 7.1819 16.8435 7.0204L15.3235 4.3889C15.2285 4.2179 15.029 4.1609 14.858 4.2179L12.9675 4.9779C12.5685 4.6739 12.1505 4.4269 11.685 4.2369L11.4 2.2229C11.3715 2.0329 11.21 1.8999 11.02 1.8999H7.98004C7.79004 1.8999 7.63804 2.0329 7.60954 2.2229L7.32454 4.2369C6.85904 4.4269 6.43154 4.6834 6.04204 4.9779L4.15154 4.2179C3.98054 4.1514 3.78104 4.2179 3.68604 4.3889L2.16604 7.0204C2.07104 7.1914 2.10904 7.3909 2.26104 7.5049L3.86654 8.7589C3.82854 8.9964 3.80004 9.2529 3.80004 9.4999C3.80004 9.7469 3.81904 10.0034 3.85704 10.2409L2.25154 11.4949C2.10904 11.6089 2.07104 11.8179 2.15654 11.9794L3.67654 14.6109C3.77154 14.7819 3.97104 14.8389 4.14204 14.7819L6.03254 14.0219C6.43154 14.3259 6.84954 14.5729 7.31504 14.7629L7.60004 16.7769C7.63804 16.9669 7.79004 17.0999 7.98004 17.0999H11.02C11.21 17.0999 11.3715 16.9669 11.3905 16.7769L11.6755 14.7629C12.141 14.5729 12.5685 14.3164 12.958 14.0219L14.8485 14.7819C15.0195 14.8484 15.219 14.7819 15.314 14.6109L16.834 11.9794C16.929 11.8084 16.891 11.6089 16.739 11.4949L15.1525 10.2409ZM9.50004 12.3499C7.93254 12.3499 6.65004 11.0674 6.65004 9.4999C6.65004 7.9324 7.93254 6.6499 9.50004 6.6499C11.0675 6.6499 12.35 7.9324 12.35 9.4999C12.35 11.0674 11.0675 12.3499 9.50004 12.3499Z', fill='#252525')
+                        .notfmenu-section
+
+                a(href="/account").header-item.header-item-select.header-item-username
+                    svg(viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z' fill='#1E1E1E')
+                    span 
+
+        script setTimeout(() => { $(document).trigger('_toRender', { pathname: '!{pathname}' }) }, 500)
+        .body
+            .notf
+
+        //.body_
+
+            //.accountsettings-changemail-wrap
+                .accountsettings-changemail
+                    .accountsettings-changemail-close
+                        span
+                        span
+                    svg(viewbox='0 0 86 86', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      rect(width='86', height='86', rx='10', fill='#97FFA1', fill-opacity='0.5')
+                      path(d='M45.4884 40.971C48.0104 41.283 49.9344 42.141 51.2604 43.545C52.5864 44.949 53.2494 46.704 53.2494 48.81C53.2494 50.396 52.8464 51.839 52.0404 53.139C51.2344 54.439 50.0124 55.479 48.3744 56.259C46.7624 57.013 44.7864 57.39 42.4464 57.39C40.4964 57.39 38.6114 57.117 36.7914 56.571C34.9974 55.999 33.4634 55.219 32.1894 54.231L34.3734 50.292C35.3614 51.124 36.5574 51.787 37.9614 52.281C39.3914 52.749 40.8604 52.983 42.3684 52.983C44.1624 52.983 45.5664 52.619 46.5804 51.891C47.6204 51.137 48.1404 50.123 48.1404 48.849C48.1404 47.575 47.6464 46.587 46.6584 45.885C45.6964 45.157 44.2144 44.793 42.2124 44.793H39.7164V41.322L45.9174 33.951H33.5154V29.7H52.1184V33.093L45.4884 40.971Z', fill='#2BBA13')
+                    //svg(viewbox='0 0 86 86', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      rect(width='86', height='86', rx='10', fill='#FFDC97', fill-opacity='0.5')
+                      path(d='M53.6394 52.71V57H33.5154V53.607L44.3574 43.311C45.5794 42.141 46.3984 41.127 46.8144 40.269C47.2564 39.385 47.4774 38.514 47.4774 37.656C47.4774 36.382 47.0484 35.407 46.1904 34.731C45.3324 34.055 44.0714 33.717 42.4074 33.717C39.6254 33.717 37.4934 34.666 36.0114 36.564L32.4624 33.834C33.5284 32.404 34.9584 31.299 36.7524 30.519C38.5724 29.713 40.6004 29.31 42.8364 29.31C45.8004 29.31 48.1664 30.012 49.9344 31.416C51.7024 32.82 52.5864 34.731 52.5864 37.149C52.5864 38.631 52.2744 40.022 51.6504 41.322C51.0264 42.622 49.8304 44.104 48.0624 45.768L40.7694 52.71H53.6394Z', fill='#FF9314')
+                    //svg(viewbox='0 0 86 86', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      rect(width='86', height='86', rx='10', fill='#FFDC97', fill-opacity='0.5')
+                      mask#accountsettingsChangeMailSVGMask(style='mask-type:alpha', maskunits='userSpaceOnUse', x='19', y='19', width='48', height='48')
+                        rect(x='19', y='19', width='48', height='48', fill='url(#accountsettingsChangeMailSVGPattern)')
+                      g(mask='url(#accountsettingsChangeMailSVGMask)')
+                        rect(x='19', y='19', width='48', height='48', fill='#FF9314')
+                      defs
+                        pattern#accountsettingsChangeMailSVGPattern(patterncontentunits='objectBoundingBox', width='1', height='1')
+                          use(xlink:href='#accountsettingsChangeMailSVGImage', transform='scale(0.0104167)')
+                        image#accountsettingsChangeMailSVGImage(width='96', height='96', xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAELklEQVR4nO2cTahVVRiGH/Xeq6WhhiRkWEYqqIgUFtiFyiAkcuDfoEmTQIeCE4c2iIgo6UoOImjQUMTJRZG0ErpUSD9iSUnpQDTSkPz/vXoarLNR9J5z1v7W2met7XkfeLmTfdf6vu/de6+99lpngxBCCCGEEEIIIYQQQgghxP0sAD4CDgPngEaP63yzFh82a1MZE4EPgFsZJJ2rbuKMGDDWuCUTgF0ZJFgX7cGdsNF4N4Ok6qZNpkq34O8MEqqbvvEp7Hifg3D3fVGOsz4HTfBs7GFguT2WnuMqsAE42elAXwNGcJfViyX+p1c5CqwBvq+i8XnAV6S/v+aoG8D7wCRzdT0ZB7wF/Jso0Rw1AiwMKaqFR4FPgdsBgddd54CN+D/MVMJLwO+kL0a3NQw8EaF+UZgEvANcI31hqtYpYHWcssVnLrCP9EWqQrdwt9xHolWrIopB+gzpixZLh4DnYxapG0yn/oP0FdyttT9ybUrRB7wBDOLO7rK8AvxB+mKW1R7gKUO+M4D3gI+JNEh/fldQXwPzDW1MBLZQj0H6H+BNQ45jzY9+MLRzH1fuCfAa7rK0zPjm4UxMXeSxdBv4DHfrLMszwP4x2ozyErNVwH8BrxnbXAecbtN2t/Un8Kohjz7cROxSm7aD6RT8DuAxQ7vTgSHSLnEW728sq1fPAj959BGMTyL/YZ+SDwK/efYTUyPYFtGn4k6cUc9+gimT1LfYXkr10/lSjqWQk2UlcKJkf8FYLushYLKhr6eBvYY+fTUMzDLE9Tiw09hnMNZkjwErjH2uxK0mxSr8SWCVIY7xwHrgQkDfwcQ46ywTkmmED9Ih728W457jQ/MPJsYZWNx3LcuZy4BfDX0eApYa+nsIN8+5bugzWwMK/Qg8Z4iheN6+6NHHZWAzNrNfxq3pxsw5mJjBNHDb94aAKYZY5uDe0bRqezfwpKHdmcAXkfLL3oBCx4HXjTGtxu06uNHUd9gG2XHA27g9PFXlGUxVgRXagXvMs9DXlIX5wIGIedTWgAZ3Fre7seeoHzdGXO1SbsF0I8hCP2N7cvFlEDjS5ZyC6WawDe4M0jHXXmPMKXrGgEKngLUR4o89q+4ZAwoNA7MNcc8ijx+VBJM6gQblJldlJm0yoKR+AV5oE+sS4GAGcT6wBjRwCyHbcbPigjnAJ/gvkmRjgM82kyguVsTp5t+ZSaNoT9sa192AOtC2xkm3VQsZkBwZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgfAy5VHsWDy4VOB/gYcCJCIL1Kx9r5GLAvQiC9ypcxGllEnovduWuUiF/R2p5BQnXTNlOlWzCAPtZXRvup4PvRA+S79yYXjeLO/OjFv5uFwFbcD+dy2f6XUhebtdhKgi8nCiGEEEIIIYQQQgghhBAif/4HH6PKnl6xpw8AAAAASUVORK5CYII=')
+                    h1 Изменение почты
+                    h2 Доступ утерян
+                    section
+                        //button.button(style="padding: 17px 60px;") У меня есть доступ к старой почте
+                        //button.button(style="padding: 17px 60px;") У меня нет доступа к старой почте
+
+                        //.input
+                            input#1(type="text" placeholder=" ")
+                            label(for="1") Введите новую почту
+                        //.textarea
+                            textarea#2(cols="30", rows="10" placeholder=" ")
+                            label(for="2") Опишите все, что знаете об аккауте (данные регистрации, первая машина, первый дом..), чтобы мы могли понять, что Вы полноправный владелец аккаунта
+
+                        .button.button Продолжить

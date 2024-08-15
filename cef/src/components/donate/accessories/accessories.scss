@@ -1,0 +1,15 @@
+@import '../../../rules/variables.scss';
+@import '../minix.scss';
+
+.donate {
+    & .accessories {
+        & .elem {
+            & .icon {
+                background-color: #236aad;
+                padding: $padding * 10 0;
+
+                border-radius: $borderRadius;
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+@import '../../../rules/variables.scss';
+@import '../minix.scss';
+
+.donate {
+    & .exchange {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        transition: .8s;
+        &.virt {
+            transform: translateX(-101%);
+        }
+        &.engold {
+            transform: translateX(101%);
+        }
+        &.show {
+            transform: none;
+        }
+
+        & ._coins {
+            position: absolute;
+            z-index: -1;
+            
+            & img {
+                width: auto;
+                height: auto;
+            }
+
+            &.top {
+                top: -60px;
+                left: -300px;
+            }
+            &.bottomLeft {
+                bottom: -30px;
+                left: -350px;
+            }
+            &.bottomRight {
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        &.engold {
+            & ._coins {
+                width: 100%;
+                height: 100%;
+
+                opacity: .8;
+                
+                & img {
+                    width: 100%;
+                    height: auto;
+                }
+                &.top {
+                    top: calc(50% + 90px);
+                    left: 50%;
+
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        & .wrap {
+            position: relative;
+            z-index: 2;
+
+            & .title {
+                @include donateText;
+                font-size: $fontsize + 18px;
+            }
+            & .desc {
+                & h1 {
+                    @include donateText;
+                    font-size: $fontsize;
+                    font-weight: 500;
+
+                    opacity: .6;
+                }
+                width: 340px;
+                white-space: nowrap;
+
+                margin: 0 auto;
+                margin-top: $margin;
+
+                position: relative;
+                & svg {
+                    position: absolute;
+
+                    right: 0;
+                    top: 50%;
+
+                    transform: translateY(-50%);
+                    font-size: $fontsize + 4px;
+
+                    cursor: pointer;
+                    opacity: .6;
+
+                    &:hover ~ .info {
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 2;
+                    }
+                }
+                & .info {
+                    position: absolute;
+                    z-index: 2;
+
+                    background-color: #0C0D1B;
+                    padding: $padding * 2;
+
+                    border-radius: $borderRadius;
+                    font-size: $fontsize - 2px;
+
+                    right: -38px;
+                    top: 30px;
+
+                    z-index: -1;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    transition: $transition;
+
+                    & span {
+                        font-size: $fontsize - 2px;
+                        opacity: .5;
+                    }
+
+                    &:before {
+                        position: absolute;
+
+                        display: block;
+                        content: "";
+
+                        top: -7px;
+                        right: 40px;
+
+                        width: 14px;
+                        height: 14px;
+
+                        background-color: inherit;
+                        z-index: -1;
+
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            & .input {
+                margin-top: $margin * 12;
+
+                display: flex;
+                align-items: center;
+
+                & section {
+                    & span {
+                        display: block;
+                        text-align: center;
+
+                        font-size: $fontsize - 2px;
+                        opacity: .6;
+                    }
+                    & input {
+                        margin-top: $margin * 2;
+
+                        background: #090912;
+                        border-radius: $borderRadius;
+
+                        text-align: center;
+                        font-size: $fontsize + 8px;
+                        font-weight: 700;
+
+                        padding: $padding * 3 $padding * 4;
+                        color: white;
+                    }
+
+                    &:last-child {
+                        & input {
+                            background: linear-gradient(46deg, #FFA800 0%, #FF881A 100%);
+                        }
+                    }
+                }
+                & h1 {
+                    margin: 0 $margin * 12;
+
+                    @include donateText;
+                    font-size: $fontsize + 18px;
+
+                    transform: translateY(10px);
+                }
+            }
+            & .course {
+                margin-top: $margin * 16;
+                text-align: center;
+
+                opacity: .6;
+                font-size: $fontsize - 2px;
+            }
+            & .buttons {
+                margin-top: $margin * 2;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & button {
+                    @include donateText;
+                    color: white;
+
+                    padding: $padding * 4 $padding * 16;
+                    border-radius: $borderRadius;
+
+                    background: #090912;
+                    opacity: .8;
+
+                    &.selected {
+                        background: linear-gradient(46deg, #FFA800 0%, #FF881A 100%);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

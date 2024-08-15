@@ -1,0 +1,23 @@
+@import '../../rules/variables.scss';
+
+#search {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    background-color: $theme_colorLightGrey;
+
+    width: 100%;
+    padding: $padding * 6;
+
+    z-index: $zindex_wrapper;
+
+    max-height: 400px;
+    overflow: auto;
+
+    & .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

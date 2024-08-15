@@ -1,0 +1,6 @@
+{
+    "spawnNames": [ "Стандартный", "Фракция", "Бизнес", "Дом" ],
+
+    "maxDialogsSubStringLength": 24,
+    "maxDialogsNameSubStringLength": 16
+}

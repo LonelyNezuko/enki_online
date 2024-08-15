@@ -1,0 +1,73 @@
+@import '../../rules/variables.scss';
+
+#notifyMenu {
+    position: absolute;
+
+    top: calc(100% + 15px);
+    right: 0;
+
+    background-color: white;
+    border: 1.5px solid $theme_colorSilver;
+
+    border-radius: $borderRadius;
+
+    width: 360px;
+    z-index: $zindex_hoverModal;
+
+    & header {
+        padding: $padding * 4;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid $theme_colorSilver;
+
+        & h1 {
+            font-weight: 600;
+        }
+        & .btn {
+            padding: 0;
+        }
+    }
+
+    & .body {
+        max-height: 550px;
+        overflow: auto;
+
+        & .notf {
+            padding: $padding * 4;
+
+            display: flex;
+            align-items: flex-start;
+
+            & .avatar {
+                border: 1px solid rgba(223, 223, 223, 0.5);
+            }
+            & .desc {
+                margin-left: $margin * 2;
+
+                & h1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    font-weight: 600;
+                    font-size: $fontsize - 1px;
+
+                    & .date {
+                        font-size: $fontsize - 3px;
+                        opacity: .6;
+                    }
+                }
+                & .text {
+                    margin-top: $margin;
+                    opacity: .8;
+
+                    text-align: left;
+                    font-size: $fontsize - 2px;
+                }
+            }
+        }
+    }
+}

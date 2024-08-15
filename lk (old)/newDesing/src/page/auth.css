@@ -1,0 +1,135 @@
+.auth
+{
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+    min-width: 950px;
+}
+.auth section
+{
+    width: 50%;
+    height: calc(330px - 80px);
+
+    padding: 40px 20px;
+}
+
+.auth section:nth-child(1)
+{
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border-radius: 10px 0 0 10px;
+}
+.auth section:nth-child(1) h1
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.auth section:nth-child(2)
+{
+    background-color: #efbf73;
+
+    border-radius: 0 10px 10px 0;
+    padding: 20px 20px;
+
+    position: relative;
+    height: calc(330px - 40px);
+}
+.auth section:nth-child(2) h1,
+.auth section:nth-child(2) h2
+{
+    color: white;
+    text-align: center;
+}
+.auth section:nth-child(2) h1
+{
+    font-size: 22px;
+}
+.auth section:nth-child(2) h2
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.auth section:nth-child(2) .input
+{
+    margin: 10px auto;
+}
+
+.auth section:nth-child(2) .auth-btns
+{
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.auth section:nth-child(2) .auth-btns a
+{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 7px;
+    color: #f7f7f7;
+}
+
+.auth section:nth-child(2) .auth-accounts
+{
+    width: 100%;
+    position: relative;
+}
+.auth section:nth-child(2) .auth-accounts h2
+{
+    margin-bottom: 5px;
+}
+.auth section:nth-child(2) .auth-accounts a
+{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 7px;
+    color: #f7f7f7;
+}
+.auth section:nth-child(2) .auth-accounts .select
+{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.auth .auth-error
+{
+    position: absolute;
+
+    background-color: #fb8787;
+    color: white;
+
+    padding: 7px 10px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -1;
+    transition: .3s;
+}
+.auth .auth-error.auth-error-show
+{
+    transform: translate(-50%, -100%);
+}

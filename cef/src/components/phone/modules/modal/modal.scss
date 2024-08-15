@@ -1,0 +1,63 @@
+@import '../../../../rules/variables.scss';
+
+.phone {
+    & .phoneModal {
+        position: absolute;
+        z-index: $zindex_modal;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .phoneModalWrapper {
+            background-color: #232323;
+            padding: $padding * 2;
+
+            border-radius: $borderRadius;
+            width: 80%;
+        }
+
+        & .body {
+            & h1 {
+                font-size: $fontsize - 2px;
+                text-align: center;
+            }
+            & input {
+                margin-top: $margin * 2;
+                padding: $padding;
+
+                border-radius: $borderRadius / 2;
+                color: white;
+
+                width: 100%;
+                background-color: #FFFFFF1A
+            }
+        }
+        & .buttons {
+            margin-top: $margin * 4;
+
+            display: flex;
+            justify-content: center;
+            gap: $padding * 2;
+
+            & button {
+                padding: $padding * 1.5 $padding * 6;
+                border-radius: $borderRadius / 2;
+
+                &:first-child {
+                    background-color: #FFFFFF0A;
+                    color: #FFFFFF4D;
+                }
+                &:last-child {
+                    background: linear-gradient(215.42deg, #FFFFFF 4.33%, #787878 86.82%);
+                }
+            }
+        }
+    }
+}

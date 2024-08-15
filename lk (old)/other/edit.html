@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Edit</title>
+</head>
+<body>
+	<style type="text/css">
+		*, body, html
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		body
+		{
+			width: 100vw;
+
+			display: flex;
+			justify-content: center;
+		}
+
+		.wrapper
+		{
+			margin-top: 150px;
+		}
+
+
+		.m-search-bg
+		{
+			position: fixed;
+
+			top: 0;
+			left: 0;
+
+			z-index: 1000;
+			background-color: rgba(0, 0, 0, .5);
+
+			opacity: 0;
+			visibility: hidden;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 100vw;
+			height: 100vh;
+		}
+		.m-search-bg.m-search-show
+		{
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.m-search
+		{
+			width: 600px;
+			max-width: 90%;
+
+			background-color: white;
+			box-shadow: 0 10px 13px 1px rgba(0, 0, 0, .15);
+
+			border-radius: 8px 8px 0 0;
+			overflow: hidden;
+		}
+
+		.m-search .m-search-title
+		{
+			background-color: #fda605;
+			color: white;
+
+			padding: 12px 15px;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			font-size: 18px;
+		}
+		.m-search .m-search-title div
+		{
+			font-size: 30px;
+
+			cursor: pointer;
+			transition: .2s;
+		}
+		.m-search .m-search-title div:hover
+		{
+			color: #eee;
+		}
+
+		.m-search .m-search-body
+		{
+			padding: 15px;
+		}
+		.m-search .m-search-body .m-search-find input
+		{
+			width: calc(100% - 40px);
+			padding: 15px 20px;
+
+			border: 0;
+			background-color: #eee;
+
+			border-radius: 4px;
+		}
+		.m-search .m-search-body .m-search-find input:focus
+		{
+			border: 0;
+			outline: 0;
+		}
+
+		.m-search .m-search-body .m-search-results
+		{
+			margin-top: 30px;
+			max-height: 400px;
+
+			overflow-x: auto;
+		}
+		.m-search .m-search-body .m-search-results section
+		{
+			width: 100%;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.m-search .m-search-body .m-search-results section + section
+		{
+			margin-top: 15px;
+			border-top: 1px solid #eee;
+
+			padding-top: 16px;
+		}
+		.m-search .m-search-body .m-search-results section span
+		{
+			font-size: 15px;
+		}
+
+		.m-search .m-search-btn
+		{
+			margin-top: 30px;
+			margin-bottom: 20px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row-reverse;
+
+			padding: 0 25px;
+		}
+		.m-search .m-search-btn button
+		{
+			background-color: transparent;
+			border: 0;
+
+			padding: 8px 15px;
+			border-radius: 5px;
+
+			cursor: pointer;
+			transition: .2s;
+
+			margin: 0 5px;
+		}
+		.m-search .m-search-btn button:hover
+		{
+			background-color: #ececec;
+		}
+
+		.m-search .m-search-btn button[data-id="accept"]
+		{
+			background-color: #fda605;
+			color: white;
+		}
+		.m-search .m-search-btn button[data-id="accept"]:hover
+		{
+			background-color: #ffb01e;
+		}
+
+
+		input.checkbox[type="checkbox"]
+		{
+			border: 3px solid silver;
+			border-radius: 5px;
+
+			width: 22px;
+			height: 22px;
+
+			cursor: pointer;
+			position: relative;
+
+			transition: .2s;
+			appearance: none;
+		}
+		input.checkbox[type="checkbox"]:disabled
+		{
+			cursor: not-allowed;
+		}
+		input.checkbox[type="checkbox"]:before
+		{
+			display: block;
+			content: "";
+
+			position: absolute;
+
+			top: 50%;
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+
+			width: 12px;
+			height: 12px;
+
+			background-color: #fda605;
+			border-radius: 2px;
+
+			opacity: 0;
+			visibility: hidden;
+			z-index: -1;
+
+			transition: .2s;
+		}
+		input.checkbox[type="checkbox"]:checked
+		{
+			border-color: #fda605;
+		}
+		input.checkbox[type="checkbox"]:checked:before
+		{
+			opacity: 1;
+			visibility: visible;
+			z-index: 1;
+		}
+	</style>
+
+	<div class="wrapper">
+		<div class="m-search-bg m-search-show">
+			<div class="m-search">
+				<div class="m-search-title">
+					Выберите игроков
+					<div>&times;</div>
+				</div>
+				<div class="m-search-body">
+					<div class="m-search-find">
+						<input type="text" placeholder="Начните вводить ник">
+					</div>
+					<div class="m-search-results">
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" checked class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" checked class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+						<section>
+							<span>Nezuko_Kamado</span>
+							<input type="checkbox" class="checkbox">
+						</section>
+					</div>
+				</div>
+				<div class="m-search-btn">
+					<button data-id="accept">Выбрать</button>
+					<button data-id="cancel">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

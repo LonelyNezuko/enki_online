@@ -1,0 +1,28 @@
+{
+  "name": "new-panel.enki-rp.ru",
+  "version": "1.0.0",
+  "description": "New Panel Enki Online",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "author": "MyAngelNezuko",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-generator": "^4.16.1",
+    "express-mailer": "^0.3.1",
+    "http-errors": "~1.6.3",
+    "js-sha256": "^0.9.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "node-localstorage": "^2.1.6",
+    "nodemon": "^2.0.6",
+    "pug": "2.0.0-beta11",
+    "request": "^2.88.2",
+    "socket.io": "^4.4.1",
+    "speakeasy": "^2.0.0"
+  }
+}

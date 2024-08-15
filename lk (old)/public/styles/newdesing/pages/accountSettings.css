@@ -1,0 +1,49 @@
+.accountsettings.accountsettings-flex
+{
+    display: flex;
+    align-items: center;
+}
+.accountsettings .accountsettings-item
+{
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accountsettings.accountsettings-flex .accountsettings-item
+{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.accountsettings:not(.accountsettings-flex) .accountsettings-item + .accountsettings-item
+{
+    margin-top: 8px;
+}
+.accountsettings .accountsettings-item section
+{
+    display: flex;
+    align-items: center;
+}
+.accountsettings .accountsettings-item section span
+{
+    margin-left: 8px;
+    font-weight: 500;
+}
+.accountsettings .accountsettings-item section svg
+{
+    width: 16px;
+    height: 16px;
+}
+.accountsettings .button
+{
+    margin-top: 17px;
+}
+.accountsettings .accountsettings-item.accountsettings-item-select
+{
+    cursor: pointer;
+    user-select: none;
+}

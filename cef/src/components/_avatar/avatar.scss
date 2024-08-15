@@ -1,0 +1,64 @@
+@import '../../rules/variables.scss';
+
+.avatar {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    // overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    user-select: none;
+
+    transition: $transition;
+
+    & .avatarWrapper {
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+        object-fit: cover;
+    }
+
+    &.avatar-medium {
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+    }
+    &.avatar-big {
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
+    }
+    &.avatar-megabig {
+        width: 160px;
+        min-width: 160px;
+        height: 160px;
+    }
+    &.avatar-min {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+    }
+
+
+    & .unread:before {
+        border: 5px solid #1A1A1A;
+        padding: $padding * 2;
+
+        top: 0;
+        right: -6px;
+    }
+}

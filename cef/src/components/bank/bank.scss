@@ -1,0 +1,593 @@
+@import '../../rules/variables.scss';
+
+.bank {
+    width: 1000px;
+    min-height: 560px;
+
+    background-color: #0C0D1B;
+    border-radius: $borderRadius;
+
+    position: absolute;
+    z-index: $zindex_fullsize;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    padding: $padding * 6;
+
+    color: white;
+    & * {
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    overflow: hidden;
+
+    & header {
+        padding: 0 $padding * 2;
+        padding-bottom: $padding * 6;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #ffffff50;
+
+        position: relative;
+        z-index: $zindex_notify;
+
+        & .logo {
+            & img {
+                width: auto;
+                height: auto;
+            }
+        }
+        & .close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            & svg {
+                color: white;
+                font-size: $fontsize + 30px;
+            }
+        }
+    }
+
+    & .body {
+        margin-top: $margin * 4;
+
+        & .cardmenu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+            width: 100%;
+
+            & .wrapper {
+                width: 330px;
+                & .cardlist {
+                    display: flex;
+                    align-items: center;
+
+                    width: 100%;
+                    overflow: hidden;
+
+                    & .card {
+                        min-width: 100%;
+                        transition: $transition;
+                    }
+                }
+
+                & .nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin-top: $margin * 4;
+                    gap: $padding;
+
+                    & button {
+                        width: 15px;
+                        height: 15px;
+
+                        border-radius: 50%;
+                        background-color: #C4C4C433;
+
+                        transition: $transition;
+
+                        &.selected,
+                        &:hover {
+                            background-color: #C4C4C4;
+                        }
+                    }
+                }
+
+                position: relative;
+                &:first-child:after {
+                    position: absolute;
+
+                    display: block;
+                    content: "";
+
+                    width: 2px;
+                    height: 70%;
+
+                    background-color: white;
+
+                    right: -$padding * 10;
+                    top: calc(50% - 12px);
+
+                    transform: translateY(-50%);
+                }
+
+                &:last-child {
+                    width: calc(100% - 330px - $padding * 20);
+                    margin-left: $padding * 20;
+                }
+            }
+
+            & .menulist {
+                width: 100%;
+                overflow: hidden;
+
+                display: flex;
+                align-items: center;
+
+                & .menu {
+                    min-width: 100%;
+                    height: 210px;
+    
+                    transition: $transition;
+    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    gap: $padding * 2;
+    
+                    & button {
+                        display: flex;
+                        align-items: center;
+    
+                        width: calc(100% / 2 - $padding);
+                        border-radius: $borderRadius;
+    
+                        background-color: #181926;
+                        color: white;
+    
+                        padding: $padding * 4;
+    
+                        & svg {
+                            font-size: $fontsize + 8px;
+                            min-width: 22px;
+                        }
+                        & h1 {
+                            margin-left: $margin * 2;
+                            white-space: nowrap;
+    
+                            font-family: 'Gilroy';
+                            font-weight: 500;
+    
+                            font-size: $fontsize + 2px;
+
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            & span {
+                                width: 100%;
+
+                                font-size: $fontsize - 4px;
+                                font-weight: 400;
+
+                                margin: 0;
+                                text-align: left;
+                            }
+                        }
+
+                        &.blocked {
+                            position: relative;
+                            & svg:last-child {
+                                position: absolute;
+                                right: $padding * 4;
+
+                                transform: translateY(3px);
+                            }
+
+                            opacity: .5;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .history {
+            margin-top: $margin * 8;
+
+            & .title {
+                font-size: $fontsize + 6px;
+                border-bottom: 1px solid white;
+
+                padding-bottom: $padding * 4;
+            }
+            & .list {
+                display: flex;
+                gap: $padding * 2;
+
+                margin-top: $margin * 4;
+                padding-bottom: $padding;
+
+                width: 100%;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    width: 2px;
+                    height: 8px;
+
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: $borderRadius;
+                    background-color: #181926;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+
+                & .elem {
+                    background-color: #C4C4C40A;
+                    border-radius: $borderRadius;
+
+                    display: flex;
+                    align-items: flex-start;
+
+                    padding: $padding * 3;
+                    min-width: 300px;
+
+                    & .icon {
+                        & img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    & .desc {
+                        margin-left: $margin * 4;
+                        width: 100%;
+
+                        & h1 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            margin-top: $margin * 2;
+                            white-space: nowrap;
+
+                            width: 100%;
+
+                            & .cash {
+                                color: #39C54F;
+                                font-weight: 500;
+
+                                &.remove {
+                                    color: #F05050;
+                                }
+                            }
+                        }
+                        & h2 {
+                            margin-top: $margin * 2;
+                            color: #5F5F5F;
+
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    & .modal {
+        & .action {
+            margin-top: $margin * 6;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $padding * 4;
+
+            & button {
+                padding: $padding * 4 0;
+                border-radius: $borderRadius * 1.5;
+
+                width: calc(100% / 2 - $padding * 12);
+                color: white;
+
+                &:first-child {
+                    background: linear-gradient(274.23deg, #B80808 21.13%, #FA0404 87.18%);
+                }
+                &:last-child {
+                    background: linear-gradient(116.1deg, #39C54F 22.11%, #199125 101.23%);
+                }
+            }
+        }
+        & .form {
+            margin-top: $margin * 4;
+
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid white;
+
+            & svg {
+                font-size: $fontsize + 6px;
+                min-width: $fontsize + 6px;
+            }
+            & input {
+                width: 100%;
+                background-color: transparent;
+
+                padding: $padding * 2;
+                color: white;
+
+                margin-left: $margin;
+
+                &:placeholder-shown ~ .clear {
+                    display: none;
+                }
+            }
+
+            & .clear {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                opacity: .4;
+                cursor: pointer;
+
+                & svg {
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+
+    & .modalIncash {
+        position: absolute;
+        z-index: $zindex_modal;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: #00000090;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .wrapper {
+            width: 470px;
+
+            background-color: #0C0D1B;
+            border-radius: $borderRadius;
+
+            padding: $padding * 4;
+
+            & .titleimg {
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+
+                & img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+    & .modalTransfer {
+        position: absolute;
+        z-index: $zindex_modal;
+
+        top: 0;
+        left: 0;
+
+        padding: $padding * 6;
+        padding-top: calc(69px + $padding * 6);
+
+        background-color: inherit;
+
+        width: 100%;
+        height: 100%;
+
+        & .title {
+            margin-top: $margin * 4;
+            width: 100%;
+
+            text-align: center;
+            font-size: $fontsize + 2px;
+        }
+
+        & .elem {
+            margin-top: $margin * 6;
+        }
+
+        & .data {
+            display: flex;
+            align-items: center;
+            gap: $padding * 4;
+
+            & .form {
+                width: 100%;
+                background-color: #C4C4C40A;
+
+                padding: $padding * 4;
+                border-radius: $borderRadius;
+
+                border-bottom: 0;
+            }
+        }
+        & .cardlist {
+            & .list {
+                display: flex;
+                justify-content: center;
+
+                & .cardinfo {
+                    padding: $padding * 4;
+                    padding-right: $padding * 12;
+                }
+            }
+        }
+
+        & .action {
+            width: 70%;
+
+            margin: 0 auto;
+            margin-top: $margin * 24;
+        }
+    }
+
+
+    & .banknotify {
+        position: absolute;
+        z-index: $zindex_notify;
+
+        top: calc(69px + $padding * 6);
+        right: $padding * 6;
+
+        padding: $padding * 4;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        & div + div {
+            margin-top: $margin * 2;
+        }
+        & div {
+            max-width: 350px;
+
+            padding: $padding * 2;
+            border-radius: $borderRadius;
+
+            font-size: $fontsize - 1px;
+            &.error {
+                background: linear-gradient(274.23deg, #B80808 21.13%, #FA0404 87.18%);
+            }
+            &.success {
+                background: linear-gradient(116.1deg, #39C54F 22.11%, #199125 101.23%);
+            }
+
+            line-height: $fontsize + 2px;
+            text-align: right;
+        }
+    }
+
+
+    & .card {
+        overflow: hidden;
+
+        width: 330px;
+        height: 210px;
+
+        background-image: url(../../../public/assets/bank/cardbg/default.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: $padding * 8 $padding * 4;
+        padding-bottom: $padding * 4;
+
+        border-radius: $borderRadius * 3;
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .cash {
+                font-size: $fontsize + 10px;
+                font-weight: 400;
+            }
+            & img {
+                width: auto;
+                height: auto;
+            }
+        }
+        & .number {
+            display: flex;
+            align-items: center;
+
+            gap: $padding * 6;
+            margin-top: $margin * 4;
+
+            & span {
+                font-weight: 600;
+                font-size: $fontsize + 4px;
+            }
+        }
+        & .data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & div {
+                & span {
+                    opacity: .5;
+                    font-size: $fontsize - 2px;
+                }
+                & h1 {
+                    margin-top: $margin;
+                    font-weight: 500;
+                }
+
+                & svg {
+                    font-size: $fontsize + 6px;
+                }
+
+                &:last-child {
+                    margin-right: $margin * 14;
+                }
+            }
+        }
+    }
+    & .cardinfo {
+        margin-top: $margin * 4;
+        padding: $padding * 2;
+
+        display: flex;
+        align-items: center;
+
+        background-color: #C4C4C40A;
+        border-radius: $borderRadius;
+
+        & img {
+            width: auto;
+            height: auto;
+        }
+        & .desc {
+            margin-left: $margin * 4;
+
+            & h1 {
+
+            }
+            & .cash {
+                margin-top: $margin * 2;
+                font-size: $fontsize + 6px;
+            }
+        }
+    }
+}

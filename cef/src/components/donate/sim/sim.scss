@@ -1,0 +1,52 @@
+@import '../../../rules/variables.scss';
+@import '../minix.scss';
+
+.donate {
+    & .sim {
+        flex-wrap: wrap;
+        & .elem {
+            &:first-child {
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                gap: $margin * 4;
+
+                & .icon {
+                    min-width: 200px;
+                    width: 200px;
+
+                    & img {
+                        width: 100%;
+                    }
+
+                    margin-left: $margin * 18;
+                }
+                & .right {
+                    position: relative;
+
+                    height: 100%;
+                    min-width: calc(70% - $margin * 6);
+
+                    & .title {
+                        margin-top: $margin * 4;
+                    }
+                }
+            }
+
+            height: calc(50% - 8px);
+            width: calc(100% / 2 - 8px);
+            min-width: calc(100% / 2 - 8px);
+
+            & .title {
+                margin: 0;
+            }
+            & .buttons {
+                width: 280px;
+                & button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

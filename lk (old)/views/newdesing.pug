@@ -1,0 +1,680 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+
+        link(rel="stylesheet", href="/styles/newdesing/main.css")
+
+        script(type='text/javascript', src='/js/modules/jquery-3.5.1.min.js')
+
+        title Enki Online - Личный Кабинет
+        link(rel='icon', href='/styles/images/favicon.ico', sizes='48x48', type='image/x-icon')
+
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    body
+        .menu
+            .menu-top
+                a(href="/account")
+                    img(src="/images/logo.png", alt="Enki Online - Логотип")
+                button
+                    span
+                    span
+                    span
+            
+            .menu-nav
+                .menu-nav-item.menu-nav-item-select
+                    svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                        path(d='M11.0003 0.166687C5.02033 0.166687 0.166992 5.02002 0.166992 11C0.166992 16.98 5.02033 21.8334 11.0003 21.8334C16.9803 21.8334 21.8337 16.98 21.8337 11C21.8337 5.02002 16.9803 0.166687 11.0003 0.166687ZM11.0003 3.41669C12.7987 3.41669 14.2503 4.86835 14.2503 6.66669C14.2503 8.46502 12.7987 9.91669 11.0003 9.91669C9.20199 9.91669 7.75033 8.46502 7.75033 6.66669C7.75033 4.86835 9.20199 3.41669 11.0003 3.41669ZM11.0003 18.8C8.29199 18.8 5.89783 17.4134 4.50033 15.3117C4.53283 13.1559 8.83366 11.975 11.0003 11.975C13.1562 11.975 17.4678 13.1559 17.5003 15.3117C16.1028 17.4134 13.7087 18.8 11.0003 18.8Z')
+                    span Мой аккаунт
+                .menu-nav-item
+                    svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M18.7345 12.014C18.7735 11.689 18.7995 11.351 18.7995 11C18.7995 10.649 18.7735 10.311 18.7215 9.98598L20.9185 8.26998C21.1135 8.11398 21.1655 7.82798 21.0485 7.60698L18.9685 4.00598C18.8385 3.77198 18.5655 3.69398 18.3315 3.77198L15.7445 4.81198C15.1985 4.39598 14.6265 4.05798 13.9895 3.79798L13.5995 1.04198C13.5605 0.781975 13.3395 0.599976 13.0795 0.599976H8.91955C8.65955 0.599976 8.45155 0.781975 8.41255 1.04198L8.02255 3.79798C7.38555 4.05798 6.80055 4.40898 6.26755 4.81198L3.68055 3.77198C3.44655 3.68098 3.17355 3.77198 3.04355 4.00598L0.963546 7.60698C0.833546 7.84098 0.885546 8.11398 1.09355 8.26998L3.29055 9.98598C3.23855 10.311 3.19955 10.662 3.19955 11C3.19955 11.338 3.22555 11.689 3.27755 12.014L1.08055 13.73C0.885546 13.886 0.833546 14.172 0.950546 14.393L3.03055 17.994C3.16055 18.228 3.43355 18.306 3.66755 18.228L6.25455 17.188C6.80055 17.604 7.37255 17.942 8.00955 18.202L8.39955 20.958C8.45155 21.218 8.65955 21.4 8.91955 21.4H13.0795C13.3395 21.4 13.5605 21.218 13.5865 20.958L13.9765 18.202C14.6135 17.942 15.1985 17.591 15.7315 17.188L18.3185 18.228C18.5525 18.319 18.8255 18.228 18.9555 17.994L21.0355 14.393C21.1655 14.159 21.1135 13.886 20.9055 13.73L18.7345 12.014ZM10.9995 14.9C8.85455 14.9 7.09955 13.145 7.09955 11C7.09955 8.85498 8.85455 7.09998 10.9995 7.09998C13.1445 7.09998 14.8995 8.85498 14.8995 11C14.8995 13.145 13.1445 14.9 10.9995 14.9Z')
+                    span Настройки аккаунта
+                    
+                .menu-nav-group
+                    h1 Жалобы
+                    .menu-nav-item
+                        svg(viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemMyReportsSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='24' height='24')
+                            rect(width='24' height='24' fill='url(#menuNavItemMyReportsSVGPattern)')
+                          g(mask='url(#menuNavItemMyReportsSVGMask)')
+                            rect(width='24' height='24')
+                          defs
+                            pattern#menuNavItemMyReportsSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemMyReportsSVGImage' transform='scale(0.0104167)')
+                            image#menuNavItemMyReportsSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAACQElEQVR4nO3dQU4TYRjG8T8ukIUuPIIJoocAEgNcQU/gXeQI4A08gDEYSHsJwAuwIbqx+7pomsyCbpj36/O97zy/ZDYshs7zHxoIaQtmZmZmZmYxzoBvwD2wAJZJjwVwB1wCp6ELNXIAzNEP1+qYAe/C1gp2DPxFP1Lr4w9wFLRZmAOmMf4wwn7IckFu0I+y7WMWslyAM/RjqI6TseO9GHsC4HPAObL6NPYEEQEOA86R1fHYE+wEPIh/wKuA82S0AF6POUFEgGXAOTIbtWHEU5CN4ABiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiDiDmAGIOIOYAYg4g5gBiVQP8Ar4AH1i9hnmn4SGnfr+G4fGbgFevZ6MefX3MgTeNr7VL6uHXd/4kxwf9+EvgY/Or7Jh6/Kv2l9hOhd+Cvm/4+i5wDjwQH/0H8LLJ1TyD+ifg/YbH9bXR9+tqfNAH2PReRS3u/J/A3jN3akYdYFuPq8vxYRoBuh0f6gfoenyoHaD78aFugBTjQ80AacaHegFSjQ+1AqQbH+oESDk+1AiQdnzIHyD1+JA7QPrxIW+AEuNDzgBlxofV29dnClBqfFh9VliWAN39MyXCJTkClLvz107pP0DJO3/omn4DlL3zh94Cj/QXYBLjrx2x+oS5XgKUf9p5yj7b/1S9TSY3/tAJcAHc0v7vBDMzMzMzs1T+A7tgO4PuG/YTAAAAAElFTkSuQmCC')
+                        span Мои жалобы
+                    .menu-nav-item
+                        svg(viewbox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemAddReportSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='22' height='22')
+                            rect(width='22' height='22' fill='url(#menuNavItemAddReportSVGPattern)')
+                          g(mask='url(#menuNavItemAddReportSVGMask)')
+                            rect(width='22' height='22')
+                          defs
+                            pattern#menuNavItemAddReportSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemAddReportSVGImage' transform='scale(0.0104167)')
+                            image#menuNavItemAddReportSVGImage(width='96' height='96' xlink:href='data:image/png;base64,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')
+                        span Создать жалобу
+                .menu-nav-group
+                    h1 Организация
+                    .menu-nav-item
+                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemFractionSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                            rect(width='26' height='26' fill='url(#menuNavItemFractionSVGPattern)')
+                          g(mask='url(#menuNavItemFractionSVGMask)')
+                            rect(width='26' height='26')
+                          defs
+                            pattern#menuNavItemFractionSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemFractionSVGImage' transform='scale(0.0111111)')
+                            image#menuNavItemFractionSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADv0lEQVR4nO2dz29MQRzAP2iUdOPURLVx4dCgG9JGiyDpya+Ds78A9R+42KOEohfFnyCRCEKchIObSksIRTSSJqqbqoqqra7D7Car2dmd1/dm5k33+0nm8va9737nk9l5M+/NewuCIAiCIAiCIAgpZY3vBCzRDBwA+oEs0Am0AZnS5z+BSWAcGAGeAs+BReeZBkoPcAv4DhQjlilgn/uUw6IbeEx0uZUl5zzrgNgIDKF+8iLZEp3AGPEEi+Q67EX1qXElX3CdeEj0AXNIS7ZKJzCNSLbKBuAl0l1YZwhpydbpJv4QTlqyAXEnIyLZgB7idxneWes7AQNO+06gBn2+E0iKZlZ2gchFi84BX4EmS/Gd0k98yTZE5ypiHzQ5IO1dR7/vBKqQ4/+T62FfiSTJXdLVoitbcrncSTC+N96QHtHVJBdRVxCDJ086ROskF4FvCcT3zgL+RdeSXAR+x4yfCnyLrid51Yj22XWYSC6ibkAEz2v8iDaVXCzlWJe0z2rGgV0JxEnihKjjvclOaZ+wvPCdgAGjJjulXfQz3wkY8MR3AknQRDJ3u22VPLDepCJpb9GLpLv7uA388Z1EEkQ5+7suS8Aee1V3R5olF4H79qrujrRLLgC7rdXeEWmXXAQuWau9I0KQPIpaxRosIUieArbbEuCCECTPoVaxBksIkvPAflsCXBCC5BGku7BaCsBl1CrWYEmz5CXUZCRrrfaOsC35ESu7EJUHhpFptVEpr39eh1pBdB617mIMJXKhVKaBV6XPcsAhDK/ChYBtybI0F5HsBJHsAJHsAJHsAJFsgQ5gAHgIvEW9C8Om5IZ7hK0V9exfAbtiG7olHwdmcSe4IVvyGeI/XCmS63AE95IbrrvYgnQXTriBXsgvYBB1q6elVHqBK8B8jeNE8jI60I8uPgM7axzbBUxojhXJyziHviXXklymC/OW3bCSQU1GqkkZjBDjqiaGSK7gHdXFRLn93quJIZIr0L0sqiVCjIwmRkMO4XT8oLqgTK2DlrFJE2M20UxTiulC9EnN9h0Rvku3ry72qsJU9EfN9lMRvku374cIMVY9A1T/2c9j9nhaFv3w7qyFfIOl1oRlAjVO1pFFP2EpAO3Wsg6UYfSjhnnUOLkPdYLMoN7FfA31rLTuuOtOaxAIbSTzfqNymQE2O61BQCR1mfQvcMJx7sER98L/YimGYMAxVtaNzABHPeQbNK3ARcxeXlIAbqL6+YYkib8HaQdOovrcbcDW0vYvwCfgAXCPBpkBCoIgCIIgCIIgBMc/IoUZzSiRm/QAAAAASUVORK5CYII=')
+                        span Фракция
+                .menu-nav-group
+                    h1 Администрация
+                    .menu-nav-item
+                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemFractionSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                            rect(width='26' height='26' fill='url(#menuNavItemFractionSVGPattern)')
+                          g(mask='url(#menuNavItemFractionSVGMask)')
+                            rect(width='26' height='26')
+                          defs
+                            pattern#menuNavItemFractionSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemFractionSVGImage' transform='scale(0.0111111)')
+                            image#menuNavItemFractionSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADv0lEQVR4nO2dz29MQRzAP2iUdOPURLVx4dCgG9JGiyDpya+Ds78A9R+42KOEohfFnyCRCEKchIObSksIRTSSJqqbqoqqra7D7Car2dmd1/dm5k33+0nm8va9737nk9l5M+/NewuCIAiCIAiCIAgpZY3vBCzRDBwA+oEs0Am0AZnS5z+BSWAcGAGeAs+BReeZBkoPcAv4DhQjlilgn/uUw6IbeEx0uZUl5zzrgNgIDKF+8iLZEp3AGPEEi+Q67EX1qXElX3CdeEj0AXNIS7ZKJzCNSLbKBuAl0l1YZwhpydbpJv4QTlqyAXEnIyLZgB7idxneWes7AQNO+06gBn2+E0iKZlZ2gchFi84BX4EmS/Gd0k98yTZE5ypiHzQ5IO1dR7/vBKqQ4/+T62FfiSTJXdLVoitbcrncSTC+N96QHtHVJBdRVxCDJ086ROskF4FvCcT3zgL+RdeSXAR+x4yfCnyLrid51Yj22XWYSC6ibkAEz2v8iDaVXCzlWJe0z2rGgV0JxEnihKjjvclOaZ+wvPCdgAGjJjulXfQz3wkY8MR3AknQRDJ3u22VPLDepCJpb9GLpLv7uA388Z1EEkQ5+7suS8Aee1V3R5olF4H79qrujrRLLgC7rdXeEWmXXAQuWau9I0KQPIpaxRosIUieArbbEuCCECTPoVaxBksIkvPAflsCXBCC5BGku7BaCsBl1CrWYEmz5CXUZCRrrfaOsC35ESu7EJUHhpFptVEpr39eh1pBdB617mIMJXKhVKaBV6XPcsAhDK/ChYBtybI0F5HsBJHsAJHsAJHsAJFsgQ5gAHgIvEW9C8Om5IZ7hK0V9exfAbtiG7olHwdmcSe4IVvyGeI/XCmS63AE95IbrrvYgnQXTriBXsgvYBB1q6elVHqBK8B8jeNE8jI60I8uPgM7axzbBUxojhXJyziHviXXklymC/OW3bCSQU1GqkkZjBDjqiaGSK7gHdXFRLn93quJIZIr0L0sqiVCjIwmRkMO4XT8oLqgTK2DlrFJE2M20UxTiulC9EnN9h0Rvku3ry72qsJU9EfN9lMRvku374cIMVY9A1T/2c9j9nhaFv3w7qyFfIOl1oRlAjVO1pFFP2EpAO3Wsg6UYfSjhnnUOLkPdYLMoN7FfA31rLTuuOtOaxAIbSTzfqNymQE2O61BQCR1mfQvcMJx7sER98L/YimGYMAxVtaNzABHPeQbNK3ARcxeXlIAbqL6+YYkib8HaQdOovrcbcDW0vYvwCfgAXCPBpkBCoIgCIIgCIIgBMc/IoUZzSiRm/QAAAAASUVORK5CYII=')
+                        span Главная
+                    .menu-nav-item
+                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                          mask#menuNavItemFractionSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                            rect(width='26' height='26' fill='url(#menuNavItemFractionSVGPattern)')
+                          g(mask='url(#menuNavItemFractionSVGMask)')
+                            rect(width='26' height='26')
+                          defs
+                            pattern#menuNavItemFractioSVGnPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#menuNavItemFractionSVGImage' transform='scale(0.0111111)')
+                            image#menuNavItemFractionSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADv0lEQVR4nO2dz29MQRzAP2iUdOPURLVx4dCgG9JGiyDpya+Ds78A9R+42KOEohfFnyCRCEKchIObSksIRTSSJqqbqoqqra7D7Car2dmd1/dm5k33+0nm8va9737nk9l5M+/NewuCIAiCIAiCIAgpZY3vBCzRDBwA+oEs0Am0AZnS5z+BSWAcGAGeAs+BReeZBkoPcAv4DhQjlilgn/uUw6IbeEx0uZUl5zzrgNgIDKF+8iLZEp3AGPEEi+Q67EX1qXElX3CdeEj0AXNIS7ZKJzCNSLbKBuAl0l1YZwhpydbpJv4QTlqyAXEnIyLZgB7idxneWes7AQNO+06gBn2+E0iKZlZ2gchFi84BX4EmS/Gd0k98yTZE5ypiHzQ5IO1dR7/vBKqQ4/+T62FfiSTJXdLVoitbcrncSTC+N96QHtHVJBdRVxCDJ086ROskF4FvCcT3zgL+RdeSXAR+x4yfCnyLrid51Yj22XWYSC6ibkAEz2v8iDaVXCzlWJe0z2rGgV0JxEnihKjjvclOaZ+wvPCdgAGjJjulXfQz3wkY8MR3AknQRDJ3u22VPLDepCJpb9GLpLv7uA388Z1EEkQ5+7suS8Aee1V3R5olF4H79qrujrRLLgC7rdXeEWmXXAQuWau9I0KQPIpaxRosIUieArbbEuCCECTPoVaxBksIkvPAflsCXBCC5BGku7BaCsBl1CrWYEmz5CXUZCRrrfaOsC35ESu7EJUHhpFptVEpr39eh1pBdB617mIMJXKhVKaBV6XPcsAhDK/ChYBtybI0F5HsBJHsAJHsAJHsAJFsgQ5gAHgIvEW9C8Om5IZ7hK0V9exfAbtiG7olHwdmcSe4IVvyGeI/XCmS63AE95IbrrvYgnQXTriBXsgvYBB1q6elVHqBK8B8jeNE8jI60I8uPgM7axzbBUxojhXJyziHviXXklymC/OW3bCSQU1GqkkZjBDjqiaGSK7gHdXFRLn93quJIZIr0L0sqiVCjIwmRkMO4XT8oLqgTK2DlrFJE2M20UxTiulC9EnN9h0Rvku3ry72qsJU9EfN9lMRvku374cIMVY9A1T/2c9j9nhaFv3w7qyFfIOl1oRlAjVO1pFFP2EpAO3Wsg6UYfSjhnnUOLkPdYLMoN7FfA31rLTuuOtOaxAIbSTzfqNymQE2O61BQCR1mfQvcMJx7sER98L/YimGYMAxVtaNzABHPeQbNK3ARcxeXlIAbqL6+YYkib8HaQdOovrcbcDW0vYvwCfgAXCPBpkBCoIgCIIgCIIgBMc/IoUZzSiRm/QAAAAASUVORK5CYII=')
+                        span Настройки адм. доступа
+            .menu-exit
+                svg(viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M7.93083 13.8892L9.45833 15.4167L14.875 10L9.45833 4.58333L7.93083 6.11083L10.7258 8.91667H0.25V11.0833H10.7258L7.93083 13.8892ZM17.5833 0.25H2.41667C1.21417 0.25 0.25 1.225 0.25 2.41667V6.75H2.41667V2.41667H17.5833V17.5833H2.41667V13.25H0.25V17.5833C0.25 18.775 1.21417 19.75 2.41667 19.75H17.5833C18.775 19.75 19.75 18.775 19.75 17.5833V2.41667C19.75 1.225 18.775 0.25 17.5833 0.25Z' fill='white')
+                span Выйти
+                
+        .header
+            .header-left
+                .search
+                    svg(width='22' height='23' viewbox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M21 22L16.1667 16.925M18.7778 10.3333C18.7778 15.488 14.7981 19.6667 9.8889 19.6667C4.9797 19.6667 1 15.488 1 10.3333C1 5.17868 4.9797 1 9.8889 1C14.7981 1 18.7778 5.17868 18.7778 10.3333Z' stroke='#656565' stroke-width='1.70417' stroke-linecap='round' stroke-linejoin='round')
+                    input(type="text" placeholder="Поиск..." maxlength="144")
+            .header-right
+                .header-item
+                    svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        mask#headerItemMessagesSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                            rect(width='26' height='26' fill='url(#headerItemMessagesSVGPattern)')
+                        g(mask='url(#headerItemMessagesSVGMask)')
+                            rect(width='26' height='26')
+                        defs
+                            pattern#headerItemMessagesSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                              use(xlink:href='#headerItemMessagesSVGImage' transform='scale(0.0104167)')
+                            image#headerItemMessagesSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAD70lEQVR4nO2dz28MYRjHP/2BStBetC4loXrQ+FUXmuBAExeJxIHEf0G4kHCjJZpG/Dg7Sg9ChXaFRCmRcBBSJC4k6KFFLY2yW4fZQ7Pdd+bt7jvzzM48n+S5bJ7ded7vd96Z2d2Z5wVFURRFURRFURRFSRM1EW5rM3AQ6AI6gCagIcLt2zAD/AK+AO+BV8BD4CnwR7CuitgFPAJmqzgmgWvAVsfahEoDXtF55AV0FXlgENjoUKdQaAKeIC9YWPEXOA8scSWYS5aSbPHnxktgnRvZ3HEZeWGijAlguxPlFBYBzXiCHsO7ePhHsAlTwDaBelNBM9AD/MbfhHFgrVCNqaAVGMDfhBfE9MScFGqAk0AOswm9URfVDpwAMsAYkPUpLq6RLdSeAY4D6wPGfBizCTNE9D2hA7htKCIJkQE6fcZ/yue9t6xVLIN6oB//aZiUyAF9hTEXU4P5nJDH++3LOU14e4a0MFHHENBYQo/VwLThPVcWoKsV9aRT/LkmlJoJvYb8CWCxtboW9AsMOm5xsYQuLZgPxzut1Q2g02cjaYocsKWEPo8N+aeDhK0NSijQs4DcJFMLnCvx+k1DvpMTcTvye17coq1Ioy5D3usgcW326gMWOWmjWJMPhryWoA+yMaDbIidtFGvy3ZC3POiDbAxYY5GTNoo1Mf1hH/jDnM1dET+BZRZ5aSLL/L171pDrq7GNAaYPTjvF2pVlgF5aCqMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGCKMGhMt0UIIaEC6TQQlqQLi8CUpQA8JlNChBDQiXgaAENSA8HmBxCNI748rH7864PLAb78ENX3QGhMNVLMQHnQGVYJoBI8BevAe2A9EZ4JYRYD+W4tsyhfwjQXGLqSKNaoFLhNSE8J3gQOMaYxUpOgebQ9BHVxtLEM40sTFg2NXGEsRQlBtrQ37Kxy0i74w15KjwJMTdCrUsi01oq4LZggZi3XP7LApMelyoWMUKqAPulCgqLTFM6XY1kdJIOs8H94AVDvRzQj1e35w0nBNyeIedOifKOWYDcAN5kcKKDKV7AznFxQIObXjdQ7rxmpu2Un2tDbLAp0IM4/X/MXVAqRrC3kN/AEciG00VEqb4z5nfNEkpIgzh83jNA512I0wqrsUfB/ZFOoIqx6X4w8CqaMuvflwIPwOcQf86LYtKxX9LlS0bFTcqEf861fddInaUI7xe2zvkGwsT/xm6BotT7mMnfA44i7eCkeKQboKXMfwM7JEqMA0cxbwO1yCwUq609LAD7z75r3hLxY4Ch4h2KV1FURRFURQlVvwHFuvqWb6oABsAAAAASUVORK5CYII=')
+                    h6 1
+                .header-item
+                    svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      mask#headerItemNotfSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                        rect(width='26' height='26' fill='url(#headerItemNotfSVGPattern)')
+                      g(mask='url(#headerItemNotfSVGMask)')
+                        rect(width='26' height='26')
+                      defs
+                        pattern#headerItemNotfSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                          use(xlink:href='#headerItemNotfSVGImage' transform='scale(0.0104167)')
+                        image#headerItemNotfSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFIUlEQVR4nO2dTWhcVRTHf6mOiR8YbaK1xlpF29qALtTiQgRFi6i0oki7Ed1YaMEUxIoiiLhVGxW6ERFB3fhFt62lm6oYafxKok0FFQXFojQmY5W2ycTFnWpoM++cN/e+OS+d84OzuvP+59xz5r17331f4DiO4ziO4ziOU346ga3AEPBX3YaAgXqbUyB9wFfAbAP7sv6btqYX2A6MAmPADuCSBLqdZCd/bhFS7AlLCbGPEfryArA4gW6hXA78wKlJ+QVYHqm9dR7dRvZopK/lwK/z6H4PLIvULoylwHc0TspbkfqfZWifbJ9G+no7Q/sgafbopPQQdtWspExG+qgK+nNtqmBfI8CFkT6ScQawBzkpx4AzI/xok3/CmqVSj1XS30Xouznb0SVkX6SfVhUA4COlj+cj/UTzALpAjwI3RPjpVfqZa70R/m4kxKzxc3+EnyiWAL8rApwGNjSh3w1sAT6ua+QtwDThn7wZOL8J/xuVfg8BFzWhH81ORXAzwEM5dZcALxLOcPMmvZFVCfP4i3PG8jBQU+i/n1M3mvsUQc0Cz+TQrADbyDfbyWtTwON1X1qeVWqvz6EZRYXs+f4J2wl0KDWvBD5RaKay/cAKZWwdwDsKzXHyFbZpBhTB/IT+uLuOYv/1WXvD3coYu4GfFZqxZ+AiXYRBJyuIGnC7Um8zzQ2wqWwa2KSMdS3yePBbPUeFsUkIYBZ4Tam1Bd0AV7TV0BfhDYXeI0qt3HQA3wrOq4Q1IYm7sP3nn2wzwL2KuC9Fnp2NA4sUWrlZKzieJcwYJFZhc8yXbArdwPycQkt7CM6FtPtVkReozgK+EHQsbRh5JrMYeS94XdDITScwITh9WaHztKBRBntC0Y8dgsYEiS+PrlcEvlLQ6AOOKHSsrYq83r9aobNO0AD0g8UdQvsw4eQsi6eAc5T+LDkPeS84QLg8mkXScWCE7GpvE7bvAf4RNMpkR4ALhD49KWh8LWyvpocwTcty1i9oPCZsX0YbEPp0nbB9jbgl8f+4U3B0CHnNZ1jQKKMNCX3qQF6Olw7dqjHgGqF9X91ZI/qA6xV+ysYasgfjWcL1hiykI0OSAowJ7behXxUtE4uAW4XfSH2XcqcqwFVC+0GhfY3CR1m5SWgfF9qvlhxoClAT2keFdnE3LDFS7FLfj0kONAX4MKPtR+AbYfsrFD7KihT7GOE6QSP2pAjibOBzTh3hZwgzJAlpCaPMdljRv3uYf5q+n4TXBrqBlwj3S04Ce4GbldtqbnIqqx1V9vGWek4mCffBDqK8ItiK2UnWFHUhUGiOCrlw4OjxAhjjBTDGC2CMF8AYL4AxXgBjvADGeAGM8QIY4wUwxgtgjBfAGC+AMV4AY7wAxngBjPECGOMFMMYLYIwXwBgvgDFeAGOKLEAX8GqB+q3iTeBc6yDysorwiI71nW2p7ABwbdIMFciDlPNB7Fj7mwJfQ5CCLuAV7BNVtJXykLQS+UnK08lGkJ+LbhkrCLdxWyel1XYYxRMwreAD7JNhZe/FJi/Frdd/Ep4faEcmiHyhd4rzgHY+mYvue4rk7U2gsVDZbR0AhJOudhyE/wAuS5C/JCwD3iU8I2WdmKJtkvAay9Ik33Ecx3GKYoq4AbPULISTqKx3MRS5bUtYCAXIelmIxK5kUbQx/TT3muPjKF6Y5Oho5kLPoEmkpykVwqFIm/zdtOhjCu1EhfB65ONkH3YG8eQXSj//fyy0WrdRwod/VhvG5TiO4ziO4ziOo+Jfsf2MlLjDOY4AAAAASUVORK5CYII=')
+                    h6 99+
+                .header-item.header-item-select.header-item-username
+                    svg(viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z' fill='#1E1E1E')
+                    span MyAngelNezuko
+
+        
+        .body
+            .mainbox(style="display: flex;")
+                .mainbox-section(style="width: 500px;")
+                    h1 Уведомления
+                    .mainbox-section-wrap(style="margin: 0;")
+                        .accountsettings
+                            .accountsettings-item
+                                section
+                                    svg(viewbox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                      mask#accountSettingsItemNotfReportSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='16' height='16')
+                                        rect(width='16' height='16' fill='url(#accountSettingsItemNotfReportSVGPattern)')
+                                      g(mask='url(#accountSettingsItemNotfReportSVGMask)')
+                                        rect(width='16' height='16' fill='#1E1E1E')
+                                      defs
+                                        pattern#accountSettingsItemNotfReportSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                          use(xlink:href='#accountSettingsItemNotfReportSVGImage' transform='scale(0.0104167)')
+                                        image#accountSettingsItemNotfReportSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFIUlEQVR4nO2dTWhcVRTHf6mOiR8YbaK1xlpF29qALtTiQgRFi6i0oki7Ed1YaMEUxIoiiLhVGxW6ERFB3fhFt62lm6oYafxKok0FFQXFojQmY5W2ycTFnWpoM++cN/e+OS+d84OzuvP+59xz5r17331f4DiO4ziO4ziOU346ga3AEPBX3YaAgXqbUyB9wFfAbAP7sv6btqYX2A6MAmPADuCSBLqdZCd/bhFS7AlLCbGPEfryArA4gW6hXA78wKlJ+QVYHqm9dR7dRvZopK/lwK/z6H4PLIvULoylwHc0TspbkfqfZWifbJ9G+no7Q/sgafbopPQQdtWspExG+qgK+nNtqmBfI8CFkT6ScQawBzkpx4AzI/xok3/CmqVSj1XS30Xouznb0SVkX6SfVhUA4COlj+cj/UTzALpAjwI3RPjpVfqZa70R/m4kxKzxc3+EnyiWAL8rApwGNjSh3w1sAT6ua+QtwDThn7wZOL8J/xuVfg8BFzWhH81ORXAzwEM5dZcALxLOcPMmvZFVCfP4i3PG8jBQU+i/n1M3mvsUQc0Cz+TQrADbyDfbyWtTwON1X1qeVWqvz6EZRYXs+f4J2wl0KDWvBD5RaKay/cAKZWwdwDsKzXHyFbZpBhTB/IT+uLuOYv/1WXvD3coYu4GfFZqxZ+AiXYRBJyuIGnC7Um8zzQ2wqWwa2KSMdS3yePBbPUeFsUkIYBZ4Tam1Bd0AV7TV0BfhDYXeI0qt3HQA3wrOq4Q1IYm7sP3nn2wzwL2KuC9Fnp2NA4sUWrlZKzieJcwYJFZhc8yXbArdwPycQkt7CM6FtPtVkReozgK+EHQsbRh5JrMYeS94XdDITScwITh9WaHztKBRBntC0Y8dgsYEiS+PrlcEvlLQ6AOOKHSsrYq83r9aobNO0AD0g8UdQvsw4eQsi6eAc5T+LDkPeS84QLg8mkXScWCE7GpvE7bvAf4RNMpkR4ALhD49KWh8LWyvpocwTcty1i9oPCZsX0YbEPp0nbB9jbgl8f+4U3B0CHnNZ1jQKKMNCX3qQF6Olw7dqjHgGqF9X91ZI/qA6xV+ysYasgfjWcL1hiykI0OSAowJ7behXxUtE4uAW4XfSH2XcqcqwFVC+0GhfY3CR1m5SWgfF9qvlhxoClAT2keFdnE3LDFS7FLfj0kONAX4MKPtR+AbYfsrFD7KihT7GOE6QSP2pAjibOBzTh3hZwgzJAlpCaPMdljRv3uYf5q+n4TXBrqBlwj3S04Ce4GbldtqbnIqqx1V9vGWek4mCffBDqK8ItiK2UnWFHUhUGiOCrlw4OjxAhjjBTDGC2CMF8AYL4AxXgBjvADGeAGM8QIY4wUwxgtgjBfAGC+AMV4AY7wAxngBjPECGOMFMMYLYIwXwBgvgDFeAGOKLEAX8GqB+q3iTeBc6yDysorwiI71nW2p7ABwbdIMFciDlPNB7Fj7mwJfQ5CCLuAV7BNVtJXykLQS+UnK08lGkJ+LbhkrCLdxWyel1XYYxRMwreAD7JNhZe/FJi/Frdd/Ep4faEcmiHyhd4rzgHY+mYvue4rk7U2gsVDZbR0AhJOudhyE/wAuS5C/JCwD3iU8I2WdmKJtkvAay9Ik33Ecx3GKYoq4AbPULISTqKx3MRS5bUtYCAXIelmIxK5kUbQx/TT3muPjKF6Y5Oho5kLPoEmkpykVwqFIm/zdtOhjCu1EhfB65ONkH3YG8eQXSj//fyy0WrdRwod/VhvG5TiO4ziO4ziOo+Jfsf2MlLjDOY4AAAAASUVORK5CYII=')
+                                    span Оповещать об изменениях статуса Ваших жалоб
+                                input.input-switch(type="checkbox")
+                            .accountsettings-item
+                                section
+                                    svg(viewbox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                      mask#accountSettingsItemNotfRepMyortSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='16' height='16')
+                                        rect(width='16' height='16' fill='url(#accountSettingsItemNotfReportMySVGPattern)')
+                                      g(mask='url(#accountSettingsItemNotfRepMyortSVGMask)')
+                                        rect(width='16' height='16' fill='#1E1E1E')
+                                      defs
+                                        pattern#accountSettingsItemNotfReportMySVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                          use(xlink:href='#accountSettingsItemNotfRepoMyrtSVGImage' transform='scale(0.0104167)')
+                                        image#accountSettingsItemNotfRepoMyrtSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFIUlEQVR4nO2dTWhcVRTHf6mOiR8YbaK1xlpF29qALtTiQgRFi6i0oki7Ed1YaMEUxIoiiLhVGxW6ERFB3fhFt62lm6oYafxKok0FFQXFojQmY5W2ycTFnWpoM++cN/e+OS+d84OzuvP+59xz5r17331f4DiO4ziO4ziOU346ga3AEPBX3YaAgXqbUyB9wFfAbAP7sv6btqYX2A6MAmPADuCSBLqdZCd/bhFS7AlLCbGPEfryArA4gW6hXA78wKlJ+QVYHqm9dR7dRvZopK/lwK/z6H4PLIvULoylwHc0TspbkfqfZWifbJ9G+no7Q/sgafbopPQQdtWspExG+qgK+nNtqmBfI8CFkT6ScQawBzkpx4AzI/xok3/CmqVSj1XS30Xouznb0SVkX6SfVhUA4COlj+cj/UTzALpAjwI3RPjpVfqZa70R/m4kxKzxc3+EnyiWAL8rApwGNjSh3w1sAT6ua+QtwDThn7wZOL8J/xuVfg8BFzWhH81ORXAzwEM5dZcALxLOcPMmvZFVCfP4i3PG8jBQU+i/n1M3mvsUQc0Cz+TQrADbyDfbyWtTwON1X1qeVWqvz6EZRYXs+f4J2wl0KDWvBD5RaKay/cAKZWwdwDsKzXHyFbZpBhTB/IT+uLuOYv/1WXvD3coYu4GfFZqxZ+AiXYRBJyuIGnC7Um8zzQ2wqWwa2KSMdS3yePBbPUeFsUkIYBZ4Tam1Bd0AV7TV0BfhDYXeI0qt3HQA3wrOq4Q1IYm7sP3nn2wzwL2KuC9Fnp2NA4sUWrlZKzieJcwYJFZhc8yXbArdwPycQkt7CM6FtPtVkReozgK+EHQsbRh5JrMYeS94XdDITScwITh9WaHztKBRBntC0Y8dgsYEiS+PrlcEvlLQ6AOOKHSsrYq83r9aobNO0AD0g8UdQvsw4eQsi6eAc5T+LDkPeS84QLg8mkXScWCE7GpvE7bvAf4RNMpkR4ALhD49KWh8LWyvpocwTcty1i9oPCZsX0YbEPp0nbB9jbgl8f+4U3B0CHnNZ1jQKKMNCX3qQF6Olw7dqjHgGqF9X91ZI/qA6xV+ysYasgfjWcL1hiykI0OSAowJ7behXxUtE4uAW4XfSH2XcqcqwFVC+0GhfY3CR1m5SWgfF9qvlhxoClAT2keFdnE3LDFS7FLfj0kONAX4MKPtR+AbYfsrFD7KihT7GOE6QSP2pAjibOBzTh3hZwgzJAlpCaPMdljRv3uYf5q+n4TXBrqBlwj3S04Ce4GbldtqbnIqqx1V9vGWek4mCffBDqK8ItiK2UnWFHUhUGiOCrlw4OjxAhjjBTDGC2CMF8AYL4AxXgBjvADGeAGM8QIY4wUwxgtgjBfAGC+AMV4AY7wAxngBjPECGOMFMMYLYIwXwBgvgDFeAGOKLEAX8GqB+q3iTeBc6yDysorwiI71nW2p7ABwbdIMFciDlPNB7Fj7mwJfQ5CCLuAV7BNVtJXykLQS+UnK08lGkJ+LbhkrCLdxWyel1XYYxRMwreAD7JNhZe/FJi/Frdd/Ep4faEcmiHyhd4rzgHY+mYvue4rk7U2gsVDZbR0AhJOudhyE/wAuS5C/JCwD3iU8I2WdmKJtkvAay9Ik33Ecx3GKYoq4AbPULISTqKx3MRS5bUtYCAXIelmIxK5kUbQx/TT3muPjKF6Y5Oho5kLPoEmkpykVwqFIm/zdtOhjCu1EhfB65ONkH3YG8eQXSj//fyy0WrdRwod/VhvG5TiO4ziO4ziOo+Jfsf2MlLjDOY4AAAAASUVORK5CYII=')
+                                    span Оповещать об изменениях статуса жалоб на Вас
+                                input.input-switch(type="checkbox")
+                            button.button Сохранить
+                .mainbox-section(style="margin-left: 50px;")
+                    h1 Аккаунт
+                    .mainbox-section-wrap(style="margin: 0;")
+                        .accountsettings.accountsettings-flex
+                            .accountsettings-item.accountsettings-item-select
+                                section
+                                    svg(viewbox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                                      mask#accountSettingsItemEmailSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='16' height='16')
+                                        rect(width='16' height='16' fill='url(#accountSettingsItemEmailSVGPattern)')
+                                      g(mask='url(#accountSettingsItemEmailSVGMask)')
+                                        rect(width='16' height='16' fill='#1E1E1E')
+                                      defs
+                                        pattern#accountSettingsItemEmailSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                          use(xlink:href='#accountSettingsItemEmailSVGImage' transform='scale(0.0104167)')
+                                        image#accountSettingsItemEmailSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAELklEQVR4nO2cTahVVRiGH/Xeq6WhhiRkWEYqqIgUFtiFyiAkcuDfoEmTQIeCE4c2iIgo6UoOImjQUMTJRZG0ErpUSD9iSUnpQDTSkPz/vXoarLNR9J5z1v7W2met7XkfeLmTfdf6vu/de6+99lpngxBCCCGEEEIIIYQQQgghxP0sAD4CDgPngEaP63yzFh82a1MZE4EPgFsZJJ2rbuKMGDDWuCUTgF0ZJFgX7cGdsNF4N4Ok6qZNpkq34O8MEqqbvvEp7Hifg3D3fVGOsz4HTfBs7GFguT2WnuMqsAE42elAXwNGcJfViyX+p1c5CqwBvq+i8XnAV6S/v+aoG8D7wCRzdT0ZB7wF/Jso0Rw1AiwMKaqFR4FPgdsBgddd54CN+D/MVMJLwO+kL0a3NQw8EaF+UZgEvANcI31hqtYpYHWcssVnLrCP9EWqQrdwt9xHolWrIopB+gzpixZLh4DnYxapG0yn/oP0FdyttT9ybUrRB7wBDOLO7rK8AvxB+mKW1R7gKUO+M4D3gI+JNEh/fldQXwPzDW1MBLZQj0H6H+BNQ45jzY9+MLRzH1fuCfAa7rK0zPjm4UxMXeSxdBv4DHfrLMszwP4x2ozyErNVwH8BrxnbXAecbtN2t/Un8Kohjz7cROxSm7aD6RT8DuAxQ7vTgSHSLnEW728sq1fPAj959BGMTyL/YZ+SDwK/efYTUyPYFtGn4k6cUc9+gimT1LfYXkr10/lSjqWQk2UlcKJkf8FYLushYLKhr6eBvYY+fTUMzDLE9Tiw09hnMNZkjwErjH2uxK0mxSr8SWCVIY7xwHrgQkDfwcQ46ywTkmmED9Ih728W457jQ/MPJsYZWNx3LcuZy4BfDX0eApYa+nsIN8+5bugzWwMK/Qg8Z4iheN6+6NHHZWAzNrNfxq3pxsw5mJjBNHDb94aAKYZY5uDe0bRqezfwpKHdmcAXkfLL3oBCx4HXjTGtxu06uNHUd9gG2XHA27g9PFXlGUxVgRXagXvMs9DXlIX5wIGIedTWgAZ3Fre7seeoHzdGXO1SbsF0I8hCP2N7cvFlEDjS5ZyC6WawDe4M0jHXXmPMKXrGgEKngLUR4o89q+4ZAwoNA7MNcc8ijx+VBJM6gQblJldlJm0yoKR+AV5oE+sS4GAGcT6wBjRwCyHbcbPigjnAJ/gvkmRjgM82kyguVsTp5t+ZSaNoT9sa192AOtC2xkm3VQsZkBwZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgfAy5VHsWDy4VOB/gYcCJCIL1Kx9r5GLAvQiC9ypcxGllEnovduWuUiF/R2p5BQnXTNlOlWzCAPtZXRvup4PvRA+S79yYXjeLO/OjFv5uFwFbcD+dy2f6XUhebtdhKgi8nCiGEEEIIIYQQQgghhBAif/4HH6PKnl6xpw8AAAAASUVORK5CYII=')
+                                    span Изменить почту
+                            .accountsettings-item.accountsettings-item-select
+                                section
+                                    svg(viewbox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                                      mask#accountSettingsItemEmailSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='16' height='16')
+                                        rect(width='16' height='16' fill='url(#accountSettingsItemEmailSVGPattern)')
+                                      g(mask='url(#accountSettingsItemEmailSVGMask)')
+                                        rect(width='16' height='16' fill='#1E1E1E')
+                                      defs
+                                        pattern#accountSettingsItemEmailSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                          use(xlink:href='#accountSettingsItemEmailSVGImage' transform='scale(0.0104167)')
+                                        image#accountSettingsItemEmailSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAELklEQVR4nO2cTahVVRiGH/Xeq6WhhiRkWEYqqIgUFtiFyiAkcuDfoEmTQIeCE4c2iIgo6UoOImjQUMTJRZG0ErpUSD9iSUnpQDTSkPz/vXoarLNR9J5z1v7W2met7XkfeLmTfdf6vu/de6+99lpngxBCCCGEEEIIIYQQQgghxP0sAD4CDgPngEaP63yzFh82a1MZE4EPgFsZJJ2rbuKMGDDWuCUTgF0ZJFgX7cGdsNF4N4Ok6qZNpkq34O8MEqqbvvEp7Hifg3D3fVGOsz4HTfBs7GFguT2WnuMqsAE42elAXwNGcJfViyX+p1c5CqwBvq+i8XnAV6S/v+aoG8D7wCRzdT0ZB7wF/Jso0Rw1AiwMKaqFR4FPgdsBgddd54CN+D/MVMJLwO+kL0a3NQw8EaF+UZgEvANcI31hqtYpYHWcssVnLrCP9EWqQrdwt9xHolWrIopB+gzpixZLh4DnYxapG0yn/oP0FdyttT9ybUrRB7wBDOLO7rK8AvxB+mKW1R7gKUO+M4D3gI+JNEh/fldQXwPzDW1MBLZQj0H6H+BNQ45jzY9+MLRzH1fuCfAa7rK0zPjm4UxMXeSxdBv4DHfrLMszwP4x2ozyErNVwH8BrxnbXAecbtN2t/Un8Kohjz7cROxSm7aD6RT8DuAxQ7vTgSHSLnEW728sq1fPAj959BGMTyL/YZ+SDwK/efYTUyPYFtGn4k6cUc9+gimT1LfYXkr10/lSjqWQk2UlcKJkf8FYLushYLKhr6eBvYY+fTUMzDLE9Tiw09hnMNZkjwErjH2uxK0mxSr8SWCVIY7xwHrgQkDfwcQ46ywTkmmED9Ih728W457jQ/MPJsYZWNx3LcuZy4BfDX0eApYa+nsIN8+5bugzWwMK/Qg8Z4iheN6+6NHHZWAzNrNfxq3pxsw5mJjBNHDb94aAKYZY5uDe0bRqezfwpKHdmcAXkfLL3oBCx4HXjTGtxu06uNHUd9gG2XHA27g9PFXlGUxVgRXagXvMs9DXlIX5wIGIedTWgAZ3Fre7seeoHzdGXO1SbsF0I8hCP2N7cvFlEDjS5ZyC6WawDe4M0jHXXmPMKXrGgEKngLUR4o89q+4ZAwoNA7MNcc8ijx+VBJM6gQblJldlJm0yoKR+AV5oE+sS4GAGcT6wBjRwCyHbcbPigjnAJ/gvkmRjgM82kyguVsTp5t+ZSaNoT9sa192AOtC2xkm3VQsZkBwZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgfAy5VHsWDy4VOB/gYcCJCIL1Kx9r5GLAvQiC9ypcxGllEnovduWuUiF/R2p5BQnXTNlOlWzCAPtZXRvup4PvRA+S79yYXjeLO/OjFv5uFwFbcD+dy2f6XUhebtdhKgi8nCiGEEEIIIYQQQgghhBAif/4HH6PKnl6xpw8AAAAASUVORK5CYII=')
+                                    span Изменить пароль
+            .mainbox
+                .mainbox-section
+                    h1 Защита аккаунта
+                    .mainbox-section-wrap(style="margin: 0;")
+                        .account-googleauth
+                            
+        
+            .account-baninfo-wrap
+                .account-baninfo
+                    .account-baninfo-center
+                        .account-baninfo-svg
+                            svg(viewbox='0 0 86 86' fill='none' xmlns='http://www.w3.org/2000/svg')
+                              rect(width='86' height='86' rx='10' fill='#FFD2D2' fill-opacity='0.5')
+                              mask#accountBanInfoSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='19' y='19' width='48' height='48')
+                                rect(x='19' y='19' width='48' height='48' fill='url(#accountBanInfoSVGPattern)')
+                              g(mask='url(#accountBanInfoSVGMask)')
+                                rect(x='19' y='19' width='48' height='48' fill='#FF3F3F')
+                              defs
+                                pattern#accountBanInfoSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                  use(xlink:href='#accountBanInfoSVGImage' transform='scale(0.0104167)')
+                                image#accountBanInfoSVGImage(width='96' height='96' xlink:href='data:image/png;base64,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')
+                        h1 Аккаунт заблокирован
+                        section
+                            h2 Заблокировал: <a href="/">MyAngelNezuko</a>
+                            h2 Причина блокировки: <span>Test</span>
+                            h2 Дата блокировки: <span>08.01.2022; 20:43</span>
+                            h2 Разблокировка: <span>08.01.2022; 22:43</span>
+                            h3 Если Вы не согласны с решением администратора, Вы можете подать на него <a href="/">жалобу</a>.
+                        .account-baninfo-bottom
+                            a(href="/").button Жалоба
+                            button.button Закрыть
+        
+            //.mainbox(style="display: flex;")
+                .mainbox-section.mainbox-section-flex(style="width: 1225px;")
+                    h1 Основная информация
+                    .mainbox-section-wrap(style="margin: 0; margin-bottom: 17px; width: calc(100% - 35px);")
+                        .account-ban
+                            section
+                                svg(viewbox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='19' cy='19' r='19' fill='#FFD2D2')
+                                  mask#accountBanSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='9' y='9' width='20' height='20')
+                                    rect(x='9' y='9' width='20' height='20' fill='url(#accountBanSVGPattern)')
+                                  g(mask='url(#accountBanSVGMask)')
+                                    rect(x='9' y='9' width='20' height='20' fill='#FF3F3F')
+                                  defs
+                                    pattern#accountBanSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountBanSVGImage' transform='scale(0.0104167)')
+                                    image#accountBanSVGImage(width='96' height='96' xlink:href='data:image/png;base64,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')
+                                div
+                                    section Аккаунт заблокирован
+                                    section Ваш аккаунт заблокировал администратор MyAngelNezuko
+                            button.button Подробнее
+                    .mainbox-section-wrap(style="margin-left: 0; margin-top: 0;")
+                        .account-user
+                            .account-user-image.account-user-image-ban
+                                section
+                                    img(src="/images/skins/120.png", alt="ID скина: 120")
+                                span Заблокирован
+                            .account-user-info
+                                div
+                                    h2 Имя аккаунта (UID)
+                                    span MyAngelNezuko (1)
+                                div
+                                    h2 Активные привязки
+                                    span
+                                        button.button.button-select(disabled) Email
+                                        button.button(disabled) Authenticator
+                        .account-lic
+                            .account-lic-item.account-lic-item-select.account-lic-item-other-on
+                                svg(viewbox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  mask#accountLicItemCarSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='34' height='34')
+                                    rect(width='34' height='34' fill='url(#accountLicItemCarSVGPattern)')
+                                  g(mask='url(#accountLicItemCarSVGMask)')
+                                    rect(width='34' height='34' fill='url(#accountLicItemCarSVGGradient)')
+                                  defs
+                                    pattern#accountLicItemCarSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountLicItemCarSVGImage' transform='scale(0.01)')
+                                    lineargradient#accountLicItemCarSVGGradient(x1='-2.26667' y1='-3.4' x2='17' y2='34' gradientunits='userSpaceOnUse')
+                                      stop(stop-color='#FF6635')
+                                      stop(offset='1' stop-color='#FF8515')
+                                    image#accountLicItemCarSVGImage(width='100' height='100' xlink:href='data:image/png;base64,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')
+                                span Лицензия на вождение
+                                
+                                .account-lic-item-other
+                                    div.account-lic-item-other-select
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherASVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherASVGPattern)')
+                                          g(mask='url(#accountLicItemOtherASVGMask)')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherASVGPaint)')
+                                          defs
+                                            pattern#accountLicItemOtherASVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherASVGImage' transform='scale(0.01)')
+                                            lineargradient#accountLicItemOtherASVGPaint(x1='-1.73333' y1='-2.6' x2='13' y2='26' gradientunits='userSpaceOnUse')
+                                              stop(stop-color='#FF6635')
+                                              stop(offset='1' stop-color='#FF8515')
+                                            image#accountLicItemOtherASVGImage(width='100' height='100' xlink:href='data:image/png;base64,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')
+                                        span A
+                                    div.account-lic-item-other-select
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherBSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherBSVGPattern)')
+                                          g(mask='url(#accountLicItemOtherBSVGMask)')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherBSVGPaint)')
+                                          defs
+                                            pattern#accountLicItemOtherBSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherBSVGImage' transform='scale(0.0111111)')
+                                            lineargradient#accountLicItemOtherBSVGPaint(x1='-1.73333' y1='-2.6' x2='13' y2='26' gradientunits='userSpaceOnUse')
+                                              stop(stop-color='#FF6635')
+                                              stop(offset='1' stop-color='#FF8515')
+                                            image#accountLicItemOtherBSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAElUlEQVR4nO2cz28VVRTHP5bShxQtYKxJIRqlCGxMSMCfiT8St0riDtkriZiYKCkbKH8AkbAg8cdaYGmgC+OOkGhiVFz5I6k/FrIQFXzQPguV4uJM4dHeO3Pnvjv3zjzOJzmZtm965nu+78fce+fMA0VRFEVRFEVRFEVRlP7hngjH2AzsBp4HtgIPAKsiHDePOeBv4AfgHHACmE6qqAe2AFPAAnCz5rEAnAEer8SJCtkHXCO9gWVjDnirAj8q4SjpDes1jgR3JTD7SW9SqHg3sDfBeAK4TnqDQsU8sD2oQ4E4h110B3gfeBIYSSWwi7XAU8jHXAe77rOpBNrYiV3sL8Bj6aQVMg78il3/znTSlvMRZpFXgIcT6nLlEeAq5ho+TqjrDoaAvzCLPJRQV1kOY67hEtBKqOsWuzALvI7MApvCOuxj/10Jdd3iFGZxp1OK8uQM5lpOpRQFMAzMYBa3O6EuX17HXMsssCahLvYYRNVCmCfD2E+KexLqYsoi6kRKUT1yEnNNU6kErcd+8ngllagAvIp9pjiaQtBei6BLyJCvqazEPlzdm0LQWYuYD1OICYxtAhZ9Sj4G3LCIeTG2mAp4CXNtC8gsMhrvWYRcAAZiCqmIAaQWU437Ywr5xiLi05giKuY05hq/9Unmc3F2C/Cj5bGLwKPI0qOJYWAj8FDXdhSZ/o5kcX+2XY2cVIe7/v8+YDD7+T9kzLvILDLt7wBtZEGrncVl4I8sLmTb37P/MbEa+A140PL4NuweGBks3mUZeTO+UeSEcQxYgSxBLsYmxNBQDC7J55P7MnL1exr4OdveAN7BbjKIB5MexyvFT5jfUndTTFNxq8aOGhRZl9hRxriyI4Q3Su7fz7xZRdJV2JdD7+Y4ScCuqyHg8xoUVdf4DJm298wHNSim7nHc292Ml2tQRBNiAZm2e/N1DYpoSnzl6THP1UB80+IZm5l5w7vXch5TzFg9yzPa+uwsoYP0b4wj/Q/jyPT0X1d1yBrFBLABmXGFiA3AgSy3K73W4urZHfxJ8VtlFng656B5fW3dMeEj0JEJRw0harnoI3DeIfHBghyTDjluIhcSqmLMUUOIWuZ9BLqI21SQY9wxTx2MDlVLaVySFl2EbTnmqfKj44CjhlC1lCbEq2CzY55riNkhX9ljWU7Xe2lC1VIal6RF3aK2Ds06RqhaSuOStIN9SPMs7qOOOkSoWkpTRuAkcrIYyraHkbFnavN8zO61FiN5l2O8nh3F7Gk/9GA0AjU6Emp0JNToSKjRkVCjI6FGR0KNjoQaHQk1OhI+bbs2XkDWbNcibVL3In3OLeSewzVIR88I8gQv/r6470pu35s4wPKvm1jaKw23e6K7aSN9FiA3m84jaxVz2c8z2ePtrt9nkOXUdte+/2R/C3LfSsi1jhjfOJaCID7oR0ck1OhI5Bk9UyLPlV6F1JggPuQZ/X2JA5TZt2kE8SHP6E9KHKDMvk2jch9awHcUX7o5T7Pv/S4iig8bCw5yHulx63ei+NAC3ga+RG6gvAp8gXz/aD+/kpeiPiiKoiiKoiiKoiiKoiiKovjzPybl9QWT0vrYAAAAAElFTkSuQmCC')
+                                        span B
+                                    div
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherCSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherCSVGPattern)')
+                                          g(mask='url(#accountLicItemOtherCSVGMask)')
+                                            rect(width='26' height='26' fill='#9F9F9F')
+                                          defs
+                                            pattern#accountLicItemOtherCSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherCSVGImage' transform='scale(0.01)')
+                                            image#accountLicItemOtherCSVGImage(width='100' height='100' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEgElEQVR4nO2dS49URRiGn54xxChgJkKUixrdmBi8oi5ZIKgLYnQWbsYY40ZDBkGM8SeogfADEBa60YUoS2CDG1ZGLjrGiBEXysSMGMVooFFmXFR3eqipPreuW/e8T1KL7pxT9X7fe6rqnNN1ToMQQgghhBBCCCGEEEIIIYQQQgghhBBCCCFECtYC7wPngTawMCLlGvADsA9Y4y1bgXkc+JX0yQtdZoFHPOUsGGtZHmZ0y8/AhJfMBWAMeBu4I7WQiGwE9qQWUcT3pD9qY5evvWQuAC3MBL4itZDIXAFuSS3CRQtzxCxHWqkFuBhLLUDciAzJDBmSGTIkM2RIZsiQzJAhmSFDejS96v8bOAe8B9yXUsiwlxB5+Bc4ANxcmvUCUidmlAzpltPA3WWJd6FbJz1852EW2AL8WGcnzSHhWA+cpGZPkSFhuQv4lBp302VIeJ7AnIFVQnNIj5B5WAAmgaNlG8qQHqHz8AewGfipaCMNWfGYAD6hwnyS+npgGK5D5oCXgdvKkmmxx1HX/rKdUicmd0PmgA1lSexDC/jcqm8e2FG0U+rE5G7IVFHyKjABXLDqvIQ5JXaSOjG5G1J3mHLxJEuX554CbnJtnDoxuRviC9d84rw+SZ2Y5WJICzhi1T0PPFdVyKiXqnnwiWs+mcOsry4VMurFJoYh4J5PDlcRMurFJpYhAG9ZbfwHPFgmZNSLTUxDxoGvrHY+LhMy6sUmpiEAz1rttIE1urnYo18eQi7KPgc8tOjzbt1cLCfk01YfWp+fliHlvBiw7i+szw9ryOrRLw9/YX71Ox9Aw62YdV1drqmHlLMa+BJ4Df/D1z/W5xXqIT2yyIN6SGbIkMyQIZkhQzJDhmSGDMkMGZIZMiQzZEhmyJDMkCGZIUMyQ4ZkRkhDZjCr9TYBKztlU+e7mYDthiJaPL4XD7SBnRSbPQ5Mk/Z1tFXzEDse72ZsLRBu85SnIEIZkiIer0HurCG+yy7PGnwakiIeLnsK8BtM163LOGYMjmlG26Ejh3j+HAPONmjUxSHgeoP9rmOtbY3AhQrbpIjnDMBL+DnqHmgoAszZSswe8q5DQw7xTIE5ezjuIchVAwSwykP7VctF4HaHhtTxHGPRwovVnS9G3ZCLwGN9NKSM5xjGgxtoYYavkzSb6HMdstrAd5hhytUzusSO5zIm11N4Wj/8mdXA7gHq2mvVdWRgdfWxn2waunimrUYHOU381qqryfn/oBxkyONZB1y1Gp5uUM8bVh1XgTs9aazDFkuHr3iuEDGeQ1bjbcztg6psw/wl0eI6PvCssQ6n8B/PQc8aC1mHeSuBHcQuirv7OOZIssX/1qkzFY+y9F7UoPFE7+2TmKtTu7vPAG+y9Hb1XpaOsQudOp6PrN2F6wH/oYvnVdymVC3zwOvRVffnHQY71c4inkngd+qLvwS8kEBvGa9gHtZpEk8OPR0wf7h1mGq/CbQxE3jTVx/F4F7gI8wLkqvGs36QBkM9YboRc9Q/A9xPb6KexfwJ2QnMe6R+CdS+b+7BHPXbCRzP/+Zs0D7HIu2dAAAAAElFTkSuQmCC')
+                                        span C
+                                    div
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherDSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherDSVGPattern)')
+                                          g(mask='url(#accountLicItemOtherDSVGMask)')
+                                            rect(width='26' height='26' fill='#9F9F9F')
+                                          defs
+                                            pattern#accountLicItemOtherDSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherDSVGImage' transform='scale(0.01)')
+                                            image#accountLicItemOtherDSVGImage(width='100' height='100' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEl0lEQVR4nO2dTYgcRRTHf7vLJkLWgxfNGsXFqIm6mxwiCIGgRsSDC66IIMEPlIAxakhOQdSTMR5UUC9+rIKCiBfNQRDxCwTBq5DFL4galJBkk4MoyX64Gw81DZOanpmq7pqqms3/Bw+2Z6rf/71+U9093T1vQQghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQwosBj7GrgTFgpEex9APLwN/AWeAf4N/QAt0KshW4H5gErgIGQwfQ58wCPwMzwOfAV8CZXghtBr4Gzsm87AzwBnCl/yZvz5PAYgbJ9bPNAc/gd0go5eUMkllJ9ilwsVcFmngigwRWon0DrPKoAwDjaDfVS5t2L4XhswyCXuk26VqMTRkEeyHY78CabsUYBO7tNkgEYQx4zGXgd6T/9Fwo9icOB/ijHg7ngOeB64Dhbo5LGAY2AC80fMXSTaV/CeYSS7Ovh7uttOAR1C0ewXTjVtw2Smjd2PqvWv6+77aC66fkQI2g2nEwkW5M/auBJcvnRKcVXAuyoWZgZVyfSDe2/heWz9c6DXYtSJ19dzuGE+nG1r/P8nkauKjdYNeC9IpUujH1VwEnLL87ygbq/kYcFoD3rdd2thusGRJHfz3mjmPhdxm41h6kGRKPI8C3TcsDwKNlAzVD4unvsHwfp+SkQQWJp78acx++2f89zQO0y4rLPPCB9VrLwV0zJK7+hOX/P2C0eNNnhvTqi2EK3ZT6h4EfmpaHgAeKBZ+CrA8VURPXJNJNrf+etfxQ8YdPQR4ME0t5IJF1U+t/iHmGoWAc2FIsuB5D5jCXrENxG+YgF1s3F/1Dls7rxRuuBSmCOwhspPoNqo3Ai7htjFC6ueg3M2VpnAAGBohzJiPcmND3kLzYroLkxTYVJC/GVJC8GNVBPS8WVZDM0C4rM1SQzFBBMkMFyQwVJDNUkMxQQTJDBckMFSQzVJDMUEEyQwXJDBUkM0IWZAbYi3mkZaRh443XZgLqpCJafj5PnZTZPLCbzsUdwrR98nnSIxeLmd8CAYLd3iFQm9sDBB27GDHz+4OaAe/2CLbgqZqaMS12fl+Ce+MA2w5jpqovQ5h9buqNnWN+jw9iWmtU4R3MD+J9WQLeragZk9j5nQQ+AniFatW8oYJowXhFzZgWM79lzG/ZAbgMUx3fgCv3Emysm3qD55LfEqa94nncjH9R6jRUHvHUSmEx8psBtrVzcinwEvArbgf6LeVunLjJMeCU1ov8TmN+PfUmcAc128h+Yjl/toav5yxfH9cJLBB9l5/dRvYIFdqfNtb5zfJV5Xw/NH2X3yitDb/2V/DztOXjLLA2UIx16Mv8pi2xReAuj/Unae0P/FbgGOvQi/zeDhzjeayltRPBPOaKZ6eLb4PAPlpPFk6Sx+woCJ3fLBHym6K1Zd054EdgD3Ajpj/tGswXpD3ATyXjl4C7ex1sBULmNxUr6EfaBO1qyzj2sE1EiPx2xQ56CjhVIdhZ8pwZNlXzO0XEmWGzDnMRzuUewDzmAHd5kkir4ZvfNDXzq/0PRxpcgWkzdCemi2fRTOUY8AumK+ch4K9AerGJlt//+qJwpsfEBv4AAAAASUVORK5CYII=')
+                                        span D
+                                    div
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherESVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherESVGPattern)')
+                                          g(mask='url(#accountLicItemOtherESVGMask)')
+                                            rect(width='26' height='26' fill='#9F9F9F')
+                                          defs
+                                            pattern#accountLicItemOtherESVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherESVGImage' transform='scale(0.0111111)')
+                                            image#accountLicItemOtherESVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEj0lEQVR4nO2cX4hVRRzHP7trZtsfNcQiC4xqN6lW0yy0F4NVhAjrJerVQFSoRFAhsUDUl+ihDBMhA3vpIbBHXS2RNjYQcR9CSIS22BT/7RYmpK17e5jrunubOTtzzpyZObffB34vwzkz3/ne3zlnZs6cC4IgCIIgCIIgCIIgCIIgCIIgCIJgYjHwAdADDABXgZpFDAOfAneFl1wdWoA3gVPYmZoVewNrrwyPA99T3OBbcQ1oDdqDCvAy6pL3ZbIYrWEVcAO/JteAz0J2InWWAH/j1+Ah4BPkYTjGdOAXsk07AawHngbujSOz+nyM2eBzwKvxpDUPczHfMk4Dj8STpmgpeH4r0AEsGhfzUZdxClxGTVQGYguZ4nj8Q0w0dSlwv29RHtlEAiaDOaN1mfos1XqADACPAaOxhei4A/gQNaTxPQ4NHTsz+jkP+Bz4DRixrG8I6APWAtPs7DTzUQADQsWLhj6upvhYux91G83NhYjG+Iw/0D9/VgI3PbXxEzDV3tqJxDbIVxzU9K0FOOO5nU321k4ktkG+Yp2mb0tKaOc8llndrKtRPZqylSW08yDwep4TY2eijzhr6FufQx3Xgc0UfOBlEdskH7FH06+Z2A/jasCWPOZl0Yy3Dt1toxtoc6jjgCctYzSb0SPAMU35csd6znvQMoFmM/pH4E9NeXdoIY00m9FHNGWdwKOhhTTSaPRQFBX+0N2fVwRXoaHRaO8PgYAMo15VNZKE0Y1MRW0UGSX+MM01vjb0x3ZH0vgIxnLg1xwCY8YaTT+W5ayrtImKjvuAfVQnu+dq+rAzZ13eJyw2rCD97P7ZoP1Ezvquo8wOmtmQfnbv1miehb+158niL9QY/h3gTgdfjaSa3a9otL4RSUs/8LCLqSZSy+4b6F8a74+oqR9PmQ3pjEyOG/QNRtb1toOXk5JCdm/V6Hoqop5b0efopRUxs3uxRs/GSFrGx9XxgnwsKnUAXZjfbJTJFeCkptx1WbQM7vFV0SLgEHFvG19pdE1D7c6PndE1Nzv/SyuwC/gngY68pdHXnYCuwka3AV8m0IGqRG7eT0B8lWIMl/3RLwC9uG/1/T+Ta//5Ycy/3CDwLuq1UXs9nqyX/Z5xXipRln5nujIq6yV7h/+M+jGxzYyh35mthoouArMtzp8NXMoptswoW/8YthOWlwzlu+tiJ+Mi6sP11Chbv/MH+wPof7Euh0YXGOqIGaH0W3+wb5pptTsIvbuA0LIilP5rtreO2uSHCFnYGn3JUP6EQ1sdDseGIpT+A7ZGm1bmVjk05nJsKMrWP4x64G60PeE9ig2PHsA8PNrsIDwvWwxtJ6f/GczLob2oQb2JGcAPhnNHcbt889JJhfQfMjRWQ01TN6Cmre2oJ/S8elnWFPawb5EZ9FRF//P4XYO+CSwsQ6iB5/C7z6NU/ds8Ct1elsgM8m4RC66/DfjCg8j9uH1T4otK6W8BdpDvMhxBZULR/wkpQuX0LwC+cxD5LepPU1IhqH4fv0wn8Brqpegcbu87G6zHUeAbzDs+Y1N1/YIgCIIgCIIgCIIgCMH5F2C0RX9HY4HGAAAAAElFTkSuQmCC')
+                                        span E
+                                    div
+                                        svg(viewbox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                          mask#accountLicItemOtherHSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='26' height='26')
+                                            rect(width='26' height='26' fill='url(#accountLicItemOtherHSVGPattern)')
+                                          g(mask='url(#accountLicItemOtherHSVGMask)')
+                                            rect(width='26' height='26' fill='#9F9F9F')
+                                          defs
+                                            pattern#accountLicItemOtherHSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                              use(xlink:href='#accountLicItemOtherHSVGImage' transform='scale(0.015625)')
+                                            image#accountLicItemOtherHSVGImage(width='64' height='64' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAEzUlEQVR4nO2aXYhWRRjHf7vvpiu7lVi7UFFGZtAHaCXRB4HuhRexEUXljRdBQUQlgl4oeuNGedFlVOuCWldmaR+udFGBQR8QC+1ikGRqlJS7S1qubCq6r13MOe28s2dmnplzzrpL5wcD+77v8/yfmWfnzOeBioqKioqK/y1NgfYdwGgZFTEIrVc0zYH2d5ZSi8tIaALuKKUW8dwOrJrOgG8Cl0oso8BTwro8C0wAv+ZvlpwD2Cs/Hqj1o+H/PmqMkXA/UNd8p61njmJPwG+BWq8Y/rcF+PZrfl8DNwbGjqIDd/f9PlBvqeG/LsB3WPNbGBg3muW4E/BZhOYRzf9AgJ8eNxchs4BvCvwzIv5e7e+HgWsiNHIRkgDfQJM3ATVgpcDH/K/n6gVF9oCTEfEHaBw8H43QyMXl7gGXgI+0z48AV0ToRCNNwLX45+iYBEDjY3A18FCkThTSBNwlsIl5BAC+AU5on7sjdaKQJkCyCYrtAXXgY+3zY5E6UbQI7SRLzUHgIjAGHAd+Ar4FPkcte118CLyQ/H0rKpmHE43DWvlZWN/Cce0BJOUH4EWg3aLfgmq0T2fC8v3NhO9sxdRw7wFCyjDwPNkHHttzap8FDgJ7gNeAZ4AHyLm4ugn4sqDG6+UL4Dotzj3ALyXEybVcXgmctgieBz4BXkJtTTuBOUAbsBi1rF2fJO+CReMEat5/DjhXYuOjEvBk0sisbrYVtS6Q0gG8DvxTciMLTcBSpj73e1GDTSzXo1Z9syIBoM7bfkfN05uN32pMDmSdwIgWbCT5jsSmpvk1ARtR0+WMTwDAIuBp47su1Gg7CPQAQxkBh5LfBhPbLkNjNY1HWjM2ASa7c1Rit6G1abYloAX7QkRSJpi68tw3WxJQA9YWUJG1NI4Jt6BmlhmdgF0lVOg9TX/rTE5AV4mVSo+/FlL+gBhFDTWCl1Wpg0w+Dl+VGKfP1UjXDqqOGrh89AMrUDu9dlSv2S/wm0hipBo+/kZtmB5HXaKk8RYBT6AaOmb4fAe8LNC20oM7uxsdvr5prkez7XbYnUPdIs0X1Hc+sAW1jB8GbhD4WOkke5GTln0CDf0KyyxDTK4YF1tsjgP3aXrpgekazSZdqLVpdvcCD4pa6UBf3maV5QIN3yA6ktg1ozZNcyw67cAO4A/UDfUpTWMYeBc4k9i0WTSC8Q0uttMdnSsFOhLeEOikZYtQEyjxGKlgTgfYni0qqO8RWCHQkD4CNpaguvWY4XcU2Ab0Jn/rv40DnwLLRK104BsEJVPXfoe/Pgja6M3w2wG0ajatwM4Mu15B/bz4psFNDt/NHt8eu+t/HDJ8jgBzM+xagWOG7YBA30kTaj/vG3T6UV3dXAj5/Abxvw53N43L5Lcdtn2aXR3hixOui5FmGnduNrqJu86qJTFcq82/Mnxs1I3PCyjgBaoyN0PmKVEWA4bPURqf/5SsR+BQYFutlLEd3iWMvS3DdyeNSZgHvJNhV8ggmFLWgYiPZagpbdzQOYZKTh9TL1TGUDPFksi2WinjSEzKhoA4r4YIh6wELwIfhIgb7Ek0YpgXYHtVZAwxRRyLh9KG6tZnUBsf/T3BU8BbqKu27RS4GXIRezGSl7Rxq7R4a5LvpvXdooqKioqKioqKWc+/As4qekL663sAAAAASUVORK5CYII=')
+                                        span H
+                            .account-lic-item.account-lic-item-select
+                                svg(viewbox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  mask#accountLicItemGunSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='34' height='34')
+                                    rect(width='34' height='34' fill='url(#accountLicItemGunSVGPattern)')
+                                  g(mask='url(#accountLicItemGunSVGMask)')
+                                    rect(width='34' height='34' fill='url(#accountLicItemGunSVGGradient)')
+                                  defs
+                                    pattern#accountLicItemGunSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountLicItemGunSVGImage' transform='scale(0.0111111)')
+                                    lineargradient#accountLicItemGunSVGGradient(x1='-2.26667' y1='-3.4' x2='17' y2='34' gradientunits='userSpaceOnUse')
+                                        stop(stop-color='#FF6635')
+                                        stop(offset='1' stop-color='#FF8515')
+                                    image#accountLicItemGunSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADkUlEQVR4nO2cS2xNQRyHv1ZTty0JqagKdh4rNlYSaTw3LKULdgiJSOxIiGKDCEpD1K5hayE2LBCRildQEVRrJ91UUoJSCa3FuTfk5txx5nFmzrn3/yX/zU06880v0zkzc24uCIIgCIIgCIIgCIIgCIIg1DR1DtuaCth35qkPLVArSNCeaAgtkAMqLYlaS5/MaE9I0J6QoD0hQXtCgvZEkqALwD7gMfCN6CkcV7pUaidr5YUFwEtPA8pbaaHaCxaIZvFy3UZrBK19tOrAshsJWYXWQUa1Rm+1dxFKqKb/V2CGL5EqIjZTVdDenrhVhvbSIThEgvaEBO0JCdoTErQnJGgzRoh2F3EViwRtxlWXjYW+tMlijQAngUbdMKvt5azNd0W07i50US0doy46ECJUQb/xZlEDqIK+7M3CngfAhtASptQDA4R/AKnqHtDhaLxO3qSYskYhELL6gfWOxxo0aIC7Cok8z+Bygge9VyGR5xlcTvCgFysk8jyDywkedItCwkWNOPJsA04DnYZ/HzzoOuC3QsS2Tlj6tQFngPFiewOG7QQPeq5CwnYmG90bFJkHnOVvwP+WyZ46eNDrFBJJa4lDn3agG/iu6O+WQbufYtoZc+CbmMMxAjo16MijHTiHOuBSTQIrNdu/ENNOjwvxpDyJEdCpU5b9zwfOAz80+72t2U8T0Eu0FI0Dl4qfeaGdaHbYBL3a0mG7Rd8bDfpTvilJi53YhfwRmGbp0AAMGfb/jJy8RbqBXdB9jjy2WTjscuSQGk2ov3iepLY4cqkHXhk6jBFtUTPLJuxCngBmOvRZa+FyxaGHc3qxC/pmCk7XLHw2p+DjBNN/1VLtScFpIebL2SjRcT1zxB1tk9YksCglL5sD1HUy+KsKg5gP6EWKXgXgvYXbwRTdjDiE+WCOpezWgfmN4m+iB31mmA7cx2wwuvcMJvQYuk0Bn4GlHhwT0wgcAb6QfBAf8LMOtgDDGl7l9RaY48FTi1bgKNFM+N8A9nv0WgX8SuBUqQaA2R59E9MKHKfyDL+DxxuvIt0VXJJWfwDnxJRm+Dui++HXwAHCCDdjt0OaArq8W+eUFSR7IVCphvwr55cdmAc9EcA31/QhM9oLzZjd0cgabcAy9Pb9D8nwriPrdJIs5OdEOyjBgouoQ35KRg8reaORync1j4BZ4dSqjwLRXc0w8JNod9FV/FwQBEEQBEEQBEEQBEEw5A+a9nXfvauSsQAAAABJRU5ErkJggg==')
+                                span Разрешение на оружие
+                            .account-lic-item
+                                svg(viewbox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  mask#accountLicItemAirSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='34' height='34')
+                                    rect(width='34' height='34' fill='url(#accountLicItemAirSVGPattern)')
+                                  g(mask='url(#accountLicItemAirSVGMask)')
+                                    rect(width='34' height='34' fill='#9F9F9F')
+                                  defs
+                                    pattern#accountLicItemAirSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountLicItemAirSVGImage' transform='scale(0.0111111)')
+                                    image#accountLicItemAirSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEfUlEQVR4nO2dTWwVVRTHf0WlxeKipCBQReMO62dCNGFB0CgJURYsJC4MCSzQLpSNpi6MC6OJiSFhZWJidMMGSHThxujCSBCBIFA/iUTClxBaaA3Y8hnr4lzT5tl5nblz77kz751fcvJe2ndn/uffO/fNnJl7C4ZhGIZhGIZhGBWlI+G+7wDuAZYB97noBRZMix73uR7XZi7Q7d6PAzfc+zHgJjDq3o+6uAiccnEaOOs+p05soxcA/cCDwAOIqfcC9wNLgDmR99/IP8B54CRi/BngBPAr8Avyx4lCKKPnAY8CjzFlbD9wd6Dta3EBMfw/448APwJXU4rqAl4FDiCH42SLxk3gILDV5axKHzDkKbzOMeRyV6ETOBo5oSrHUedBdLYmSK5q8VppF3NwMFFyVYr9RU3zOesYB+70aNdKjAPzizTwMXrSo00rUsg77QuGtsWMVqJORt8ABpHz2D7gTaZqHS1Jqm/6wRm0DCbUU4g6fRkuRQpC01k8w8+0KORdnYzO0lo1PTNSpzG61pjRSpjRSpjRSpjRSpjRSpjRSpjRSpjRSpjRStTB6DHg5Sa/3wCMKGlR5RZ6FbIvkGLSbCwEdinqUnmsbFwhkVFgi4e2F4BhBX2XPbQV5lLkJHYDi0roW+S2EVOjylB1PJJ4316cRczefSygzkz2RhCedywuSqyx+9sIWv9HyMNyGOl5sQndu3cqaOb9QGJ3IT1Oix7go0Da39MQvLmkSK1enMU64NwMuorERg2hT5QQqN2Lsyg7dq/QENkJXPMUWJReYDUw0OQzA+4zvR7b98nhKjKXphC+Uyv2A096tMvaXy/wELC84XV6789zF3wE+Bn4reH1Yo62efkeWFm00e0eOwL4Gj+j8xhahoXAUy6mk/UH8OEbb3UerCDMt3eIYUdbx6rCbuE/dHQgU8fU5nNQjQdoRpGnowoXlXzLpJPI1Vy78Rmelbsy9ejPS7StKypXhI10IMWVdhmjf6dExyzToyeBD0u0rxvbkSnOSbgL+Iu4PekYsKmJhk3EP7LGKDg5KAbbiJPcEFJTuC2HhjlIDeNAJC0fFHYlAn3A34RLag+wtoSetW4bofRcIU6t3Iu3CZdYKELpeSugptLMQxYfaTWjz1DByasv0XpGvxhQTzA6gK8Id8imji9JuxRSU5YiJcnUJpWNEWQpokqznvRGlY0NwV2JxKekN8s3PongRzS6kDsRqU0rGoeo4FnGbCxGljxLbV7e+BPd+npQHifsVWOsuIIsJ1drngEmSG9mVkwAT0fLXplnkdv0qU1tjOvAcxHzTsLz+D8PEiOuOU0tyWri16/zxGVgTeRck9NP2rORc8gaqm3BMuAH9E0+hKz221Z0AR+jZ/IOangxEpIB4p7+TQCvqGVTcZYDhwlv8k/AI4p51IJO4F1kibWyBl8H3sHj8dp24mFgH/4mf4c8oWrkZB3wB/kNPo08nlDZuyJVphN4A7njkWXwMPA6SotntzrdyNnJPqb+/cdeZDJ+d5N2hmEYhmEYhmEYxmz8C7nxYOkRXuWwAAAAAElFTkSuQmCC')
+                                span Управление пилотным т/c
+                            .account-lic-item
+                                svg(viewbox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  mask#accountLicItemWaterSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='0' y='0' width='34' height='34')
+                                    rect(width='34' height='34' fill='url(#accountLicItemWaterSVGPattern)')
+                                  g(mask='url(#accountLicItemWaterSVGMask)')
+                                    rect(width='34' height='34' fill='#9F9F9F')
+                                  defs
+                                    pattern#accountLicItemWaterSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountLicItemWaterSVGImage' transform='scale(0.01)')
+                                    image#accountLicItemWaterSVGImage(width='100' height='100' xlink:href='data:image/png;base64,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')
+                                span Лицензия на водный т/с
+                    
+                    .mainbox-section-wrap(style="margin-top: 0;")
+                        .account-info
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#FFD1D1')
+                                  mask#accountInfoEmailSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoEmailSVGPattern)')
+                                  g(mask='url(#accountInfoEmailSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#FF5959')
+                                  defs
+                                    pattern#accountInfoEmailSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoEmailSVGImage' transform='scale(0.0104167)')
+                                    image#accountInfoEmailSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAELklEQVR4nO2cTahVVRiGH/Xeq6WhhiRkWEYqqIgUFtiFyiAkcuDfoEmTQIeCE4c2iIgo6UoOImjQUMTJRZG0ErpUSD9iSUnpQDTSkPz/vXoarLNR9J5z1v7W2met7XkfeLmTfdf6vu/de6+99lpngxBCCCGEEEIIIYQQQgghxP0sAD4CDgPngEaP63yzFh82a1MZE4EPgFsZJJ2rbuKMGDDWuCUTgF0ZJFgX7cGdsNF4N4Ok6qZNpkq34O8MEqqbvvEp7Hifg3D3fVGOsz4HTfBs7GFguT2WnuMqsAE42elAXwNGcJfViyX+p1c5CqwBvq+i8XnAV6S/v+aoG8D7wCRzdT0ZB7wF/Jso0Rw1AiwMKaqFR4FPgdsBgddd54CN+D/MVMJLwO+kL0a3NQw8EaF+UZgEvANcI31hqtYpYHWcssVnLrCP9EWqQrdwt9xHolWrIopB+gzpixZLh4DnYxapG0yn/oP0FdyttT9ybUrRB7wBDOLO7rK8AvxB+mKW1R7gKUO+M4D3gI+JNEh/fldQXwPzDW1MBLZQj0H6H+BNQ45jzY9+MLRzH1fuCfAa7rK0zPjm4UxMXeSxdBv4DHfrLMszwP4x2ozyErNVwH8BrxnbXAecbtN2t/Un8Kohjz7cROxSm7aD6RT8DuAxQ7vTgSHSLnEW728sq1fPAj959BGMTyL/YZ+SDwK/efYTUyPYFtGn4k6cUc9+gimT1LfYXkr10/lSjqWQk2UlcKJkf8FYLushYLKhr6eBvYY+fTUMzDLE9Tiw09hnMNZkjwErjH2uxK0mxSr8SWCVIY7xwHrgQkDfwcQ46ywTkmmED9Ih728W457jQ/MPJsYZWNx3LcuZy4BfDX0eApYa+nsIN8+5bugzWwMK/Qg8Z4iheN6+6NHHZWAzNrNfxq3pxsw5mJjBNHDb94aAKYZY5uDe0bRqezfwpKHdmcAXkfLL3oBCx4HXjTGtxu06uNHUd9gG2XHA27g9PFXlGUxVgRXagXvMs9DXlIX5wIGIedTWgAZ3Fre7seeoHzdGXO1SbsF0I8hCP2N7cvFlEDjS5ZyC6WawDe4M0jHXXmPMKXrGgEKngLUR4o89q+4ZAwoNA7MNcc8ijx+VBJM6gQblJldlJm0yoKR+AV5oE+sS4GAGcT6wBjRwCyHbcbPigjnAJ/gvkmRjgM82kyguVsTp5t+ZSaNoT9sa192AOtC2xkm3VQsZkBwZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgZkBgfAy5VHsWDy4VOB/gYcCJCIL1Kx9r5GLAvQiC9ypcxGllEnovduWuUiF/R2p5BQnXTNlOlWzCAPtZXRvup4PvRA+S79yYXjeLO/OjFv5uFwFbcD+dy2f6XUhebtdhKgi8nCiGEEEIIIYQQQgghhBAif/4HH6PKnl6xpw8AAAAASUVORK5CYII=')
+                                div
+                                    section Почта
+                                    section email@enki-rp.ru
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#FEFFD1')
+                                  mask#accountInfoLevelSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoLevelSVGPattern)')
+                                  g(mask='url(#accountInfoLevelSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#FF8C39')
+                                  defs
+                                    pattern#accountInfoLevelSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoLevelSVGImage' transform='scale(0.01)')
+                                    image#accountInfoLevelSVGImage(width='100' height='100' xlink:href='data:image/png;base64,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')
+                                div
+                                    section Уровень
+                                    section 1
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D1D6FF')
+                                  mask#accountInfoExpSVGPath(fill='white')
+                                    path(d='M22 15.5C22 16.8624 21.5719 18.1904 20.7762 19.2963C19.9804 20.4022 18.8573 21.2302 17.5655 21.6631C16.2737 22.096 14.8785 22.1121 13.577 21.709C12.2756 21.306 11.1337 20.5042 10.3127 19.4169C9.49171 18.3296 9.03311 17.0118 9.00173 15.6498C8.97034 14.2877 9.36774 12.9502 10.1378 11.8262C10.9078 10.7023 12.0116 9.84872 13.2931 9.38613C14.5746 8.92354 15.969 8.87533 17.2794 9.2483L16.7341 11.164C15.8253 10.9053 14.8581 10.9388 13.9693 11.2596C13.0805 11.5804 12.315 12.1724 11.7809 12.952C11.2468 13.7315 10.9712 14.6592 10.993 15.6039C11.0148 16.5486 11.3328 17.4625 11.9022 18.2166C12.4717 18.9707 13.2636 19.5269 14.1663 19.8064C15.0689 20.086 16.0366 20.0748 16.9326 19.7745C17.8285 19.4743 18.6075 18.9001 19.1594 18.133C19.7113 17.366 20.0082 16.4449 20.0082 15.5H22Z')
+                                  path(d='M22 15.5C22 16.8624 21.5719 18.1904 20.7762 19.2963C19.9804 20.4022 18.8573 21.2302 17.5655 21.6631C16.2737 22.096 14.8785 22.1121 13.577 21.709C12.2756 21.306 11.1337 20.5042 10.3127 19.4169C9.49171 18.3296 9.03311 17.0118 9.00173 15.6498C8.97034 14.2877 9.36774 12.9502 10.1378 11.8262C10.9078 10.7023 12.0116 9.84872 13.2931 9.38613C14.5746 8.92354 15.969 8.87533 17.2794 9.2483L16.7341 11.164C15.8253 10.9053 14.8581 10.9388 13.9693 11.2596C13.0805 11.5804 12.315 12.1724 11.7809 12.952C11.2468 13.7315 10.9712 14.6592 10.993 15.6039C11.0148 16.5486 11.3328 17.4625 11.9022 18.2166C12.4717 18.9707 13.2636 19.5269 14.1663 19.8064C15.0689 20.086 16.0366 20.0748 16.9326 19.7745C17.8285 19.4743 18.6075 18.9001 19.1594 18.133C19.7113 17.366 20.0082 16.4449 20.0082 15.5H22Z' stroke='#597EFF' stroke-width='4' mask='url(#accountInfoExpSVGPath)')
+                                div
+                                    section Опыт
+                                    section 0 / 8
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D5FFD1')
+                                  g(clip-path='url(#accountInfoExpSVGClip)')
+                                    path(d='M21.4402 14.08H18.5602V8.32001C18.5602 8.19681 18.4895 8.08481 18.3788 8.03137C18.2681 7.97857 18.1366 7.99297 18.0399 8.07041C17.9942 8.10689 13.4559 11.7488 12.0982 12.7767C10.4236 14.0442 10.2402 14.6442 10.2402 15.6227V21.76C10.2402 22.6422 10.958 23.36 11.8402 23.36H21.4402C21.6169 23.36 21.7602 23.2166 21.7602 23.04V14.4C21.7602 14.2234 21.6169 14.08 21.4402 14.08ZM15.3398 14.1667C15.6844 13.7821 16.1881 13.6464 16.4642 13.8634C16.7407 14.0807 16.6854 14.5687 16.3407 14.9533C15.9961 15.3379 15.4927 15.4736 15.2162 15.2563C14.9398 15.0391 14.9951 14.5514 15.3398 14.1667ZM12.4802 21.76L18.4111 18.0141C18.5039 17.9555 18.5602 17.8534 18.5602 17.7437V14.72H20.1602V19.28C20.1602 19.4221 20.0665 19.5475 19.9298 19.5872L12.4802 21.76Z' fill='#0FC60C')
+                                  defs
+                                    clippath#accountInfoExpSVGClip
+                                      rect(width='16' height='16' fill='white' transform='translate(8 8)')
+                                div
+                                    section Наличные
+                                    section 1.320$
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D5FFD1')
+                                  mask#accountInfoBankSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoBankSVGPattern)')
+                                  g(mask='url(#accountInfoBankSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#30D615')
+                                  defs
+                                    pattern#accountInfoBankSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoBankSVGImage' transform='scale(0.0111111)')
+                                    image#accountInfoBankSVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAABWklEQVR4nO3cPU7DMABH8QdCtAOcAE7GGYCeiqvwMQELB6Hdy5CoU2MgTf5J3feTPFmRnCcnijIYJEmSJEmSJEm/WAIr4A3YAFsH27bFK/AILHrXbd0CnzO4qbmPj7ZVL0uM/N/YvXb2agaLP7bx0BXzvBD6rjCn/TqbnRUuWgNXw6+lahvget9EKfR2nLVUb2/T0qtDAzK0JEmSJJ06/3UMz38dUzJ0iKFDDB1i6JCLA68vfbUMoZovH3d0iKFDDn11VPNoj80dHWLoEEOHGDrE0CGGDjF0iKFDDB1i6BBDhxg6xNAhhg4xdIihQwwdYugQQ4cYOsTQIYYOMXSIoUMMHWLokFLoTWwV9fjumiiF/hphIbXrbFYK/TTCQmrXq9mC5oixqU/eOpbxDlz2CQ3NoXnG/lvkm56NdxY057m90JwcNvVNzWWsgWfgngN2siRJkiRJkiSdiB8dMg642RtnxAAAAABJRU5ErkJggg==')
+                                div
+                                    section Банковская карта
+                                    section 230.998$
+                            .account-info-item
+                                svg(width='31' height='31' viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D1FFF4')
+                                  mask#accountInfoDepositeSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='7' width='16' height='16')
+                                    rect(x='8' y='7' width='16' height='16' fill='url(#accountInfoDepositeSVGPattern)')
+                                  g(mask='url(#accountInfoDepositeSVGMask)')
+                                    rect(x='8' y='7' width='16' height='16' fill='#2EA7FF')
+                                  defs
+                                    pattern#accountInfoDepositeSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoDepositeSVGImage' transform='scale(0.0104167)')
+                                    image#accountInfoDepositeSVGImage(width='96' height='96' xlink:href='data:image/png;base64,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')
+                                
+                                div
+                                    section Депозитный счет
+                                    section 0$
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#FED1FF')
+                                  mask#accountInfoDonateSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoDepDonatePattern)')
+                                  g(mask='url(#accountInfoDonateSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#E441FF')
+                                  defs
+                                    pattern#accountInfoDepDonatePattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoDDonateVGImage' transform='scale(0.015625)')
+                                    image#accountInfoDDonateVGImage(width='64' height='64' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADtklEQVR4nO3by4tcRRTH8c/Y08bxAXmgJmKCETFmKYoLiVmKDqP+D/4BbtSNC42PhavggBGiWwVjtm7EjWAWGhSX8ZFEyUTCjJKHD/CVGRc1je3t2z19q+re20P6C2dxe7qrzu9M3XqeYsqUKdcyMw3U0cEDeAT3YR/uxFbcjDX8jstYwrc4hRP4Elcb8DE7XTyJ44KwtUi7jA/Wy+o2qiCSHXgZK+JFD7MVHML2xtRU4Ea8hl/lF160X/AK5hpRNgYL+F79wot2FvMN6BvKFixiVfPi++3oui+NsgtfJDqe005iZ62K+9iL72oWFPtK3FujbnAPLrQsdJRdWPexFm4TJiltixynJezKLX6LyXrnN7KTMneMb06AqKq2mEv8wgSIibFVGeYJc8I71baYWPsBN40S2NkgAIeEhchmZSv+wScxP94h39y+Cl3swQG8gDOJdV/Btoo+IKzqcjXFFGbxHP5KqP+lqpV25V3S5uBx8UFYUXE/4anIiuoMADyf4MMTVSo6nlDROAEY9d1VnMfbBhc4s/gx0odj44rvSNvGSg1Avy0JU/B+Xo304aKNRz3wUGbxKQFYw5HCbx9O8OPBoiPXlTh3YEhg2mKh8HwuoawBbWUB2J9QQR3cXnj+KaGsAW1lAdiXUEEdLBeeiwGpwoC2sgDsTqigDj4sPKf4t6f4QVkAbkmoIDfnhRlpPwcTyhtL25/aHQV684B3DM4DOtL2I/8oOjI7TkQiGXXuGHsm+Ywa9/x6/Kye/3oqj0pvnWONILlOeXLRwbPyvJpni4WXvQJLuCujgKp0cYfQYx/E07g7U9kDk6iyAHwjnOWn0t8Kiu/8jNDZNc3XxQ/KhsFTDTjSFmMF4EQDjrTFp+N8qYNL2ukEc88/+u2SkuVwWQu4io8jBUwyHynJNyoLALxXry+t8G6VL+fYFI2hrua/bMim6LAW8DfeihRRJqbIzBBH6+KIoKkS24WEpDpmhcMCUIeNPBgZ1gIIm4hvjPj7ZuGwMAJEMSf9aKrNFnAaN8SK7zGv/UywGFvFY6nieyxOgKCqdjiXeLheSDtpW9S49vm6z1m5VVgpti1uIzujxpzBazpNrsdek5ku10iiZI+dJqtP+EzagUkUs3hd+0PkUTV0eFWY104m2WkZx/lU5oSMslxrh1F2Rcj5mZgLE/1sE5yr48rMMl4UmfHVNF0hJ+eYtO21i3h/vaxaLk01dW3ufiE5Yb9wRL3bf9fm4DchLeec/1+b+8omvTY3ZcqUzcG/wmrevvn0084AAAAASUVORK5CYII=')
+                                div
+                                    section Донат счет
+                                    section 0 рублей
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D8FFD1')
+                                  mask#accountInfoFractionSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoDonFractionPattern)')
+                                  g(mask='url(#accountInfoFractionSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#50C509')
+                                  defs
+                                    pattern#accountInfoDonFractionPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoDFractionVGImage' transform='scale(0.0111111)')
+                                    image#accountInfoDFractionVGImage(width='90' height='90' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADv0lEQVR4nO2dz29MQRzAP2iUdOPURLVx4dCgG9JGiyDpya+Ds78A9R+42KOEohfFnyCRCEKchIObSksIRTSSJqqbqoqqra7D7Car2dmd1/dm5k33+0nm8va9737nk9l5M+/NewuCIAiCIAiCIAgpZY3vBCzRDBwA+oEs0Am0AZnS5z+BSWAcGAGeAs+BReeZBkoPcAv4DhQjlilgn/uUw6IbeEx0uZUl5zzrgNgIDKF+8iLZEp3AGPEEi+Q67EX1qXElX3CdeEj0AXNIS7ZKJzCNSLbKBuAl0l1YZwhpydbpJv4QTlqyAXEnIyLZgB7idxneWes7AQNO+06gBn2+E0iKZlZ2gchFi84BX4EmS/Gd0k98yTZE5ypiHzQ5IO1dR7/vBKqQ4/+T62FfiSTJXdLVoitbcrncSTC+N96QHtHVJBdRVxCDJ086ROskF4FvCcT3zgL+RdeSXAR+x4yfCnyLrid51Yj22XWYSC6ibkAEz2v8iDaVXCzlWJe0z2rGgV0JxEnihKjjvclOaZ+wvPCdgAGjJjulXfQz3wkY8MR3AknQRDJ3u22VPLDepCJpb9GLpLv7uA388Z1EEkQ5+7suS8Aee1V3R5olF4H79qrujrRLLgC7rdXeEWmXXAQuWau9I0KQPIpaxRosIUieArbbEuCCECTPoVaxBksIkvPAflsCXBCC5BGku7BaCsBl1CrWYEmz5CXUZCRrrfaOsC35ESu7EJUHhpFptVEpr39eh1pBdB617mIMJXKhVKaBV6XPcsAhDK/ChYBtybI0F5HsBJHsAJHsAJHsAJFsgQ5gAHgIvEW9C8Om5IZ7hK0V9exfAbtiG7olHwdmcSe4IVvyGeI/XCmS63AE95IbrrvYgnQXTriBXsgvYBB1q6elVHqBK8B8jeNE8jI60I8uPgM7axzbBUxojhXJyziHviXXklymC/OW3bCSQU1GqkkZjBDjqiaGSK7gHdXFRLn93quJIZIr0L0sqiVCjIwmRkMO4XT8oLqgTK2DlrFJE2M20UxTiulC9EnN9h0Rvku3ry72qsJU9EfN9lMRvku374cIMVY9A1T/2c9j9nhaFv3w7qyFfIOl1oRlAjVO1pFFP2EpAO3Wsg6UYfSjhnnUOLkPdYLMoN7FfA31rLTuuOtOaxAIbSTzfqNymQE2O61BQCR1mfQvcMJx7sER98L/YimGYMAxVtaNzABHPeQbNK3ARcxeXlIAbqL6+YYkib8HaQdOovrcbcDW0vYvwCfgAXCPBpkBCoIgCIIgCIIgBMc/IoUZzSiRm/QAAAAASUVORK5CYII=')
+                                div
+                                    section Фракция
+                                    section Не имеется
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#D8FFD1')
+                                  mask#accountInfoFracRankSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoFractioRankPattern)')
+                                  g(mask='url(#accountInfoFracRankSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#50C509')
+                                  defs
+                                    pattern#accountInfoFractioRankPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoFractRankVGImage' transform='scale(0.0104167)')
+                                    image#accountInfoFractRankVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEjklEQVR4nO2cTWxUVRiGH1tth1h/FiLVKHGDjQSFxAWCLjSsNRoF487ExIjuDa4R/1CisjMmxJVKkBiNLjTuFMU0LBRNEBc1Kgjlp9SR1mqti+9OMqnj3DP3nnu+O+37JF9o6Jw57/nemXPO/eAcEEIIIYQQQoj+4pIsRGLWAh8DF7L4KPs7kYCNwBSwsCimst+JCrkdOMd/k99uwh1u6pY4ecmXCRUSmnyZUAG9Jl8mRKRo8mVCBMomXyaUIFbyZUIBYidfJvRAVcmXCQFUnXyZ0IVUyZcJHVhL59pOChNuSTC+2vMZ6ZPfik8SjK8rdailzwANp76bwBVOfQMw4Nl5xsll2jdQDwNeWaZ914qngB+Beaqf9+ezvrYnGVkOdVgDemUh5/d9NaY6TEHLGhngjAxwRgY4IwOckQHOyABnZIAzMsAZGeCMDHBGBjgjA5yRAc7IAGdkgDMywBkZ4IwMcEYGOCMDnJEBzsgAZ2SAMzLAGRngjAxwRgY4IwOckQHOyABnZIAzlzr0OQysx84Gr8M+BJ8CBxNqGAAeALZgBz6OAuPAN8CfCXUkYQi4B3gO+BqYo/PRofcI+0DkHUHKo4Fd+Nep7RxwONN6d6a9LxkC7gP2Y0dBQ89v7Qh477IG7OxBTxN4F7gXuCzgvd25DngZOEOxA3QTAX1Md2k/FdD+p4LaJoHdwGhAH8kZBfZih67LnGBsBvR1sEv7AwHte/lGdoqLwOvAqoC+krCN4p/4xfFVQH9jwNkObc8CawLaH46kdRLYGtBfZQwBbxFnMK24P7DvG7D1pXVz7gHCkk/WR0zN+3BYHwaBD0sKXzz1PJFQ/3bKT0Xt8T6Wk2TsKin4b+AItm48gs+FGSPAw9h8Pg781UVvSOxMJXysoNhjmHFbsMHXjcux55VnMa29jm+O8GmwFK/2IOoElvQNKYRFZj2m/VfCx7snhbDvAoRMAE/idw9QTBrYWCbIH/e3KQRdzBHxAXBlCiGJGcF2Xt3G/kevb1qkGppXrGpii+xSYwH4J+c1SQp5R8j/Kv4CPEofF7PaGAIeI2wtGE8h6PkAIa04ie0qkuwOIjOGVUVPET7eXSmE3cT/l5S7xVHMjM3YvwnUjWHgTizp31NsG7o6ldhnCghsjxngc+BFrJZ0G2lNaWDbzG3AS5mW2QLjaI+niwgper3XAFYnf6hg+07MY1u9Y9ga8htwGpt7J7FS8wz2ENjEFsQLWdurMk0jWF1mBXA1cC1wffbnKFZDGsO+xTFLB/uxJ/q8RToqg8CblPvULIV4g8R1oMVsJV45up/iPPB4hPxFYRVW1Co7j/ZDzAKvYdNa7ViNLayn8U9U7DgFvADcGC1bFTKMLdDvAL/jn7yiMQ28DTxIRQ+VKS45bWB7/7uwffYmnC/M7sI08CVwCNuaHsKmnMrwuGV2ELgVM2Md9pR8M7ZFTKVnAfgZOA78gFV4v8CqmfOJNAD1uuZ3BWbEGuy/t1wDrMQW+NbPw9nrGpiRrarrNJa4WexZYRbbmZ3BnidaP5/Akn48e50QQgghhBBCJOdfSIWG2wvb9h8AAAAASUVORK5CYII=')
+                                div
+                                    section Должность
+                                    section Не имеется (0)
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#E4E4E4')
+                                  mask#accountInfoGenderankSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='9' y='9' width='14' height='14')
+                                    rect(x='9' y='9' width='14' height='14' fill='url(#accountInfoFraGenderSVGPattern)')
+                                  g(mask='url(#accountInfoGenderankSVGMask)')
+                                    rect(x='9' y='9' width='14' height='14' fill='#3C3C44')
+                                  defs
+                                    pattern#accountInfoFraGenderSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoFGendernkSVGImage' transform='scale(0.01)')
+                                    image#accountInfoFGendernkSVGImage(width='100' height='100' xlink:href='data:image/png;base64,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')
+                                div
+                                    section Пол
+                                    section Мужской
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#E4E4E4')
+                                  mask#accountInfoAgeSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoAgeSVGPattern)')
+                                  g(mask='url(#accountInfoAgeSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#3C3C44')
+                                  defs
+                                    pattern#accountInfoAgeSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInfoAgeSVGImage' transform='scale(0.0104167)')
+                                    image#accountInfoAgeSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVR4nO3dyU3DQBxG8Y8lnIA6INQBlUA3rKIZljKgAkog3IIUDuaAkFhmHPsR5v2kOcE/seeRECLkJJKkVq2NcB+LP3AM30GPb33IG9fPDAAzAMwAMAPADAAzAGwZAQ6SXCR5TPKS7nX1x/WTz98/9io9vpf3cz1PMv3F/GC2klwneQ2/idR6TXKVZNJzL4ttJbnvceD/bd1l5AjXA5zEqq/LXjta4CBtP+18teZJ9ks3s+aX8EmSjYq5/24zyXHpUE2Aw4qZVhyVDtS81TpLsl0x14JZkt2SgZoAi4qZlhTtqX8JwwwAMwDMADADwAwAMwDMADADwAwAMwBsc4DbpP/Xc2hLfS/MRwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwGquFTFLsvPN11u+ruhz6UDNI+CpYqYVxXtTE+CuYqYVN2PcyTRevv6ry9fv9djXIlcjnNCqrfNeO1poku6piD7pv7JuA3yOzCTdx3bMexz4qq95up/80Tf/o2mSsyQP6V6i0psy9Jq9n+tpKj6yRJIkSZIkSe16AxSOldL3k7zMAAAAAElFTkSuQmCC')
+                                div
+                                    section Возраст
+                                    section 23 года
+                            .account-info-item
+                                svg(viewbox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  circle(cx='15.5' cy='15.5' r='15.5' fill='#E4E4E4')
+                                  mask#accountILastEnterAgeSVGMask(style='mask-type:alpha' maskunits='userSpaceOnUse' x='8' y='8' width='16' height='16')
+                                    rect(x='8' y='8' width='16' height='16' fill='url(#accountInfoLastEnterSVGPattern)')
+                                  g(mask='url(#accountILastEnterAgeSVGMask)')
+                                    rect(x='8' y='8' width='16' height='16' fill='#3C3C44')
+                                  defs
+                                    pattern#accountInfoLastEnterSVGPattern(patterncontentunits='objectBoundingBox' width='1' height='1')
+                                      use(xlink:href='#accountInLastEntergeSVGImage' transform='scale(0.0104167)')
+                                    image#accountInLastEntergeSVGImage(width='96' height='96' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVR4nO3dyU3DQBxG8Y8lnIA6INQBlUA3rKIZljKgAkog3IIUDuaAkFhmHPsR5v2kOcE/seeRECLkJJKkVq2NcB+LP3AM30GPb33IG9fPDAAzAMwAMAPADAAzAGwZAQ6SXCR5TPKS7nX1x/WTz98/9io9vpf3cz1PMv3F/GC2klwneQ2/idR6TXKVZNJzL4ttJbnvceD/bd1l5AjXA5zEqq/LXjta4CBtP+18teZJ9ks3s+aX8EmSjYq5/24zyXHpUE2Aw4qZVhyVDtS81TpLsl0x14JZkt2SgZoAi4qZlhTtqX8JwwwAMwDMADADwAwAMwDMADADwAwAMwBsc4DbpP/Xc2hLfS/MRwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwAwAMwDMADADwGquFTFLsvPN11u+ruhz6UDNI+CpYqYVxXtTE+CuYqYVN2PcyTRevv6ry9fv9djXIlcjnNCqrfNeO1poku6piD7pv7JuA3yOzCTdx3bMexz4qq95up/80Tf/o2mSsyQP6V6i0psy9Jq9n+tpKj6yRJIkSZIkSe16AxSOldL3k7zMAAAAAElFTkSuQmCC')
+                                div
+                                    section Последний вход
+                                    section 09.01.2022; 19:41
+                                    
+                        .account-acs
+                            .account-acs-wrap
+                                .account-acs-item.account-acs-item-select
+                                    img(src="/images/invItems/371.png", alt="Предмет #371")
+                                    div Рюкзак на 5 кг
+                                .account-acs-item.account-acs-item-select.account-acs-item-error
+                                    img(src="/images/invItems/-1.png", alt="Предмет #-1")
+                                    div Неизвестно
+                                .account-acs-item
+                                .account-acs-item
+                                .account-acs-item
+                                .account-acs-item
+                            .account-acs-info
+                                h1 Аксессуары
+                                span Отображено наличие активных аксессуаров, в использовании на данных момент!
+                                    
+                .mainbox-section(style="min-width: 350px;")
+                    h1 Прочее
+                    .mainbox-section-wrap(style="margin: 0;")
+                        .account-other
+                            .account-other-item
+                                span Дата регистрации
+                                span 18.12.2021
+                            .account-other-item
+                                span Регистрационный IP
+                                span 217.66.159.173
+                            .account-other-item
+                                span Последний IP
+                                span 217.66.159.173
+                            .account-other-item
+                                span Предупреждений
+                                span 0 / 3
+                            .account-other-item
+                                span Блокировка чата
+                                span Есть (До 09.01.2022; 23:00)
+                            .account-other-item
+                                span Точка спавна
+                                span Личный
+                            .account-other-item
+                                span Брак
+                                span Не женат
+                        .account-other-select
+                            button.account-other-select-btn
+                            
+            //.mainbox(style="display: flex;")
+                .mainbox-section
+                    h1 Навыки владения оружием
+                    .mainbox-section-wrap(style="margin: 0; width: 855px;")
+                        .account-skills
+                            .account-skills-item.account-skills-item-select
+                                img(src="/images/weapons/pistol.png", alt="Weapon Pistol")
+                                .account-skills-item-info
+                                    h1
+                                        span Pistol 9mm
+                                        span 61%
+                                    section
+                                        section(style="width: 61%")
+                            .account-skills-item.account-skills-item-select
+                                img(src="/images/weapons/deagle.png", alt="Weapon Desert Eagle")
+                                .account-skills-item-info
+                                    h1
+                                        span Desert Eagle
+                                        span 23%
+                                    section
+                                        section(style="width: 23%")
+                            .account-skills-item
+                                img(src="/images/weapons/tec.png", alt="Weapon TEC 9")
+                                .account-skills-item-info
+                                    h1
+                                        span TEC-9
+                                        span 0%
+                                    section
+                                        section(style="width: 0%")
+                            .account-skills-item.account-skills-item-select
+                                img(src="/images/weapons/shotgun.png", alt="Weapon Shotgun")
+                                .account-skills-item-info
+                                    h1
+                                        span Shotgun
+                                        span 100%
+                                    section
+                                        section(style="width: 100%")
+                            .account-skills-item
+                                img(src="/images/weapons/mp5.png", alt="Weapon MP5")
+                                .account-skills-item-info
+                                    h1
+                                        span MP5
+                                        span 0%
+                                    section
+                                        section(style="width: 0%")
+                            .account-skills-item
+                                img(src="/images/weapons/ak47.png", alt="Weapon AK-47")
+                                .account-skills-item-info
+                                    h1
+                                        span AK-47
+                                        span 0%
+                                    section
+                                        section(style="width: 0%")
+                            .account-skills-item.account-skills-item-select
+                                img(src="/images/weapons/sniper.png", alt="Weapon Sniper Rifle")
+                                .account-skills-item-info
+                                    h1
+                                        span Sniper Rifle
+                                        span 5%
+                                    section
+                                        section(style="width: 5%")
+                            .account-skills-item
+                                img(src="/images/weapons/rifle.png", alt="Weapon Country Rifle")
+                                .account-skills-item-info
+                                    h1
+                                        span Country Rifle
+                                        span 0%
+                                    section
+                                        section(style="width: 0%")
+                            .account-skills-item
+                                img(src="/images/weapons/combat.png", alt="Weapon Combat")
+                                .account-skills-item-info
+                                    h1
+                                        span Combat
+                                        span 0%
+                                    section
+                                        section(style="width: 0%")
+                .mainbox-section(style="margin-left: 50px;")
+                    h1 Управление аккаунтом
+                    .mainbox-section-wrap(style="margin: 0;")
+                        .account-settings
+                            button.button(style="background: #C7EBFF;") Изменить почту
+                            button.button(style="background: #EAFFAF;") Изменить пароль

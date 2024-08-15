@@ -1,0 +1,1025 @@
+/*333b62*/
+.color-333b62
+{
+	color: white;
+}
+.color-333b62 .bg-color
+{
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%);
+}
+
+.color-333b62 .logo
+{
+	background-image: url(../images/logo-white.png);
+}
+
+.color-333b62 .header menu a
+{
+	color: white;
+}
+.color-333b62 .header menu a:hover,
+.color-333b62 .header menu a.header-menu-select
+{
+	color: #FFC121;
+}
+
+.color-333b62 .button
+{
+	color: black;
+}
+.color-333b62 .button-anim:before
+{
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%);
+}
+
+.color-333b62 .lk-btn
+{
+	color: black;
+}
+.color-333b62 .lk-btn svg g rect
+{
+	fill: black;
+}
+.color-333b62 .lk-btn:hover
+{
+	color: white;
+}
+.color-333b62 .lk-btn:hover svg g rect
+{
+	fill: white;
+}
+
+.color-333b62 .info .start
+{
+	background-color: rgba(21, 40, 58, 0.4);
+}
+
+.color-333b62 .info .shop a
+{
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%);
+	color: white;
+}
+
+.color-333b62 .servers
+{
+	padding-bottom: 10px;
+}
+.color-333b62 .servers .wrap
+{
+	background-color: #333b62;
+	color: white;
+}
+
+.color-333b62 .servers .wrap .flex .srv-info .online-draw
+{
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%);
+}
+.color-333b62 .servers .wrap .flex .srv-info .online-draw span
+{
+	color: white;
+}
+
+.color-333b62 .servers .wrap .flex .srv-info .other
+{
+	color: white;
+}
+.color-333b62 .servers .wrap .flex a.srv-info:before
+{
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%)
+}
+
+.color-333b62::-webkit-scrollbar-thumb
+{
+	background-color: #333b62;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #333b62;
+}
+
+.color-333b62 .info .start .faq a svg path,
+.color-333b62 .info .start .faq a svg g rect
+{
+	stroke: black;
+	fill: black;
+}
+
+.color-333b62 .news-item .wrap,
+.color-333b62 .news-info
+{
+	background: rgba(21, 40, 58, 0.4);
+}
+.color-333b62 .news-item .wrap .foot a
+{
+	color: white;
+}
+.color-333b62 .news-item .wrap .foot a svg path
+{
+	fill: white;
+}
+
+.color-333b62 .news-back a
+{
+	color: white;
+}
+
+.color-333b62 .donate-form .donate-form-input
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-333b62 .donate-form .donate-form-input .donate-select .donate-select-list
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-333b62 .donate-form .donate-form-input input::placeholder,
+.color-333b62 .donate-form .donate-form-input .donate-select
+{
+	color: rgba(255, 255, 255, .5);
+}
+.color-333b62 .donate-form .donate-form-input input
+{
+	color: white;
+}
+
+.color-333b62 .donate-form button#donate-btn
+{
+	color: white;
+	background: linear-gradient(115.7deg, rgba(73, 109, 164, 0.96) 10.74%, rgba(26, 28, 78, 0.96) 92.45%);
+
+	box-shadow: 0px 0px 19px #333b62;
+}
+
+.color-333b62 .donate-form .donate-form-input-select:after
+{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.color-333b62 .footer
+{
+	padding-bottom: 0;
+}
+.color-333b62 .footer .wrap
+{
+	padding: 40px 0;
+	padding-top: 50px;
+
+	background-color: #333b62;
+	clip-path: polygon(50% 0%, 100% 36%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 38%);
+}
+.color-333b62 .footer a
+{
+	color: white;
+}
+
+.color-333b62 .last-news .flex .arrow span:first-child,
+.color-333b62 .last-news .flex .arrow span:first-child:before
+{
+	background-color: rgba(255, 255, 255, .4);
+}
+.color-333b62 .last-news .flex .arrow span,
+.color-333b62 .last-news .flex .arrow span:before
+{
+	background-color: white;
+}
+
+.color-333b62 .header .burger-btn span,
+.color-333b62 .header .burger-btn span:before,
+.color-333b62 .header .burger-btn span:after
+{
+	background-color: white;
+}
+
+.color-333b62 .burger-menu .burger-menu-body
+{
+	background-color: #333b62;
+}
+
+.color-333b62 .burger-menu .burger-menu-body menu a.burger-menu-select,
+.color-333b62 .burger-menu .burger-menu-body menu a:hover
+{
+	background-color: rgba(34, 34, 34, 0.3);
+	color: #FFC121;
+}
+.color-333b62 .burger-menu .burger-menu-body menu a
+{
+	color: white;
+}
+
+
+/*691717*/
+.color-691717
+{
+	color: white;
+}
+.color-691717 .bg-color
+{
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+}
+
+.color-691717 .logo
+{
+	background-image: url(../images/logo-white.png);
+}
+
+.color-691717 .header menu a
+{
+	color: white;
+}
+.color-691717 .header menu a:hover,
+.color-691717 .header menu a.header-menu-select
+{
+	color: #FFC121;
+}
+
+.color-691717 .button
+{
+	color: black;
+}
+.color-691717 .button-anim:before
+{
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+}
+
+.color-691717 .lk-btn
+{
+	color: black;
+}
+.color-691717 .lk-btn svg g rect
+{
+	fill: black;
+}
+.color-691717 .lk-btn:hover
+{
+	color: white;
+}
+.color-691717 .lk-btn:hover svg g rect
+{
+	fill: white;
+}
+
+.color-691717 .info .start
+{
+	background-color: rgba(58, 21, 21, 0.4);;
+}
+
+.color-691717 .info .shop a
+{
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+	color: white;
+}
+
+.color-691717 .servers
+{
+	padding-bottom: 10px;
+}
+.color-691717 .servers .wrap
+{
+	background-color: #691717;
+	color: white;
+}
+
+.color-691717 .servers .wrap .flex .srv-info .online-draw
+{
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+}
+.color-691717 .servers .wrap .flex .srv-info .online-draw span
+{
+	color: white;
+}
+
+.color-691717 .servers .wrap .flex .srv-info .other
+{
+	color: white;
+}
+.color-691717 .servers .wrap .flex a.srv-info:before
+{
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+}
+
+.color-691717::-webkit-scrollbar-thumb
+{
+	background-color: #691717;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #691717;
+}
+
+.color-691717 .info .start .faq a svg path,
+.color-691717 .info .start .faq a svg g rect
+{
+	stroke: black;
+	fill: black;
+}
+
+.color-691717 .news-item .wrap,
+.color-691717 .news-info
+{
+	background: rgba(21, 40, 58, 0.4);
+}
+.color-691717 .news-item .wrap .foot a
+{
+	color: white;
+}
+.color-691717 .news-item .wrap .foot a svg path
+{
+	fill: white;
+}
+
+.color-691717 .news-back a
+{
+	color: white;
+}
+
+.color-691717 .donate-form .donate-form-input
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-691717 .donate-form .donate-form-input .donate-select .donate-select-list
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-691717 .donate-form .donate-form-input input::placeholder,
+.color-691717 .donate-form .donate-form-input .donate-select
+{
+	color: rgba(255, 255, 255, .5);
+}
+.color-691717 .donate-form .donate-form-input input
+{
+	color: white;
+}
+
+.color-691717 .donate-form button#donate-btn
+{
+	color: white;
+	background: linear-gradient(115.7deg, rgba(191, 51, 51, 0.96) 10.74%, rgba(64, 5, 5, 0.96) 92.45%, rgba(64, 5, 5, 0.96) 92.45%);
+
+	box-shadow: 0px 0px 19px #691717;
+}
+
+.color-691717 .donate-form .donate-form-input-select:after
+{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.color-691717 .footer
+{
+	padding-bottom: 0;
+}
+.color-691717 .footer .wrap
+{
+	padding: 40px 0;
+	padding-top: 50px;
+
+	background-color: #691717;
+	clip-path: polygon(50% 0%, 100% 36%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 38%);
+}
+.color-691717 .footer a
+{
+	color: white;
+}
+
+.color-691717 .last-news .flex .arrow span:first-child,
+.color-691717 .last-news .flex .arrow span:first-child:before
+{
+	background-color: rgba(255, 255, 255, .4);
+}
+.color-691717 .last-news .flex .arrow span,
+.color-691717 .last-news .flex .arrow span:before
+{
+	background-color: white;
+}
+
+.color-691717 .header .burger-btn span,
+.color-691717 .header .burger-btn span:before,
+.color-691717 .header .burger-btn span:after
+{
+	background-color: white;
+}
+
+.color-691717 .burger-menu .burger-menu-body
+{
+	background-color: #691717;
+}
+
+.color-691717 .burger-menu .burger-menu-body menu a.burger-menu-select,
+.color-691717 .burger-menu .burger-menu-body menu a:hover
+{
+	background-color: rgba(34, 34, 34, 0.3);
+	color: #FFC121;
+}
+.color-691717 .burger-menu .burger-menu-body menu a
+{
+	color: white;
+}
+
+/*0F0F0F*/
+.color-0F0F0F
+{
+	color: white;
+}
+.color-0F0F0F .bg-color
+{
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+}
+
+.color-0F0F0F .logo
+{
+	background-image: url(../images/logo-white.png);
+}
+
+.color-0F0F0F .header menu a
+{
+	color: white;
+}
+.color-0F0F0F .header menu a:hover,
+.color-0F0F0F .header menu a.header-menu-select
+{
+	color: #FFC121;
+}
+
+.color-0F0F0F .button
+{
+	color: black;
+}
+.color-0F0F0F .button-anim:before
+{
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+}
+
+.color-0F0F0F .lk-btn
+{
+	color: black;
+}
+.color-0F0F0F .lk-btn svg g rect
+{
+	fill: black;
+}
+.color-0F0F0F .lk-btn:hover
+{
+	color: white;
+}
+.color-0F0F0F .lk-btn:hover svg g rect
+{
+	fill: white;
+}
+
+.color-0F0F0F .info .start
+{
+	background-color: rgba(31, 31, 31, 0.4);
+}
+
+.color-0F0F0F .info .shop a
+{
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+	color: white;
+}
+
+.color-0F0F0F .servers
+{
+	padding-bottom: 10px;
+}
+.color-0F0F0F .servers .wrap
+{
+	background-color: #0F0F0F;
+	color: white;
+}
+
+.color-0F0F0F .servers .wrap .flex .srv-info .online-draw
+{
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+}
+.color-0F0F0F .servers .wrap .flex .srv-info .online-draw span
+{
+	color: white;
+}
+
+.color-0F0F0F .servers .wrap .flex .srv-info .other
+{
+	color: white;
+}
+.color-0F0F0F .servers .wrap .flex a.srv-info:before
+{
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+}
+
+.color-0F0F0F::-webkit-scrollbar-thumb
+{
+	background-color: #0F0F0F;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #0F0F0F;
+}
+
+.color-0F0F0F .info .start .faq a svg path,
+.color-0F0F0F .info .start .faq a svg g rect
+{
+	stroke: black;
+	fill: black;
+}
+
+.color-0F0F0F .news-item .wrap,
+.color-0F0F0F .news-info
+{
+	background: rgba(21, 40, 58, 0.4);
+}
+.color-0F0F0F .news-item .wrap .foot a
+{
+	color: white;
+}
+.color-0F0F0F .news-item .wrap .foot a svg path
+{
+	fill: white;
+}
+
+.color-0F0F0F .news-back a
+{
+	color: white;
+}
+
+.color-0F0F0F .donate-form .donate-form-input
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-0F0F0F .donate-form .donate-form-input .donate-select .donate-select-list
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-0F0F0F .donate-form .donate-form-input input::placeholder,
+.color-0F0F0F .donate-form .donate-form-input .donate-select
+{
+	color: rgba(255, 255, 255, .5);
+}
+.color-0F0F0F .donate-form .donate-form-input input
+{
+	color: white;
+}
+
+.color-0F0F0F .donate-form button#donate-btn
+{
+	color: white;
+	background: linear-gradient(115.7deg, rgba(29, 29, 29, 0.96) 10.74%, rgba(0, 0, 0, 0.96) 92.45%);
+
+	box-shadow: 0px 0px 19px #0F0F0F;
+}
+
+.color-0F0F0F .donate-form .donate-form-input-select:after
+{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.color-0F0F0F .footer
+{
+	padding-bottom: 0;
+}
+.color-0F0F0F .footer .wrap
+{
+	padding: 40px 0;
+	padding-top: 50px;
+
+	background-color: #0F0F0F;
+	clip-path: polygon(50% 0%, 100% 36%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 38%);
+}
+.color-0F0F0F .footer a
+{
+	color: white;
+}
+
+.color-0F0F0F .last-news .flex .arrow span:first-child,
+.color-0F0F0F .last-news .flex .arrow span:first-child:before
+{
+	background-color: rgba(255, 255, 255, .4);
+}
+.color-0F0F0F .last-news .flex .arrow span,
+.color-0F0F0F .last-news .flex .arrow span:before
+{
+	background-color: white;
+}
+
+.color-0F0F0F .header .burger-btn span,
+.color-0F0F0F .header .burger-btn span:before,
+.color-0F0F0F .header .burger-btn span:after
+{
+	background-color: white;
+}
+
+.color-0F0F0F .burger-menu .burger-menu-body
+{
+	background-color: #0F0F0F;
+}
+
+.color-0F0F0F .burger-menu .burger-menu-body menu a.burger-menu-select,
+.color-0F0F0F .burger-menu .burger-menu-body menu a:hover
+{
+	background-color: rgba(34, 34, 34, 0.3);
+	color: #FFC121;
+}
+.color-0F0F0F .burger-menu .burger-menu-body menu a
+{
+	color: white;
+}
+
+/*562762*/
+.color-562762
+{
+	color: white;
+}
+.color-562762 .bg-color
+{
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+}
+
+.color-562762 .logo
+{
+	background-image: url(../images/logo-white.png);
+}
+
+.color-562762 .header menu a
+{
+	color: white;
+}
+.color-562762 .header menu a:hover,
+.color-562762 .header menu a.header-menu-select
+{
+	color: #FFC121;
+}
+
+.color-562762 .button
+{
+	color: black;
+}
+.color-562762 .button-anim:before
+{
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+}
+
+.color-562762 .lk-btn
+{
+	color: black;
+}
+.color-562762 .lk-btn svg g rect
+{
+	fill: black;
+}
+.color-562762 .lk-btn:hover
+{
+	color: white;
+}
+.color-562762 .lk-btn:hover svg g rect
+{
+	fill: white;
+}
+
+.color-562762 .info .start
+{
+	background-color: rgba(49, 23, 50, 0.4);;
+}
+
+.color-562762 .info .shop a
+{
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+	color: white;
+}
+
+.color-562762 .servers
+{
+	padding-bottom: 10px;
+}
+.color-562762 .servers .wrap
+{
+	background-color: #562762;
+	color: white;
+}
+
+.color-562762 .servers .wrap .flex .srv-info .online-draw
+{
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+}
+.color-562762 .servers .wrap .flex .srv-info .online-draw span
+{
+	color: white;
+}
+
+.color-562762 .servers .wrap .flex .srv-info .other
+{
+	color: white;
+}
+.color-562762 .servers .wrap .flex a.srv-info:before
+{
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+}
+
+.color-562762::-webkit-scrollbar-thumb
+{
+	background-color: #562762;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #562762;
+}
+
+.color-562762 .info .start .faq a svg path,
+.color-562762 .info .start .faq a svg g rect
+{
+	stroke: black;
+	fill: black;
+}
+
+.color-562762 .news-item .wrap,
+.color-562762 .news-info
+{
+	background: rgba(49, 23, 50, 0.4);
+}
+.color-562762 .news-item .wrap .foot a
+{
+	color: white;
+}
+.color-562762 .news-item .wrap .foot a svg path
+{
+	fill: white;
+}
+
+.color-562762 .news-back a
+{
+	color: white;
+}
+
+.color-562762 .donate-form .donate-form-input
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-562762 .donate-form .donate-form-input .donate-select .donate-select-list
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-562762 .donate-form .donate-form-input input::placeholder,
+.color-562762 .donate-form .donate-form-input .donate-select
+{
+	color: rgba(255, 255, 255, .5);
+}
+.color-562762 .donate-form .donate-form-input input
+{
+	color: white;
+}
+
+.color-562762 .donate-form button#donate-btn
+{
+	color: white;
+	background: linear-gradient(115.7deg, rgba(136, 63, 154, 0.96) 10.74%, rgba(56, 5, 69, 0.96) 92.45%);
+
+	box-shadow: 0px 0px 19px #562762;
+}
+
+.color-562762 .donate-form .donate-form-input-select:after
+{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.color-562762 .footer
+{
+	padding-bottom: 0;
+}
+.color-562762 .footer .wrap
+{
+	padding: 40px 0;
+	padding-top: 50px;
+
+	background-color: #562762;
+	clip-path: polygon(50% 0%, 100% 36%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 38%);
+}
+.color-562762 .footer a
+{
+	color: white;
+}
+
+.color-562762 .last-news .flex .arrow span:first-child,
+.color-562762 .last-news .flex .arrow span:first-child:before
+{
+	background-color: rgba(255, 255, 255, .4);
+}
+.color-562762 .last-news .flex .arrow span,
+.color-562762 .last-news .flex .arrow span:before
+{
+	background-color: white;
+}
+
+.color-562762 .header .burger-btn span,
+.color-562762 .header .burger-btn span:before,
+.color-562762 .header .burger-btn span:after
+{
+	background-color: white;
+}
+
+.color-562762 .burger-menu .burger-menu-body
+{
+	background-color: #562762;
+}
+
+.color-562762 .burger-menu .burger-menu-body menu a.burger-menu-select,
+.color-562762 .burger-menu .burger-menu-body menu a:hover
+{
+	background-color: rgba(34, 34, 34, 0.3);
+	color: #FFC121;
+}
+.color-562762 .burger-menu .burger-menu-body menu a
+{
+	color: white;
+}
+
+/*2D4E18*/
+.color-2D4E18
+{
+	color: white;
+}
+.color-2D4E18 .bg-color
+{
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+}
+
+.color-2D4E18 .logo
+{
+	background-image: url(../images/logo-white.png);
+}
+
+.color-2D4E18 .header menu a
+{
+	color: white;
+}
+.color-2D4E18 .header menu a:hover,
+.color-2D4E18 .header menu a.header-menu-select
+{
+	color: #FFC121;
+}
+
+.color-2D4E18 .button
+{
+	color: black;
+}
+.color-2D4E18 .button-anim:before
+{
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+}
+
+.color-2D4E18 .lk-btn
+{
+	color: black;
+}
+.color-2D4E18 .lk-btn svg g rect
+{
+	fill: black;
+}
+.color-2D4E18 .lk-btn:hover
+{
+	color: white;
+}
+.color-2D4E18 .lk-btn:hover svg g rect
+{
+	fill: white;
+}
+
+.color-2D4E18 .info .start
+{
+	background-color: rgba(49, 23, 50, 0.4);;
+}
+
+.color-2D4E18 .info .shop a
+{
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+	color: white;
+}
+
+.color-2D4E18 .servers
+{
+	padding-bottom: 10px;
+}
+.color-2D4E18 .servers .wrap
+{
+	background-color: #2D4E18;
+	color: white;
+}
+
+.color-2D4E18 .servers .wrap .flex .srv-info .online-draw
+{
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+}
+.color-2D4E18 .servers .wrap .flex .srv-info .online-draw span
+{
+	color: white;
+}
+
+.color-2D4E18 .servers .wrap .flex .srv-info .other
+{
+	color: white;
+}
+.color-2D4E18 .servers .wrap .flex a.srv-info:before
+{
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+}
+
+.color-2D4E18::-webkit-scrollbar-thumb
+{
+	background-color: #2D4E18;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #2D4E18;
+}
+
+.color-2D4E18 .info .start .faq a svg path,
+.color-2D4E18 .info .start .faq a svg g rect
+{
+	stroke: black;
+	fill: black;
+}
+
+.color-2D4E18 .news-item .wrap,
+.color-2D4E18 .news-info
+{
+	background: rgba(31, 58, 21, 0.4);
+}
+.color-2D4E18 .news-item .wrap .foot a
+{
+	color: white;
+}
+.color-2D4E18 .news-item .wrap .foot a svg path
+{
+	fill: white;
+}
+
+.color-2D4E18 .news-back a
+{
+	color: white;
+}
+
+.color-2D4E18 .donate-form .donate-form-input
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-2D4E18 .donate-form .donate-form-input .donate-select .donate-select-list
+{
+	border-color: rgba(255, 255, 255, .5);
+}
+.color-2D4E18 .donate-form .donate-form-input input::placeholder,
+.color-2D4E18 .donate-form .donate-form-input .donate-select
+{
+	color: rgba(255, 255, 255, .5);
+}
+.color-2D4E18 .donate-form .donate-form-input input
+{
+	color: white;
+}
+
+.color-2D4E18 .donate-form button#donate-btn
+{
+	color: white;
+	background: linear-gradient(115.7deg, rgba(124, 164, 73, 0.96) 10.74%, rgba(35, 69, 15, 0.96) 92.45%);
+
+	box-shadow: 0px 0px 19px #2D4E18;
+}
+
+.color-2D4E18 .donate-form .donate-form-input-select:after
+{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.color-2D4E18 .footer
+{
+	padding-bottom: 0;
+}
+.color-2D4E18 .footer .wrap
+{
+	padding: 40px 0;
+	padding-top: 50px;
+
+	background-color: #2D4E18;
+	clip-path: polygon(50% 0%, 100% 36%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 38%);
+}
+.color-2D4E18 .footer a
+{
+	color: white;
+}
+
+.color-2D4E18 .last-news .flex .arrow span:first-child,
+.color-2D4E18 .last-news .flex .arrow span:first-child:before
+{
+	background-color: rgba(255, 255, 255, .4);
+}
+.color-2D4E18 .last-news .flex .arrow span,
+.color-2D4E18 .last-news .flex .arrow span:before
+{
+	background-color: white;
+}
+
+.color-2D4E18 .header .burger-btn span,
+.color-2D4E18 .header .burger-btn span:before,
+.color-2D4E18 .header .burger-btn span:after
+{
+	background-color: white;
+}
+
+.color-2D4E18 .burger-menu .burger-menu-body
+{
+	background-color: #2D4E18;
+}
+
+.color-2D4E18 .burger-menu .burger-menu-body menu a.burger-menu-select,
+.color-2D4E18 .burger-menu .burger-menu-body menu a:hover
+{
+	background-color: rgba(34, 34, 34, 0.3);
+	color: #FFC121;
+}
+.color-2D4E18 .burger-menu .burger-menu-body menu a
+{
+	color: white;
+}

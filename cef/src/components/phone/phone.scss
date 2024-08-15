@@ -1,0 +1,166 @@
+@import '../../rules/variables.scss';
+
+.phone {
+    position: absolute;
+    z-index: $zindex_phone;
+
+    bottom: $margin * 4;
+    right: $margin * 6;
+
+    width: 280px;
+    height: 500px;
+
+    background: #101010;
+    border-radius: $borderRadius * 4;
+
+    // overflow: hidden;
+    padding: $padding * 3;
+
+    color: white;
+    
+    & * {
+        font-size: $fontsize - 4px;
+        font-weight: 500;
+    }
+
+    transition: .5s;
+    transform: translateY(200%);
+
+    &.phone-open {
+        transform: translateY(0);
+    }
+
+    & .fringe {
+        width: 50%;
+        height: 40px;
+
+        border-radius: 0 0 $borderRadius * 4.5 $borderRadius * 4.5;
+        background-color: inherit;
+
+        position: absolute;
+
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+        z-index: $zindex_wrapper;
+    }
+
+    & .phonebuttons {
+        & div {
+            position: absolute;
+            z-index: $zindex_wrapper;
+
+            background-color: #101010;
+            border-radius: $borderRadius 0 0 $borderRadius;
+
+            width: 4px;
+            height: 40px;
+
+            left: -3px;
+
+            &:nth-child(1) {
+                top: 20%;
+                right: -3px;
+
+                left: auto;
+                border-radius: 0 $borderRadius $borderRadius 0;
+
+                height: 60px;
+            }
+            &:nth-child(2) {
+                top: 13%;
+                left: -3px;
+
+                height: 20px;
+            }
+            &:nth-child(3) {
+                top: 21%;
+            }
+            &:nth-child(4) {
+                top: 31%;
+            }
+        }
+    }
+
+    & .display {
+        width: 100%;
+        height: 100%;
+
+        background-color: #1A1A1A;
+        border-radius: $borderRadius * 3;
+
+        overflow: hidden;
+        position: relative;
+
+        opacity: 1;
+
+        & .statusbar {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            z-index: $zindex_wrapper;
+
+            margin-top: $margin;
+            padding: $padding $padding * 3.5;
+
+            & * {
+                font-size: $fontsize - 2px;
+                font-weight: 600;
+            }
+
+            & .network {
+                & svg + svg {
+                    margin-left: $margin;
+                }
+                & svg {
+                    
+                }
+            }
+        }
+
+        & .app {
+            width: 100%;
+            height: 100%;
+
+            position: relative;
+
+            & .logoblur {
+                position: absolute;
+    
+                top: 50%;
+                left: 50%;
+    
+                transform: translate(-50%, -50%);
+                & img {
+                    width: 80px;
+                    height: auto;
+                }
+            }
+
+            & .homebtn {
+                position: absolute;
+
+                bottom: $margin * 4;
+                left: 50%;
+
+                transform: translateX(-50%);
+
+                width: 45%;
+                height: 8px;
+
+                border-radius: $borderRadius - 2px;
+                background-color: white;
+
+                z-index: $zindex_wrapper;
+                cursor: pointer;
+            }
+        }
+    }
+}

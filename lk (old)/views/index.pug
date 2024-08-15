@@ -1,0 +1,156 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+
+		link(rel="stylesheet", href="/styles/main.css")
+		link(rel="stylesheet", href="/styles/notf.css")
+		link(rel="stylesheet", href="/styles/acp.css")
+
+		script(type='text/javascript', src='/js/modules/jquery-3.5.1.min.js')
+		script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
+
+		script(type='text/javascript', src='/js/modules/dialog.js')
+		script(type='module', src='/js/modules/notf.js')
+		script(type='text/javascript', src='/js/modules/select.js')
+		script(type='text/javascript', src='/js/modules/moment.js')
+		script(type='text/javascript', src='/js/modules/notf-page.js')
+		script(type='text/javascript', src='/js/modules/m-search.js')
+		script(type='text/javascript', src='/js/modules/input-file.js')
+
+		script(type='module', src='/js/modules/acp.js')
+
+		script(type='text/javascript', src='/js/modules/farbtastic/farbtastic.js')
+		link(rel="stylesheet", href="/js/modules/farbtastic/farbtastic.css" type="text/css")
+
+		//- script(type='text/javascript', src='/js/modules/img-loader.js')
+
+		title Panel Enki RP
+		link(rel='icon', href='/styles/images/favicon.ico', sizes='48x48', type='image/x-icon')
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	body
+		script(type='text/javascript', src='/js/modules/loading.js')
+		script console.log('\x1b[41m%s\x1b[0m', "Если ты все таки смог открыть консоль - молодец.\nТолько ничего не трогай здесь, хорошо?\n\n\n\n\n\n\n\n\n".toUpperCase())
+
+		script(type="module", src='/js/other-pages/login.js')
+		script(type="module", src='/js/main.js')
+
+		.header
+			.header-left
+				.header-swipe-menu
+					span
+				.header-logo
+					a(href="/account")
+						img(src="/styles/images/logo.png", alt="Логотип Enki RP")
+
+			.header-right
+				a(href="/messages").header-item#header-item-messages
+					//- .header-item-notf 10
+					img(src="/styles/images/messages.png", alt="Сообщения")
+
+				.header-item#header-item-notf
+					//- .header-item-notf 10
+					img(src="/styles/images/notf.png", alt="Уведомления")
+
+					.notf-all
+						.notf-all-title
+							h1 Уведомления
+							a(href="/account/settings") &#160;
+
+						.notf-all-items
+
+				a(href="/account").header-item.header-item-open#header-item-account
+					span
+
+					//- .header-item-menu
+					//- 	a(href="/account/settings") Настройки
+
+		.menu
+			.menu-items
+				a(href="/account").menu-item(data-menu-item-id="account")
+					img(src="/styles/images/menu/user.png")
+					span Мой аккаунт
+				a(href="/account/settings").menu-item(data-menu-item-id="account/settings")
+					img(src="/styles/images/menu/account-settings.png")
+					span Настройки аккаунта
+				a(href="/changemail").menu-item(data-menu-item-id="changemail")
+					img(src="/styles/images/menu/mail.png")
+					span Изменить почту
+
+			.menu-items
+				a(href="/report").menu-item(data-menu-item-id="report")
+					img(src="/styles/images/menu/report.png")
+					span Мои жалобы
+					//- .menu-item-notf 10
+				a(href="/report/create").menu-item(data-menu-item-id="report/create")
+					img(src="/styles/images/menu/report.png")
+					span Создать жалобу
+
+			.menu-items
+				a(href="/find").menu-item(data-menu-item-id="find")
+					img(src="/styles/images/menu/find.png")
+					span Поиск
+
+			.menu-items
+				a(href="/fraction").menu-item(data-menu-item-id="fraction")
+					img(src="/styles/images/menu/fraction.png")
+					span Фракция
+
+			.menu-items(data-id="exit")
+				.menu-item(data-menu-item-id="exit")
+					img(src="/styles/images/menu/exit.png")
+					span Выйти
+
+		.wrapper
+
+			//- .account-main(style="justify-content: space-between;")
+			//- 	.account-main-other(style="width: calc(50% - 60px);")
+			//- 		h1 Основная информация
+
+			//- 		.account-main-other-item
+			//- 			span Дата назначения
+			//- 			span 10.02.2021
+			//- 		.account-main-other-item
+			//- 			span Дата назначения
+			//- 			span 10.02.2021
+			//- 		.account-main-other-item
+			//- 			span Дата назначения
+			//- 			span 10.02.2021
+			//- 		.account-main-other-item
+			//- 			span Дата назначения
+			//- 			span 10.02.2021
+			//- 		.account-main-other-item
+			//- 			span Дата назначения
+			//- 			span 10.02.2021
+
+			//- 	.account-main-other(style="width: calc(50% - 60px);")
+			//- 		h1 Работа
+
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+			//- 		.account-main-other-item
+			//- 			span Выдано наказаний
+			//- 			span 100
+
+			//- 	.account-main-other
+			//- 		.account-main-circles
+			//- 		
+
+		.cookies-check
+			img(src="/styles/images/cookies.png", alt="Cookies check")
+			span На нашем сайте мы используем файлы Cookies. Баз них сайт не будет нормально работать.<br>Мы не храним в кукисах важную информацию, только логин и пароль для авторизации.
+			button.button Хорошо	

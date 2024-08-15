@@ -1,0 +1,32 @@
+.logo
+{
+    width: 120px;
+    height: 120px;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo.logo-minimal
+{
+    width: 60px;
+    height: 60px;
+}
+.logo.logo-header
+{
+    border-radius: 0;
+
+    width: auto;
+    height: auto;
+
+    display: block;
+}
+
+.logo img
+{
+    width: 80%;
+    height: 80%;
+}

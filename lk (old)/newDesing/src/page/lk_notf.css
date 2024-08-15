@@ -1,0 +1,156 @@
+.page-notf
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page-notf .page-notf-nav
+{
+    width: 250px;
+    background-color: white;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    position: sticky;
+    top: 0;
+}
+.page-notf .page-notf-nav section
+{
+    display: flex;
+    align-items: center;
+
+    padding: 15px 10px;
+    cursor: pointer;
+
+    position: relative;
+}
+.page-notf .page-notf-nav section span
+{
+    margin-left: 10px;
+    color: #9d9494;
+
+    transition: .2s;
+}
+.page-notf .page-notf-nav section:first-child span
+{
+    margin-left: 35px;
+}
+.page-notf .page-notf-nav section svg
+{
+    width: 25px;
+    height: 25px;
+
+    fill: #9d9494;
+    transition: .2s;
+}
+.page-notf .page-notf-nav section.page-notf-nav-select span,
+.page-notf .page-notf-nav section:hover span
+{
+    color: #bf8d08;
+}
+.page-notf .page-notf-nav section.page-notf-nav-select svg,
+.page-notf .page-notf-nav section:hover svg
+{
+    fill: #bf8d08;
+}
+.page-notf .page-notf-nav section h6.__notf-title
+{
+    bottom: 50%;
+    right: 12px;
+
+    transform: translateY(50%);
+
+    width: 9px;
+    height: 9px;
+}
+
+
+.page-notf .page-notf-section
+{
+    width: calc(100% - 250px - 20px);
+}
+.page-notf .page-notf-section .page-notf-section-elem
+{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding: 7px 12px;
+    padding-bottom: 0;
+
+    cursor: pointer;
+    transition: .2s;
+
+    color: black;
+
+    background-color: white;
+    border-radius: 5px;
+}
+.page-notf .page-notf-section .page-notf-section-elem + .page-notf-section-elem
+{
+    margin-top: 15px;
+}
+.page-notf .page-notf-section .page-notf-section-elem .logo
+{
+    width: 50px;
+    height: 50px;
+}
+.page-notf .page-notf-section .page-notf-section-elem span
+{
+    width: calc(100% - 50px - 10px);
+
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+}
+.page-notf .page-notf-section .page-notf-section-elem span h1
+{
+    margin-right: 5px;
+    font-size: 16px;
+}
+.page-notf .page-notf-section .page-notf-section-elem span a
+{
+    color: black;
+    margin-left: 5px;
+}
+.page-notf .page-notf-section .page-notf-section-elem h3
+{
+    position: absolute;
+
+    top: 24px;
+    left: 72px;
+
+    font-size: 13px;
+    color: #9d9494;
+}
+.page-notf .page-notf-section .page-notf-section-elem h2
+{
+    color: #9d9494;
+
+    text-indent: 60px;
+    margin-right: 12px;
+
+    position: relative;
+    top: -12px;
+}
+.page-notf .page-notf-section .page-notf-section-elem h4
+{
+    width: auto;
+    height: auto;
+
+    border-radius: 3px;
+
+    font-size: 15px;
+    padding: 3px 7px;
+
+    top: 15px;
+    right: 15px;
+}

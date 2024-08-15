@@ -1,0 +1,1 @@
+{"admin":{"view":{"main":5,"accounts":5,"promo":6,"realty":2,"report":5,"reportTags":2,"admStats":1},"promo":{"create":6,"save":6,"remove":6},"report":{"ans":{"open":3,"close":3,"other":3,"pending":3},"changestatus":5,"tag":{"create":4,"delete":3}}}}

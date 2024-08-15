@@ -1,0 +1,99 @@
+$theme_domBackground: var(--theme_domBackground);
+$theme_domBackgroundBlack: var(--theme_domBackgroundBlack);
+$theme_color: var(--theme_color);
+$theme_header: var(--theme_header);
+$theme_colorRed: var(--theme_colorRed);
+$theme_colorNull: var(--theme_colorNull);
+$theme_colorIcon: var(--theme_colorIcon);
+$theme_colorBlack: var(--theme_colorBlack);
+$theme_colorWhite: var(--theme_colorWhite);
+$theme_colorGrey: var(--theme_colorGrey);
+$theme_colorText: var(--theme_colorText);
+$theme_colorTextGreen: var(--theme_colorTextGreen); //
+$theme_colorGreen: var(--theme_colorGreen);
+$theme_disabled: var(--theme_disabled); //
+$theme_btn: var(--theme_btn);
+$theme_colorLightGrey: var(--theme_colorLightGrey); //
+$theme_colorSilver: var(--theme_colorSilver);
+$theme_colorBlue: var(--theme_colorBlue);
+$theme_colorYellow: var(--theme_colorYellow);
+$theme_colorLightGreen: var(--theme_colorLightGreen);
+$theme_input: var(--theme_input);
+$theme_inputBorder: var(--theme_inputBorder);
+
+
+body {
+    --theme_domBackground: #F2F4FB;
+    --theme_domBackgroundBlack: linear-gradient(184.77deg, #282828 -1.9%, #0B0B0B 67.51%);
+    --theme_color: linear-gradient(253.92deg, #FDC305 23.92%, #FD9A05 61.19%);
+    // --theme_domBackgroundBlack: linear-gradient(184.77deg, #282828 -1.9%, #0B0B0B 67.51%);
+    // --theme_color: linear-gradient(253.92deg, #FDC305 23.92%, #FD9A05 61.19%);
+    --theme_header: white;
+    --theme_colorRed: #FF3E3E;
+    --theme_colorNull: #8E8E8E;
+    --theme_colorIcon: #8E8E8E;
+    --theme_colorBlack: #1E1E1E;
+    --theme_colorWhite: white;
+    --theme_colorGrey: #B1B1B1;
+    --theme_colorText: #FF9314;
+    --theme_colorTextGreen: #2BBA13;
+    --theme_colorGreen: #4FD620;
+    --theme_disabled: #EFEFEF;
+    --theme_btn: #DDDDDD;
+    --theme_colorLightGrey: #F4F4F4;
+    --theme_colorSilver: #E9EBFF;
+    --theme_colorBlue: #6CA7FF;
+    --theme_colorYellow: #ffe357;
+    --theme_colorLightGreen: #CEFFCA;
+    --theme_input: #F2F4FB;
+    --theme_inputBorder: #B1B1B1;
+
+    & span, h1, h2, h3, h4, h5, h6, input, textarea, svg {
+        color: black;
+    }
+}
+body.darkTheme {
+    --theme_domBackground: #101010;
+    --theme_domBackgroundBlack: linear-gradient(184.77deg, #282828 -1.9%, #101010 67.51%);
+    --theme_color: linear-gradient(253.92deg, #FDC305 23.92%, #FD9A05 61.19%);
+    // --theme_domBackgroundBlack: linear-gradient(184.77deg, #282828 -1.9%, #0B0B0B 67.51%);
+    // --theme_color: linear-gradient(253.92deg, #FDC305 23.92%, #FD9A05 61.19%);
+    --theme_header: #282828;
+    --theme_colorRed: #FF3E3E;
+    --theme_colorNull: #8E8E8E;
+    --theme_colorIcon: #8E8E8E;
+    --theme_colorBlack: #d1d1d1;
+    --theme_colorWhite: #282828;
+    --theme_colorGrey: #B1B1B1;
+    --theme_colorText: #FF9314;
+    --theme_colorTextGreen: #2BBA13;
+    --theme_colorGreen: #4FD620;
+    --theme_disabled: #434345;
+    --theme_btn: #454343;
+    --theme_colorLightGrey: #F4F4F4;
+    --theme_colorSilver: #464646;
+    --theme_colorBlue: #4970aa;
+    --theme_colorYellow: #ffe357;
+    --theme_colorLightGreen: #355732;
+    --theme_input: #2a2a2d;
+    --theme_inputBorder: #454343;
+
+    & span, h1, h2, h3, h4, h5, h6, input, textarea, svg {
+        color: white;
+    }
+}
+
+
+$borderRadius: 6px;
+$padding: 4px;
+$margin: 4px;
+$transition: .3s;
+
+$fontsize: 14px;
+
+$zindex_null: 0;
+$zindex_hover: 1;
+$zindex_wrapper: 2;
+$zindex_hoverModal: 3;
+$zindex_modal: 4;
+$zindex_notify: 5;

@@ -1,0 +1,63 @@
+@import '../../rules/variables.scss';
+
+.notify {
+    position: absolute;
+    z-index: $zindex_notify;
+
+    bottom: $margin * 6;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $padding * 2;
+
+    & .elem {
+        display: flex;
+        align-items: center;
+        gap: $padding * 2;
+
+        padding: $padding * 4;
+        
+        background-color: #0d0e1b;
+        color: white;
+
+        border: 2px solid #FA0404;
+        border-radius: $borderRadius;
+
+        max-width: 480px;
+
+        & h1 {
+            line-height: $fontsize + 4px;
+            font-size: $fontsize;
+        }
+        & img {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+        }
+
+        &.success {
+            border-color: #39C54F;
+        }
+
+        // &:before {
+        //     position: absolute;
+
+        //     display: block;
+        //     content: "";
+
+        //     background: linear-gradient(116.1deg, #FA0404 22.11%, rgba(220, 6, 6, 0) 44.36%, rgba(216, 6, 6, 0) 53.02%, #B80808 101.23%);
+
+        //     width: calc(100% + 4px);
+        //     height: calc(100% + 4px);
+
+        //     left: -2px;
+        //     top: -2px;
+
+        //     z-index: -1;
+        // }
+    }
+}

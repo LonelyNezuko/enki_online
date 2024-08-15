@@ -1,0 +1,318 @@
+@import '../../../../rules/variables.scss';
+
+.phone {
+    & .apppage.app-sms {
+        & header {
+            & h1 {
+                display: flex;
+                align-items: center;
+
+                & span {
+                    margin-left: $margin;
+
+                    &:before {
+                        position: relative;
+                    }
+                }
+            }
+        }
+        & .list {
+            & .elem {
+                position: relative;
+                & .desc {
+                    width: 100%;
+                    & .name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        & h2 {
+                            font-size: inherit;
+                            font-weight: inherit;
+
+                            & svg {
+                                margin-left: $margin;
+                                opacity: .6;
+
+                                color: white;
+                            }
+                        }
+
+                        & .time {
+                            font-size: $fontsize - 4px;
+                            opacity: .6;
+
+                            transform: translateY(1px);
+                        }
+                    }
+                }
+                & .action {
+                    position: absolute;
+
+                    & button {
+                        &:last-child,
+                        &.unpin {
+                            background: #EE2D2D;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .messages {
+            position: absolute;
+            z-index: $zindex_wrapper;
+
+            top: $padding + 30px;
+            left: 0;
+
+            width: 100%;
+            height: calc(100% - ($padding + 30px));
+
+            background-color: #1A1A1A;
+            transition: $transition;
+
+            // opacity: 0;
+            visibility: hidden;
+            transform: translateX(100%);
+
+            &.show {
+                transform: none;
+                // opacity: 1;
+                visibility: visible;
+            }
+
+            & .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                border-bottom: 1px solid #ffffff10;
+
+                padding: $padding * 2 $padding * 2;
+                padding-top: $padding;
+
+                & .section {
+                    display: flex;
+                    align-items: center;
+
+                    &:first-child {
+                        & .avatar {
+                            margin-left: $margin * 2;
+                        }
+                        & h1 {
+                            margin-left: $margin * 2;
+
+                            font-size: $fontsize;
+                            font-weight: 600;
+
+                            & span {
+                                display: block;
+                                color: #208442;
+
+                                margin-top: $margin;
+                                &.offline {
+                                    color: #ffffff70;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        position: relative;
+
+                        &:hover {
+                            & .action {
+                                opacity: 1;
+                                visibility: visible;
+                                top: 105%;
+                            }
+                        }
+                        & .action {
+                            position: absolute;
+                            z-index: $zindex_wrapper;
+
+                            top: 100%;
+                            right: 0;
+
+                            background-color: #1A1A1A;
+                            border-radius: $borderRadius;
+
+                            overflow: hidden;
+                            transition: $transition;
+
+                            opacity: 0;
+                            visibility: hidden;
+                            top: 110%;
+
+                            & button {
+                                background-color: transparent;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                width: 100%;
+                                height: auto;
+
+                                padding: $padding * 2;
+                                border-radius: 0;
+
+                                &:hover {
+                                    background-color: #ffffff20;
+                                }
+
+                                & span {
+                                    margin-left: $margin * 2;
+                                    color: white;
+
+                                    font-size: $fontsize - 2px;
+                                    white-space: nowrap;
+                                }
+                                & svg {
+                                    font-size: $fontsize;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 20px;
+                    height: 20px;
+
+                    background-color: transparent;
+                    border-radius: $borderRadius;
+
+                    transition: $transition;
+
+                    & svg {
+                        color: white;
+                        font-size: $fontsize + 6px;
+                    }
+
+                    &:hover {
+                        background-color: #ffffff20;
+                    }
+                }
+            }
+
+            & .content {
+                padding: 0 $padding * 2;
+
+                padding-top: $padding;
+                padding-bottom: 35px;
+
+                height: calc(100% - 43px - 31px - 50px);
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                & .message + .message {
+                    margin-top: $margin * 2;
+                }
+                & .message {
+                    display: flex;
+                    align-items: center;
+
+                    &.reverse {
+                        flex-direction: row-reverse;
+
+                        & .text {
+                            border-radius: $borderRadius $borderRadius 0 $borderRadius;
+                            background: radial-gradient(100% 100% at 88.24% 0%, #FF3440 0%, #093F7D 100%);
+
+                        }
+                    }
+                        
+                    & .text {
+                        background: linear-gradient(215.42deg, #323232 4.33%, #272727 86.82%);
+
+                        padding: $padding * 2;
+                        padding-bottom: $padding * 4;
+    
+                        border-radius: $borderRadius $borderRadius $borderRadius 0;
+                        position: relative;
+    
+                        & h1 {
+                            font-size: $fontsize - 2px;
+                        }
+                        & .time {
+                            position: absolute;
+    
+                            bottom: $padding;
+                            right: $padding;
+    
+                            opacity: .7;
+                            font-size: $fontsize - 5px;
+                        }
+                    }
+                }
+
+                & .nomessages {
+                    height: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & section {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        opacity: .4;
+
+                        & svg {
+                            font-size: $fontsize + 45px;
+                            color: white;
+                        }
+                        & h1 {
+                            margin-top: $margin * 4;
+                            font-size: $fontsize - 2px;
+
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            & .input {
+                width: 100%;
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
+
+                display: flex;
+                align-items: center;
+
+                & input {
+                    padding: $padding * 2;
+                    background-color: transparent;
+
+                    font-size: $fontsize - 2px;
+                    color: white;
+
+                    width: 100%;                    
+                }
+                & button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: transparent;
+                    padding: 0 $padding * 2;
+                    & svg {
+                        color: white;
+                        font-size: $fontsize + 4px;
+                    }
+                }
+            }
+        }
+    }
+}

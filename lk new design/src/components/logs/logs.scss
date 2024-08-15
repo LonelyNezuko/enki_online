@@ -1,0 +1,18 @@
+@import '../../rules/variables.scss';
+
+.logs {
+    background-color: $theme_colorWhite;
+    border-radius: $borderRadius;
+
+    padding: $padding * 4;
+
+    & .title {
+        font-size: $fontsize + 4px;
+        font-weight: 700;
+
+        padding: $padding * 3;
+    }
+    & .table {
+        margin-top: $margin * 2;
+    }
+}

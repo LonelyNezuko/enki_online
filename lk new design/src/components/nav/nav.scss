@@ -1,0 +1,176 @@
+@import '../../rules/variables.scss';
+
+#nav {
+    width: 280px;
+    height: 100%;
+
+    background: $theme_domBackgroundBlack;
+    padding: $padding * 4.5 $padding * 4;
+
+    & header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-bottom: 1px solid #ffffff20;
+        padding-bottom: $padding * 4.5;
+
+        & img {
+            width: 100px;
+            height: auto;
+        }
+        & #navToggle {
+            width: 20px;
+
+            cursor: pointer;
+            transition: $transition;
+
+            & span + span {
+                margin-top: $margin;
+            }
+            & span {
+                width: 100%;
+                height: 3px;
+
+                border-radius: $borderRadius;
+                background-color: white;
+
+                display: block;
+
+                &:nth-child(2) {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    & #navPage {
+        margin-top: $margin * 6;
+
+        & ul + ul {
+            margin-top: $margin * 10;
+        }
+        & ul {
+            &.hidden .title button {
+                transform: none;
+            }
+            & .title {
+                margin-bottom: $margin * 2;
+
+                color: white;
+                opacity: .3;
+
+                font-size: $fontsize - 2px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & button {
+                    transform: rotate(180deg);
+                    
+                    background-color: transparent;
+                    border-radius: 50%;
+
+                    display: flex;
+                    align-items: center;
+
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover {
+                        background-color: #ffffff30;
+                    }
+
+                    & svg {
+                        color: white;
+                        font-size: $fontsize + 8px;
+
+                        transition: $transition;
+                        transform: translateY(1px);
+                    }
+                }
+            }
+            & li + li {
+                margin-top: 2px;
+            }
+            & li {
+                &.selected {
+                    background: $theme_color;
+
+                    & a {
+                        opacity: 1;
+
+                        & h1, & svg {
+                            color: $theme_colorWhite;
+                            fill: $theme_colorWhite;
+                        }
+                    }
+                }
+                &:not(.selected):hover {
+                    & a {
+                        opacity: .6;
+                    }
+                }
+
+                border-radius: $borderRadius * 1.2;
+                overflow: hidden;
+
+                & a {
+                    padding: $padding * 4;
+
+                    display: flex;
+                    align-items: center;
+
+                    opacity: .3;
+
+                    & h1 {
+                        // color: $theme_colorWhite;
+                        margin-left: $margin * 3;
+
+                        font-weight: 600;
+                    }
+                    & svg {
+                        // color: white;
+                        font-size: $fontsize + 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    & #navExit {
+        margin-top: $margin * 10;
+        & button {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid #FFF738;
+            border-radius: $borderRadius;
+
+            padding: $padding * 4 0;
+            background-color: transparent;
+
+            & svg {
+                color: white;
+                font-size: $fontsize + 4px;
+            }
+            & h1 {
+                color: white;
+                margin-left: $margin * 2;
+            }
+
+            &:hover {
+                background: $theme_color;
+                border-color: transparent;
+
+                & svg, & h1 {
+                    color: $theme_colorBlack;
+                }
+            }
+        }
+    }
+}

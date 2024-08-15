@@ -1,0 +1,83 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+
+		link(rel="stylesheet", href="/styles/main.css")
+		link(rel="stylesheet", href="/styles/other-pages/login.css")
+
+		script(type='text/javascript', src='/js/modules/jquery-3.5.1.min.js')
+		script(type='text/javascript', src='/js/modules/dialog.js')
+		script(type='text/javascript', src='/js/modules/loading.js')
+
+		title Panel Enki RP - Авторизация
+		link(rel='icon', href='/styles/images/favicon.ico', sizes='48x48', type='image/x-icon')
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	body
+		script(type='module', src='/js/other-pages/login.js')
+		script console.log('\x1b[41m%s\x1b[0m', "Если ты все таки смог открыть консоль - молодец.\nТолько ничего не трогай здесь, хорошо?\n\n\n\n\n\n\n\n\n".toUpperCase())
+
+		.header
+			.header-left
+				.header-logo
+					a(href="/")
+						img(src="/styles/images/logo.png", alt="Логотип Enki RP")
+		.wrapper
+			.wrap
+				//- .login.login-recovery
+				//- 	h1 Восстановление аккаунта
+				//- 	.login-wrap
+				//- 		.login-text Для того, чтобы восстановить аккаунт введите игровой ник аккаунта и электронную почту, которая была привязана к аккаунту
+
+				//- 		.login-input
+				//- 			input#recoveryLogin(type="text", name="login_recovery", maxlength="24", placeholder=" ")
+				//- 			label(for="recoveryLogin") Введите игровой ник
+				//- 		.login-input
+				//- 			input#recoveryEmail(type="email", name="email_recovery", placeholder=" ")
+				//- 			label(for="recoveryEmail") Введите почту, привязанную к аккаунту
+
+				//- 		.login-btn
+				//- 			a(href="/recovery/email")
+				//- 				button#loginRecovery Нет доступа к почте
+				//- 			button.login-enter(disabled="disabled") Восстановить
+				.login.login-select
+					h1 Авторизация
+					.login-wrap
+						.login-input
+							input#loginName(type="text", name="login", maxlength="24", placeholder=" ")
+							label(for="loginName") Игровой ник аккаунта
+						.login-input
+							input#loginPass(type="password", name="password", placeholder=" ")
+							label(for="loginPass") Пароль от аккаунта
+						.login-input.login-input-select
+							.input-select#loginServer
+								span Выберите сервер
+								div
+									label(data-id="0") Enki Online Plus Test
+									label(data-id="1") Enki Online Plus #1
+
+						.login-btn
+							button.login-enter(disabled="disabled") Войти
+				//- .login.login-reg
+				//- 	h1 Создать аккаунт
+				//- 	.login-wrap
+				//- 		.login-input
+				//- 			input#regName(type="text", name="login_reg", maxlength="24", placeholder=" ")
+				//- 			label(for="regName") Придумайте ник аккаунта
+				//- 		.login-input
+				//- 			input#regPass(type="password", name="password_reg", placeholder=" ")
+				//- 			label(for="regPass") Придумайте пароль для аккаунта
+				//- 		.login-input
+				//- 			input#regEmail(type="email", name="email_reg", placeholder=" ")
+				//- 			label(for="regEmail") Свой Email адрес для подтверждения
+				//- 		.login-input#regCode(style="display: none;")
+				//- 			input#regEmailCode(type="code", placeholder=" ")
+				//- 			label(for="regEmailCode") Код из письма
+
+				//- 		.login-btn
+				//- 			button.login-enter(disabled="disabled") Создать аккаунт
+			.cookies-check
+				img(src="/styles/images/cookies.png", alt="Cookies check")
+				span На нашем сайте мы используем файлы Cookies. Баз них сайт не будет нормально работать.<br>Мы не храним в кукисах важную информацию, только логин и пароль для авторизации.
+				button.button Хорошо

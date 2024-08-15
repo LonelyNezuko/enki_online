@@ -1,0 +1,56 @@
+@import '../../rules/variables.scss';
+
+.notify {
+    position: absolute;
+
+    right: $padding * 4;
+    top: calc(98px + $padding * 4);
+
+    z-index: $zindex_notify;
+
+    max-width: 500px;
+    max-height: 80%;
+
+    overflow: hidden;
+
+    & .elem + .elem {
+        margin-top: $margin * 2;
+    }
+    & .elem {
+        background-color: $theme_colorNull;
+        border-radius: $borderRadius;
+
+        padding: $padding * 3;
+        animation: notifyCreate .4s ease;
+
+        & h1 {
+            line-height: $fontsize + 2px;
+            font-size: $fontsize - 1px;
+        }
+
+        @keyframes notifyCreate {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: none;
+            }
+        }
+
+        &.error {
+            background-color: $theme_colorRed;
+            color: white;
+        }
+        &.success {
+            background-color: $theme_colorGreen;
+            color: white;
+        }
+        &.warning {
+            background-color: $theme_colorYellow;
+        }
+        &.info {
+            background-color: $theme_colorBlue;
+            color: white;
+        }
+    }
+}

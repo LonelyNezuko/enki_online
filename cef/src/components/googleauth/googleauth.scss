@@ -1,0 +1,137 @@
+@import '../../rules/variables.scss';
+
+.googleAuth {
+    position: absolute;
+    z-index: $zindex_fullsize;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #0C0D1B;
+    border-radius: $borderRadius;
+
+    padding: $padding * 4;
+    color: white;
+
+    & h1 {
+        font-size: $fontsize + 12px;
+        font-weight: 700;
+
+        margin-bottom: $margin * 6;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & svg {
+            font-size: $fontsize + 22px;
+            cursor: pointer;
+        }
+    }
+    & h2
+    {
+        font-weight: 500;
+    }
+    & .account-googleauth-enable
+    {
+        margin-top: 20px;
+        display: flex;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section
+    {
+        background-color: white;
+        border-radius: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 8px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section:last-child
+    {
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section:first-child {
+        width: 190px;
+        height: 190px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section img
+    {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+        z-index: 5;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section:first-child div
+    {
+        position: absolute;
+        z-index: 1;
+
+        text-align: center;
+
+        font-size: 11px;
+        font-weight: 500;
+
+        color: black;
+        opacity: .4;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-qr section h5
+    {
+        padding: 8px 17px;
+        background-color: #C9C9C966;
+
+        font-size: 12px;
+        font-weight: 500;
+
+        border-radius: 5px;
+
+        cursor: pointer;
+        color: black;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-info
+    {
+        margin-left: 26px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-info div + div
+    {
+        margin-top: 15px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-info div h2
+    {
+        margin-bottom: 8px;
+    }
+    & .account-googleauth-enable .account-googleauth-enable-info div span
+    {
+        font-weight: 500;
+
+        position: relative;
+        left: 15px;
+    }
+
+    & .account-googleauth-code {
+        & h1 {
+            font-weight: 500;
+            font-size: 14px;    
+        }
+        & section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & button {
+                margin-left: $margin * 16;
+
+                padding: $padding * 4 $padding * 10;
+                background: linear-gradient(274.23deg, #B80808 21.13%, #FA0404 87.18%);
+
+                color: white;
+                border-radius: $borderRadius;
+            }
+        }
+    }
+}

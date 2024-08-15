@@ -1,0 +1,40 @@
+.document
+{
+	margin:  0 auto;
+
+	margin-top: 50px;
+	margin-bottom: 40px;
+
+	width: 100%;
+}
+.document-title
+{
+	font-size: 23px;
+	text-align: center;
+}
+.document-title .document-title-desc
+{
+	margin-top: 5px;
+	font-size: 13px;
+}
+.document-body
+{
+	margin: 0 auto;
+	margin-top: 30px;
+
+	font-size: 15px;
+}
+
+.document-body .document-body-li
+{
+	margin-top: 15px;
+}
+.document-body .document-body-li span
+{
+	margin-right: 7px;
+}
+.document-body .document-body-li .document-body-ul
+{
+	margin-top: 5px;
+	margin-left: 40px;
+}

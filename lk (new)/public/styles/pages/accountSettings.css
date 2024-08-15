@@ -1,0 +1,262 @@
+.accountsettings.accountsettings-flex
+{
+    display: flex;
+    align-items: center;
+}
+.accountsettings .accountsettings-item
+{
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accountsettings.accountsettings-flex .accountsettings-item
+{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.accountsettings:not(.accountsettings-flex) .accountsettings-item + .accountsettings-item
+{
+    margin-top: 8px;
+}
+.accountsettings .accountsettings-item section
+{
+    display: flex;
+    align-items: center;
+}
+.accountsettings .accountsettings-item section span
+{
+    margin-left: 8px;
+    font-weight: 500;
+}
+.accountsettings .accountsettings-item section svg
+{
+    width: 16px;
+    height: 16px;
+}
+.accountsettings .button
+{
+    margin-top: 17px;
+}
+.accountsettings .accountsettings-item.accountsettings-item-select
+{
+    cursor: pointer;
+    user-select: none;
+}
+
+.accountsettings-changemail-wrap
+{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, .3);
+    display: none;
+}
+.accountsettings-changemail-wrap.accountsettings-changemail-wrap-show
+{
+    display: block;
+}
+.accountsettings-changemail
+{
+    position: absolute;
+
+    top: 40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: white;
+    box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
+
+    border-radius: 20px;
+
+    width: calc(600px - 80px);
+
+    padding: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.accountsettings-changemail .accountsettings-changemail-close
+{
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+}
+.accountsettings-changemail .accountsettings-changemail-close span
+{
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: black;
+    transform: rotate(45deg);
+}
+.accountsettings-changemail .accountsettings-changemail-close span:last-child
+{
+    transform: rotate(135deg);
+}
+.accountsettings-changemail svg
+{
+    width: 86px;
+    height: 86px;
+}
+.accountsettings-changemail h1,
+.accountsettings-changemail h2
+{
+    width: 100%;
+    text-align: center;
+}
+.accountsettings-changemail h1
+{
+    margin-top: 24px;
+    font-size: 19px;
+
+    color: #FF9314;
+}
+.accountsettings-changemail h2
+{
+    width: 80%;
+
+    margin-top: 8px;
+    font-weight: 500;
+
+    color: #1F1F1F66;
+}
+.accountsettings-changemail section
+{
+    margin-top: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.accountsettings-changemail section .button,
+.accountsettings-changemail section .input,
+.accountsettings-changemail section .textarea
+{
+    margin-top: 12px;
+}
+.accountsettings-changemail section .input input,
+.accountsettings-changemail section .textarea textarea
+{
+    background-color: #F4F4F4;
+}
+.accountsettings-changemail section .input,
+.accountsettings-changemail section .textarea
+{
+    width: 100%;
+}
+.accountsettings-changemail section .input input:not(:disabled):focus,
+.accountsettings-changemail section .input input:not(:disabled):not(:placeholder-shown)
+{
+    background-color: white;
+}
+
+.account-googleauth h2
+{
+    font-weight: 500;
+    color: #0000004D;
+}
+.account-googleauth .account-googleauth-enable
+{
+    margin-top: 20px;
+    display: flex;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-qr section
+{
+    background-color: white;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-qr section:last-child
+{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-qr section img
+{
+    width: 160px;
+    height: 160px;
+
+    position: relative;
+    z-index: 5;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-qr section:first-child div
+{
+    position: absolute;
+    z-index: 1;
+
+    text-align: center;
+    color: #0000004D;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-qr section h5
+{
+    padding: 8px 17px;
+    background-color: #C9C9C966;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-info
+{
+    margin-left: 26px;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-info div + div
+{
+    margin-top: 15px;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-info div h2
+{
+    color: black;
+    margin-bottom: 8px;
+}
+.account-googleauth .account-googleauth-enable .account-googleauth-enable-info div span
+{
+    font-weight: 500;
+    color: #00000080;
+
+    position: relative;
+    left: 15px;
+}
+
+.account-googleauth .account-googleauth-code h1
+{
+    font-weight: 500;
+    font-size: 14px;
+
+    color: black;
+}

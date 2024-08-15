@@ -1,0 +1,139 @@
+@import '../../rules/variables.scss';
+@import './minix.scss';
+
+.donate {
+    position: absolute;
+    z-index: $zindex_fullsize;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(46deg, #0c0d1b 0%, #181735f3 100%);
+    border-radius: $borderRadius;
+
+    width: 1300px;
+    height: 750px;
+
+    color: white;
+    display: flex;
+
+    & .nav {
+        min-width: 25%;
+        height: 100%;
+
+        padding: $padding * 8;
+
+        & .header {
+            @include donateText;
+            border-bottom: 1px solid #4F4D68;
+
+            padding-bottom: $padding * 3;
+        }
+        & nav {
+            margin-top: $margin * 6;
+
+            & li + li {
+                margin-top: $margin * 3;
+            }
+            & li {
+                width: 100%;
+
+                background: #090912;
+                border-radius: $borderRadius;
+
+                padding: $padding * 5 0;
+
+                @include donateText;
+                font-size: $fontsize + 2px;
+
+                &.selected {
+                    background:  linear-gradient(46deg, #FFA800 0%, #FF881A 100%);
+                }
+            }
+        }
+
+        position: relative;
+        &:before {
+            position: absolute;
+
+            display: block;
+            content: "";
+
+            width: 1px;
+            height: calc(100% - $padding * 16);
+
+            background-color: #4F4D68;
+            border-radius: $borderRadius;
+
+            right: 0;
+            top: 50%;
+
+            transform: translateY(-50%);
+            opacity: .6;
+        }
+    }
+
+    & .wrapper {
+        width: 100%;
+        height: 100%;
+
+        & .header {
+            padding: $padding * 6 $padding * 8;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+
+            & .donateScore {
+                display: flex;
+                align-items: center;
+
+                & h1, & button {
+                    @include donateText;
+                }
+                & button {
+                    margin-left: $margin * 4;
+                    padding: $padding * 2.5;
+
+                    background-color: #50349F;
+                    border-radius: $borderRadius;
+
+                    color: white;
+                    font-size: $fontsize + 4px;
+                }
+            }
+            & .close {
+                & svg {
+                    font-size: $fontsize + 22px;
+                    cursor: pointer;
+                }
+            }
+
+            & .switch {
+                display: flex;
+                align-items: center;
+
+                & h1 {
+                    @include donateText;
+                    font-size: $fontsize + 8px;
+                }
+                & input.switch {
+                    margin: 0 $margin * 4;
+                }
+            }
+        }
+
+        & .body {
+            overflow: hidden;
+
+            width: 100%;
+            height: calc(100% - 90px);
+
+            position: relative;
+        }
+    }
+}

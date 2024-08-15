@@ -1,0 +1,107 @@
+@import '../../../rules/variables.scss';
+@import '../minix.scss';
+
+.donate {
+    & .improvements {
+        padding: $padding * 8;
+        padding-top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        gap: $margin * 4;
+
+        overflow: auto;
+
+        & .elem {
+            background-color: #090912;
+            border-radius: $borderRadius;
+
+            overflow: hidden;
+            position: relative;
+
+            height: 100%;
+            width: calc(50% - 8px);
+            min-width: calc(50% - 8px);
+
+            padding: $padding * 4;
+
+            &.alive {
+                width: 100%;
+
+                position: relative;
+                border-radius: $borderRadius * 2;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 0;
+
+                & .bg {
+                    position: absolute;
+
+                    width: 100%;
+                    height: 100%;
+
+                    opacity: .3;
+
+                    top: 0;
+                    left: 0;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+
+                        object-fit: cover;
+                    }
+                }
+                & .bwrap {
+                    position: relative;
+                    z-index: 2;
+
+                    & .desc {
+                        font-size: $fontsize + 2px;
+                    }
+                    & .buttons {
+                        position: relative;
+                        margin-top: $margin * 22;
+                    }
+                }
+            }
+
+            & .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    width: 20%;
+                    height: auto;
+                }
+            }
+            & .title {
+                @include donateText;
+                margin-top: $margin * 8;
+            }
+            & .desc {
+                @include donateText;
+                font-size: $fontsize - 2px;
+
+                opacity: .6;
+                margin-top: $margin * 2;
+            }
+            & .buttons {
+                @include donateBuy;
+
+                & .wrap {
+                    & .price {
+                        background-color: #1f1f29;
+                    }
+                }
+            }
+        }
+    }
+}
